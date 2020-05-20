@@ -19,7 +19,7 @@ if(!empty($S->client['client_note'])){
 ?>
 
 <?php
-$bgcolor = $req['report_client_id'] ? "#fcc": "#ccc";
+$bgcolor = isSet($req['report_client_id']) ? "#fcc": "#ccc";
 ?>
 
 <?php //echo dumper($client) ?>
@@ -27,7 +27,7 @@ $bgcolor = $req['report_client_id'] ? "#fcc": "#ccc";
 
 <h3 style="background-color: <?php echo $bgcolor ?>;margin:0;">&nbsp;Contact History 
 <?php 
-echo $req['report_client_id']?'('.$client[0]['name'].')':'';
+echo isSet($req['report_client_id']) ? '('.$client[0]['name'].')' : '';
 ?>
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal"><?php echo date("g:i a, l jS F Y ")?></span></h3>

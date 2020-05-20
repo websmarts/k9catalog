@@ -618,20 +618,25 @@ if (isSet($req['catid']) )
 
 <div id="leftbar" >
 
-    <?php if ($req['m'] != "order") : ?>              
+    <?php if ( $req['m'] ?? '' != "order") : ?>              
 
             <form  id="searchform" name="search_form">
 
                 find:
 
-                <?php if($req['q'] == 'core' || $req['q'] == 'special' || $req['q'] == 'new product' || $req['q'] == 'clearance'){
+                <?php 
+                
+                if( $q = $req['q']??"" ) {
+                    
+                    if($generate_quickreg_code == 'core' 
 
-                    $q = '';
+                    || $q== 'special' 
+                    || $q == 'new product' 
+                    || $q == 'clearance'){
 
-                } else {
+                        $q = '';
 
-                    $q = $req['q'];
-
+                    }
                 }
 
                 ?>
@@ -708,9 +713,9 @@ if (isSet($req['catid']) )
 
     //echo dumper($_SESSION['messages']);
 
-    $error_msg .= $_SESSION['messages']['error'];
+    $error_msg = $_SESSION['messages']['error'] ?? '';
 
-    $flash_msg .= $_SESSION['messages']['success'];
+    $flash_msg = $_SESSION['messages']['success'] ?? '';
 
     if (!empty($error_msg))
 

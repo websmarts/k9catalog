@@ -322,7 +322,7 @@ function get_list_hierarchy($table, $order = "")
     $depth = 0;
     $list = do_query($query);
 
-    if (is_array($list) && count($list > 0)) {
+    if (is_array($list) && count($list) >0) {
         foreach ($list as $key => $rec)
         {
             $nlist[$rec['id']] = array
@@ -342,7 +342,9 @@ function get_hierarchy_children($id, $depth, $table, $order = " order by display
     $nlist = array();
     $list = do_query($query);
 
-    if (is_array($list) && count($list > 0)) {
+   // echo dumper($list);
+
+    if (is_array($list) && count($list) > 0 ) {
         foreach ($list as $key => $rec)
         {
             $nlist[$rec['id']] = array
@@ -787,7 +789,9 @@ function isBomAndAvailable($product_code){
             }
         }
         //echo dumper($numboms);
-        return array('max_available'=> min($numboms));
+
+        $maxAvailable = count($numboms) > 0 ? min($numboms) : 0;
+        return array('max_available'=> $maxAvailable);
     } else {// it is not a bom
         return false;
     }

@@ -18,25 +18,25 @@ ini_set('session.use_only_cookies', 1); // Forces sessions to only use cookies.
 
 $time = $_SERVER['REQUEST_TIME'];
 
-if($_SERVER['HTTP_HOST'] == 'ecat.test') {
+// if($_SERVER['HTTP_HOST'] == 'ecat.test') {
 
-} else {
-    session_save_path('/home/k9homes/tmp/php/session');
+// } else {
+//     session_save_path('/home/k9homes/tmp/php/session');
 
 
 
-    /**
+//     /**
     
-     * Here we look for the user’s LAST_ACTIVITY timestamp. If
+//      * Here we look for the user’s LAST_ACTIVITY timestamp. If
     
-     * it’s set and indicates our $timeout_duration has passed,
+//      * it’s set and indicates our $timeout_duration has passed,
     
-     * blow away any previous $_SESSION data and start a new one.
+//      * blow away any previous $_SESSION data and start a new one.
     
-     */
+//      */
     
-    session_set_cookie_params($lifetime, '/', '.k9homes.com.au');
-}
+//     session_set_cookie_params($lifetime, '/', '.k9homes.com.au');
+// }
 
 
 
