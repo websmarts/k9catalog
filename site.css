@@ -1,0 +1,834 @@
+a.moreinfo {
+
+display:block;
+
+width:80px;
+
+padding:5px 0;
+
+background: #ddd;
+
+text-align: center;
+
+border: 1px solid #ccc;
+
+margin-top:15px;
+
+margin-left:30px;
+
+
+
+}
+
+span.basketupdatebutton { float:right; margin-top: 10px;}
+
+/** text when no image to display **/
+
+.no_image_available_text { color: #888}
+
+
+
+/** Product group table on product list page**/
+
+table.product_group_table {
+
+    border-bottom:1px solid #888;
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+table.product_group_table td.imgcell {
+
+    border-right: 0px dotted #888;
+
+}
+
+table.product_group_table p.product_name {
+
+    color: #002f59; 
+
+    font-size:150%;
+
+    font-weight: bold;
+
+    margin: 0;
+
+}
+
+table.product_group_table p.type_description {
+
+    color: #002f59; 
+
+    font-size:100%;
+
+    font-weight: normal;
+
+    margin: 0 20px 15px 0px;
+
+}
+
+
+
+.sprice {border-bottom: 1px dotted red !important}
+
+
+
+/** Subcat menu at top of listing page **/
+
+.section_header td{
+
+   padding-left:5px;
+
+   background:#fff;
+
+   color:#fff;
+
+   font-size:120%;
+
+   font-weight:600;
+
+}
+
+td ul {
+
+    list-style: none;
+
+    padding: 0px;
+
+}
+
+td ul.depth_0 > li a {
+
+   text-decoration: none;  
+
+}
+
+td.subcatmenu ul ul li {
+
+    float: left;
+
+    border: 1px solid #ccc;
+
+    list-style: none;
+
+    margin-top:10px;
+
+    padding:0 3px;
+
+
+
+}
+
+td.subcatmenu ul ul li a {
+
+    display: block;
+
+    padding: 6px;
+
+    
+
+}
+
+td.subcatmenu ul ul li a.active {
+
+    background: #ccf;
+
+    /*color: #00aa55;*/
+
+}
+
+td.subcatmenu p {
+
+    color:#333;
+
+}
+
+/** end subcat menu **/
+
+
+
+/** main cat menu **/
+
+#catmenu ul {
+
+    padding-left:4px;
+
+}
+
+#catmenu ul li{
+
+    list-style: none;
+
+    margin: 15px 0; /* space out main cat items for ipad */
+
+    
+
+}
+
+#catmenu ul.alt li a {
+
+    text-decoration: none;
+
+}
+
+#catmenu ul.alt li a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/** end main cat menu **/
+
+
+
+#topbar {
+
+    padding: 6px;
+
+    background: #e0d9c6;
+
+    overflow: hidden;
+
+}
+
+#topbar p { float:left; width: 100px; margin: 0; padding: 0; text-align: left}
+
+#header {
+
+    clear:both;
+
+    border-bottom: 4px solid #e0d9c6;;
+
+    height: 123px;
+
+    background: #e0d9c6;
+
+}
+
+#header img {float: left; margin: 0px;margin-right:20px;}
+
+#header #controlbar {
+
+    xmargin-left:300px;
+
+    text-align: right;
+
+    padding: 6px;
+
+    padding-right: 20px;
+
+    border:0px solid red;
+
+    overflow: hidden;
+
+}
+
+#header #controlbar table {
+
+    width: 400px;
+
+    float: right;
+
+    background: transparent;
+
+    border: 1px solid #eee;
+
+}
+
+
+
+#controlbar h3 {   
+
+    float:left;
+
+    margin-top: 0;
+
+    }
+
+    
+
+#controlbar div#clientinfomenu{
+
+    margin-top: 28px;
+
+    margin-left:68px;
+
+    padding-top:4px;
+
+    border-top: 1px solid #002f59;
+
+    overflow: hidden;
+
+}
+
+#controlbar p{
+
+    float:right;
+
+    margin:0 0 0 20px;
+
+    
+
+}
+
+
+
+#leftbar {
+
+    float: left;
+
+    width: 180px;
+
+    padding:4px;
+
+    /*background: #eee;*/
+
+   
+
+    
+
+}
+
+
+
+body /*normal*/{
+
+	font-family:arial;
+
+	font-size:9pt;
+
+	margin:0px;
+
+	padding:6px;
+
+    text-align: center;
+
+	}
+
+#pagecontainer{
+
+    width:988px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    background: #e0d9c6;
+
+    overflow: hidden;
+
+    border: 2px solid #e0d9c6;
+
+}
+
+
+
+#content {
+
+    /*margin-left: 190px;*/
+
+    float: right;
+
+    width: 780px;
+
+    border: 1px solid #fff;
+
+    
+
+    padding: 0px;
+
+    background: #fff;
+
+    min-height: 300px;
+
+}
+
+
+
+#footer {
+
+    padding:10px;
+
+    background: #e0d9c6;
+
+    text-align: center;
+
+    clear: both;
+
+}
+
+	
+
+.heading {
+
+color:#990000;
+
+font-size:100%;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+}
+
+.login_form {
+
+	background:#e0e0e0;
+
+	border:1px solid #000080;
+
+}
+
+.error_msg {
+
+background:#ed615f;
+
+
+
+color:#fff;
+
+font-size:11pt;
+
+padding:5px;
+
+text-align: center;
+
+}
+
+.flash_msg {
+
+
+
+background:#74ec40;
+
+color:#000;
+
+font-size:11pt;
+
+padding:5px;
+
+text-align: center;
+
+}
+
+
+
+.orderinstructions {
+
+ color:#ff0000;
+
+}
+
+.client_name {
+
+font-size:120%;
+
+font-weight:600;
+
+color:#fff;
+
+background:#ccc;
+
+padding:5px;
+
+}
+
+
+
+.total {
+
+padding-top:5px;
+
+padding-bottom:5px;
+
+border-top:1px solid #000;
+
+
+
+font-weight:700;
+
+}
+
+	
+
+
+
+	
+
+th {font-size:100%; background:#ccccff;font-weight: bold}
+
+.notifyme th {background: #f2a; font-size:100%; color: #fff}
+.notifyme td {background: #fcc; font-size:120%; color: #000}
+
+	
+
+.product_heading {color:blue;padding-left:2px;font-size:100%; font-weight:600;background:#ffffff;}
+
+.product_description {padding-left:2px;font-size:100%;}
+
+.aus_made {font-size:100%; font-weight:700;color:green;background:#FFA600;}
+
+
+
+a:visited,a:link { color:#000000;text-decoration:non;}
+
+a:hover{color:#0000ff;}
+
+
+
+
+
+
+
+.notation {
+
+ font-size:70%;
+
+ background:#FFFFc0;
+
+ }
+
+.row0{background:#eee;}
+
+.row1{background:#fff;}
+
+.orderrow td{color:#44f;}
+
+.orderrow td a {text-decoration: none;color:#44f;}
+
+.countrow td {color:#284;}
+
+.catmenu {
+
+	background:#444;;
+
+	border-right:3px groove #888;
+
+	padding-left:5px;
+
+	
+
+	
+
+	}
+
+.catmenu A:Link,.catmenu a:visited {
+
+color:#e0e0e0;
+
+}
+
+.catmenu a:hover {
+
+	background:#fff;
+
+	color:#000;
+
+}
+
+
+
+/* product listing table */    
+
+table.list_table{
+
+	/*border-top:4px solid #FFA600;*/
+
+	width:100%;
+
+	}
+
+
+
+.list_table .highlight {
+
+background: yellow;
+
+}
+
+.list_table .special_price{ color:red;}
+
+
+
+ .list_table .qty_disc_price {
+
+ color:magenta;
+
+ font-size:80%;
+
+ }
+
+.list_table .discount {
+
+  color:magenta;  
+
+}
+
+ 
+
+.list_table .normal {
+
+color:black;
+
+font-size:80%;
+
+padding-left:2px;
+
+}
+
+
+
+.list_table input.input  {
+
+    font-family : Trebuchet MS;
+
+    font-size : 130%;
+
+    width:2em;
+
+    font-weight : normal;
+
+    background-color : #eee;
+
+    border-color : #cccccc;
+
+    border-style : inset;
+
+    border : 1px solid #888;
+
+   
+
+}
+
+.list_table input.highlight{
+
+    background: yellow;
+
+}
+
+.list_table td.input { width:32px; overflow:hidden}
+
+
+
+
+
+/* style of product_name in listing */
+
+.list_table .product_name {
+
+font-size:160%;
+
+font-weight:700;
+
+}
+
+
+
+.list_table .productcode {
+
+    font-weight: bold;
+
+    width: 75px;
+
+    overflow: hidden;
+
+}
+
+
+
+/* highlight if item is pending status with red */
+
+.list_table .productcode.red{
+
+    color: red;
+
+}
+
+
+
+.list_table .description {
+
+    width: auto;
+
+}
+
+
+
+.list_table .instock {
+
+	font-size:90%;
+
+	 background-color : #e0e0e0;
+
+	 padding-left:2px;
+
+	
+
+	}
+
+
+
+ 
+
+.list_table .custom_price {color:red; font-weight:bold}
+
+.list_table tr.item td {border-bottom: 1px dotted #ccc}
+
+
+
+/** end product listing table **/
+
+
+
+/* OPTION CLASSES DISPLAY THE SWATCH COLOR AT THE HEAD OF QTY COLUMNS */
+
+.opt_ff0000 {/* Red*/
+
+ background:#ff0000;
+
+}
+
+.opt_00ff00 {/*green*/
+
+ background:#00ff00;
+
+}
+
+.opt_0000ff {/*blue*/
+
+ background:#0000ff;
+
+ color:#fff;
+
+}
+
+.opt_8080ff {/*lightblue*/
+
+ background:#8080ff;
+
+}
+
+.opt_000066 {/*darkblue*/
+
+ background:#000066;
+
+ color:#fff;
+
+}
+
+.opt_ff00ff {/*Purple*/
+
+ background:#ff00ff;
+
+}
+
+.opt_ffff00{/* yellow */
+
+	background:#ffff00;	
+
+}
+
+.opt_ffff40{/* gold */
+
+	background:#ffff40;	
+
+}
+
+.opt_663300{/* brown */
+
+	background:#663300;	
+
+	color:#ffffff;
+
+}
+
+.opt_ff8000{/* orange */
+
+	background:#ff8000;	
+
+	color:#ffffff;
+
+}
+
+.opt_000000{/* black */
+
+	background:#000000;	
+
+	color:#ffffff;
+
+}
+
+.opt_998855{/* beige */
+
+	background:#998855;	
+
+	color:#000;
+
+}
+
+.opt_ffcccc{/*PINK*/
+
+ background:#ffcccc;
+
+ color:#000;
+
+ }
+
+ .opt_cc9933{/*TAN*/
+
+ background:#cc9933;
+
+ color:#000;
+
+ }
+
+ .opt_999999{/* grey */
+
+ background: #999;
+
+ color: #000;
+
+ }
+
+  .opt_ff0044{/* Burgundy */
+
+  background: #800;
+
+  color: #fff;
+
+ }
+
+ 
+
+ /**
+
+ * Fix chromes habit of put arrows on intut type=number field
+
+ */
+
+form input[type='number']::-webkit-outer-spin-button,
+
+form input[type='number']::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+
+
+/* Freight Docket image */
+
+img.freight-docket {
+
+    display: none;
+
+    /*width: 100px;*/
+
+}

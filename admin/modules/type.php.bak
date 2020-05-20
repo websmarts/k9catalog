@@ -1,0 +1,142 @@
+<?php
+function create_type() {
+	global $req,$_v;
+	
+	//echo dumper ($req);
+	
+	// check we have everything we need
+	
+	$cats = $req['catid'];
+	if (count($cats) < 1 ) {
+		$msg .= "no actegory selected<br>";
+		$_v['form_errors']['catid'] = 1;
+	}
+	if (trim($req['typename']) < " "){
+		$msg .= "No type name supplied <br>";
+		$_v['form_errors']['typename'] = 1;
+	}
+	
+	
+	$ausmade = $req['ausmade'] == "on"?1:0;
+	
+	$sql = "INSERT INTO type ".
+				 "SET name='".$req['typename']."'".
+				 ",image='".$req['typeimagename']."'".
+				 ",aus_made=$ausmade ".
+				 ",display_format='".$req['displayformat']."'";
+				 
+	//echo $sql ; 
+				 
+	$typeid = do_query($sql);
+	
+	// now get typeid and insert entries into type category
+	foreach ($cats as $catid) {
+		$sql ="INSERT into type_category (typeid,catid) values ($typeid,$catid) ";
+		
+		//echo $sql ."<br>\n";
+		$r = do_query($sql);
+	}	
+}
+
+function add_options () {
+	global $req;
+	
+	$options = $req['opt'];
+	if (is_array($options) ) {
+		foreach ($options as $option) {
+			foreach ($option as $typeid =>$opts) {
+				
+				$sql = "insert into type_options set typeid=$typeid,";
+				foreach ($opts as $k => $v) {
+					//echo "k=$k and v=$v <br>\n";
+					if ($k == "opt_code") {
+						 if( $v >""){
+							$sql .= " $k='$v',";
+						} else {
+							$skipflag = 1; // set so we ignore blank data and dont insert into db
+						}
+					} else {
+						$sql .= " $k='$v',";
+					}						
+				}
+			}
+			
+			// remove trailing comma
+			$pattern = "/,$/";
+			$string = $sql;
+			$replacement="";
+			$sql = preg_replace($pattern, $replacement, $string);
+			
+			//echo $sql."<br>skipflag=$skipflag <br>\n";
+			if ($skipflag == 0){ // ignore any blank data submitted - 
+				$r = do_query($sql);
+			} else {
+				$skipflag = 0;
+			}
+		}		
+	}
+	
+	
+}
+function update_type($req) {
+	if ($req['typeid'] && $req['typename'] > "") {
+		$sql = "update type set name='".addslashes($req['typename'])."' WHERE typeid=".$req['typeid'];	
+		do_query($sql);
+	}	
+	
+	// now update the type category
+	$sql = "delete from type_category where typeid=".$req['typeid']; // get rid of current entries
+	echo dumper($sql);
+	$res = do_query($sql);
+	
+	// now add in the updated type_category entries
+	if(is_array($req['catid']) and count($req['catid']) > 0) {
+		foreach($req['catid'] as $catid) {
+			$sql = "insert into type_category (catid,typeid) VALUES ($catid,".$req['typeid'].")";
+			echo dumper($sql);
+			do_query($sql);
+		}		
+	}
+}
+	
+/*
+ * MAIN 
+ *
+ *
+ */
+ 
+// echo "included type.php<br>\n";
+
+
+
+switch ($a) {
+	case "create_type":
+		create_type();
+				break;
+	case "add_options":
+		add_options();
+		break;
+	case "update_type":
+		update_type(&$req);
+
+		break;
+		
+		
+	default:
+}
+
+// Get the display data for view
+$_v['cats']= get_list_hierarchy("category","order by name asc");
+
+// get product types for 
+$_v['ptypes'] = get_product_types();
+
+$_v['type_options'] = get_type_options();
+
+//echo dumper ($_v['ptypes']);
+
+//echo dumper($_v['cats']);
+//echo dumper($_v['type_options']);
+
+
+?>

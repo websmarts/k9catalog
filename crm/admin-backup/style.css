@@ -1,0 +1,13 @@
+/* CSS Document */
+body {font-family:Verdana, Arial, Helvetica, sans-serif}
+.tophead { font-size: 20pt; color: #FFFFFF}
+.links { font-size: 20pt; color: #FFFFFF}
+.header { padding: 0px 0px 0px 5px; font-size: 13pt; color: #FFFFFF}
+.red-bold{ color:#E13000;}
+.blue-bold { font-size:12px; color:#000088;}
+.msg { font-size:12px; color:#009988; font-weight:bold}
+.tdhead { font-size:12px; color:#FFFF88; font-weight:bold; background-color:#000000; }
+table {FONT-SIZE: 12px; COLOR: #565656; FONT-FAMILY: Tahoma, Verdana, Arial; text-align:left;}
+a:link,a:active,a:visited {color:#0584D0; text-decoration:none}
+a:hover {color:#DB1C1C; text-decoration:none;}
+.inputbutton { font-size:12px; font-weight:bold; color:#000000; border-color:#000000; border:1px solid; padding:2px; cursor:pointer;}

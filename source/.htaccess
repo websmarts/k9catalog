@@ -1,0 +1,12 @@
+
+<IfModule mod_expires.c>
+
+ExpiresActive on
+ExpiresDefault                                      "access plus 1 day"
+
+
+ExpiresByType image/jpeg                            "access plus 1 day"
+ExpiresByType image/jpg                            "access plus 1 day"
+
+
+</IfModule>

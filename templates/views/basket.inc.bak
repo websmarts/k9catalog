@@ -1,0 +1,73 @@
+ 	
+<form>
+<input type=hidden name=m value=basket>
+<input type=hidden name=a value=update >
+<input type=hidden name=page value=basket >
+
+<input type=hidden name=catid value=<?php echo $req['catid'];?> >
+
+
+	<TABLE class=list_table >
+			<?php 
+			if (is_array($products) ) {
+				$class= " class=row0 ";
+				foreach($products as $product) { ?>
+		<TR><TD>
+		<TABLE width=100% >
+		<TR >
+			<TD valign=top width=10 >
+			&nbsp;
+			<TD valign=top>
+						<table border=0 width=100% >
+						<tr>
+													
+							<td valign=top <?php echo $class;?> ><?php echo $product['name']."<br><i>".$product['description']."</i>";?> </TD>
+							
+							<td valign=top width=70  ><a href=?m=list&catid=<?php echo $product['catid']."&highlight=".$product['product_code'];?> ><?php echo $product['product_code'];?></a> </TD>
+							<td valign=top width=160  ><?php echo $product['size'];?></TD>
+							<?php // determine the price to use i.e standard or special
+								if (isSet($special_prices[$product['product_code']])) {
+									$price = $special_prices[$product['product_code']];
+									$price_class = " class=special_price ";
+								} else {
+									$price = $product['price'];
+									// check if qty discount applies
+									if ($product['qty_break'] > 0 && $product['qty'] > $product['qty_break'] ) { // is qty break set and should it be applied?
+										
+										$price = $price * (1 - ($product['qty_discount']/100));
+										$price_class=" class=discount ";
+									} else {
+										$price_class="";
+									}
+								}
+							?>
+							<td valign=top width=80 <? echo $price_class;?> >$<?php echo number_format(($price/100),2);?></TD>
+							<td valign=top width=50 ><input type=text name=basket[<?php echo $product['product_code'];?>][qty] size=3 value='<?php echo $basket[$product['product_code']]; ?>' >
+							<td valign=top width=70 <? echo $price_class;?>>$<?php $ext_cost = (($price/100)*$product['qty']);$total += $ext_cost;echo number_format($ext_cost,2);?> </td>
+						</tr>
+						
+						
+						</table>						
+					</TD>
+				</TR>
+				</table></TD></tr>
+			<?php }} ?>	
+			<tr><td align=right style="border-top:1px solid black;"><span style="padding-right:30px;border-bottom:1px solid black;font-weight:700;" ><?php echo "$".number_format($total,2); ?></span> </TD></tr>	
+			<tr><td align=right><input type=submit name=b value=Clear >&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=b value=Update ></td></tr>
+			<tr><td align=center>
+						<table>
+							
+							<tr>
+								<td align=right>Special Instructions:</td><td align=left><textarea name=basket_instructions cols=40 rows=4><?php echo $_SESSION['basket_instructions'];?></textarea></td>
+							</tr>
+							<tr>
+								<td align=center colspan=2><input type=submit name=b value=SaveOrder ></td>
+							</tr>
+						</table>
+						
+					</td>
+			</tr>
+			
+	</TABLE>
+	
+</form>			

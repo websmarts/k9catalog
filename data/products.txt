@@ -1,0 +1,781 @@
+product_code	description	price	current_product_code	typeid	catid	
+060B	Fineline # 3440744	6300	060B	106	1	1
+060D	Dog kennel deluxe 60lt	7910	060D	106	1	1
+060S	Dog kennel standard 60lt	7400	060S	106	1	1
+200B	Fineline # 3440778	7500		107	1	0
+200D	Dog kennel deluxe 200lt	9636	200D	107	1	1
+200S	Dog kennel standard 200lt	8181	200S	107	1	1
+300D	Dog kennel deluxe 300lt	18000	300D	107	1	1
+600D	Dog kennel deluxe 600lt	25000	600D	107	1	1
+900D	Dog kennel deluxe 900lt	28000	900D	107	1	1
+B199	"6"" aluminium dog bowl"	375	B199	1	5	1
+B200	"7"" aluminium dog bowl"	495	B200	1	5	1
+B201	"8"" aluminium dog bowl"	600	B201	1	5	1
+B202	"9"" aluminium dog bowl"	713	B202	1	5	1
+B203	"10"" aluminium dog bowl"	825	B203	1	5	1
+B204	"11"" aluminium dog bowl"	975	B204	1	5	1
+B209-blu	Double plastic diner blue	83	B209-blu	92	5	1
+B209-grn	Double plastic diner green	83	B209-grn	92	5	1
+B209-red	Double plastic diner red	83	B209-red	92	5	1
+B209-yel	Double plastic diner yellow	83	B209-yel	92	5	1
+B210-blu	Small plastic dog bowl blue	75	B210-blu	2	5	1
+B210-grn	Small plastic dog bowl green	75	B210-grn	2	5	1
+B210-red	Small plastic dog bowl red	75	B210-red	2	5	1
+B210-yel	Small plastic dog bowl yellow	75	B210-yel	2	5	1
+B213-blu	Large plastic dog bowl blue	195	B213-blu	2	5	1
+B213-grn	Large plastic dog bowl green	195	B213-grn	2	5	1
+B213-red	Large plastic dog bowl red	195	B213-red	2	5	1
+B213-yel	Large plastic dog bowl yellow	195	B213-yel	2	5	1
+B220-blu	Medium plastic dog bowl blue	143	B220-blu	2	5	1
+B220-grn	Medium plastic dog bowl green	143	B220-grn	2	5	1
+B220-red	Medium plastic dog bowl red	143	B220-red	2	5	1
+B220-yel	Medium plastic dog bowl yellow	143	B220-yel	2	5	1
+B221-blu	Cat shaped plastic bowl blue	296	B221-blu	79	5	1
+B221-red	Cat shaped plastic bowl red	296	B221-red	79	5	1
+B221-yel	Cat shaped plastic bowl yellow	296	B221-yel	79	5	1
+B227	Heavy duty small square bowl	255	B227	102	5	1
+B230	Heavy duty small cat bowl	165	B230	102	5	1
+B231	Heavy duty double diner	248	B231	102	5	1
+B232-blu	H/duty litter tray lge blue	330	B232-blu	57	14	1
+B232-grn	H/duty litter tray lge green	330	B232-grn	57	14	1
+B232-red	H/duty litter tray lge red	330	B232-red	57	14	1
+B232-yel	H/duty litter tray lge yellow	330	B232-yel	57	14	1
+B233	Heavy duty large square bowl	495	B233	102	5	1
+B237	Water/food fold up dog bowl	350	B237	98	5	1
+B240-blu	H/duty litter tray sml blue	290	B240-blu	57	14	1
+B240-grn	H/duty litter tray sml green	290	B240-grn	57	14	1
+B240-red	H/duty litter tray sml red	290	B240-red	57	14	1
+B240-yel	H/duty litter tray sml yellow	290	B240-yel	57	14	1
+B241-blu	Spill proof water bowl blue	350	B241-blu	134	5	1
+B241-gld	Spill proof water bowl gold	350	B241-gld	134	5	1
+B241-grn	Spill proof water bowl green	350	B241-grn	134	5	1
+B241-red	Spill proof water bowl red	350	B241-red	134	5	1
+B242-blu	Cat litter scoop blue	120	B242-blu	112	14	1
+B243	H/D pooper scooper pan & scoop	1386	B243	112	14	1
+B244-blu	Ant free double diner blue	216	B244-blu	53	5	1
+B244-gld	Ant free double diner gold	216	B244-gld	53	5	1
+B244-grn	Ant free double diner green	216	B244-grn	53	5	1
+B244-red	Ant free double diner red	216	B244-red	53	5	1
+B245-blu	Ant free small bowl blue	214	B245-blu	53	5	1
+B245-gld	Ant free small bowl gold	214	B245-gld	53	5	1
+B245-grn	Ant free small bowl green	214	B245-grn	53	5	1
+B245-red	Ant free small bowl red	214	B245-red	53	5	1
+B260	S/S pet bowl embossed small	595	B260	137	5	1
+B261	S/S pet bowl embossed medium	775	B261	137	5	1
+B262	S/S pet bowl embossed large	990	B262	137	5	1
+B271	Water bowl suit sml carry cage	350	B271	70	5	1
+B272	Cage bowls	248	B272	70	5	1
+B273-blu	Melamine bowl w/r rim blue	250	B273-blu	153	5	1
+B273-mti	Melamine bowl w/r rim multi	250	B273-mti	153	5	1
+B273-red	Melamine bowl w/r rim red	250	B273-red	153	5	1
+B275	Water bowl suit lge carry cage	450	B275	70	5	1
+B280	Hooded litter tray	3485		57	14	0
+BACNE1	PET BASKET DELUXE PLUSH SET 6	8120		178	19	0
+BELBLGE-xxx	Budget bell igloo large	2600	BELBLGE-xxx	69	18	1
+BELDLGE-fle	Deluxe bell igloo lge leopard	4200	BELDLGE-xxx	86	18	0
+BELDLGE-fpa	Deluxe bell igloo lge panther	4200		86	18	0
+BELSLGE-pbl	Standard bell igloo lge p/blue	3254	BELSLGE-xxx	136	18	0
+BELSLGE-ppu	Standard bell igloo lge p/purp	3254		136	18	0
+BK01	Holidaying with dogs book	1060	BK01	64	17	1
+BK02	Walkies in Victoria book	1060	BK02	64	17	1
+BK03	Holidaying with cats book	1006	BK03	64	17	1
+BLAN01-blu	Fleece blanket 150x120cm blue	600	BLAN01-blu	58	24	1
+BLAN01-pur	Fleece blanket 150x120cm purpl	600	BLAN01-pur	58	24	1
+BLAN01-red	Fleece blanket 150x120cm red	600	BLAN01-red	58	24	1
+BLAN01-yel	Fleece blanket 150x120cm yello	600	BLAN01-yel	58	24	1
+BRD01	Craft perch w-10cm extension	205	BRD01	155	3	1
+BRD02	Craft style hanging bird toy	215	BRD02	155	3	1
+BRD03	Twist rope bird perch	250	BRD03	155	3	1
+BRD04	Bird swing perch with bell	185		155	3	0
+C001	50ml plastic bottle with cap	110		65	15	0
+C002	125ml plastic bottle with cap	115		65	15	0
+C010	4 Dram vial with s/cap 200pc	3175	C010	65	15	1
+C011	6 Dram vial with s/cap 200pc	3965	C011	65	15	1
+C012	8 Dram vial with s/cap 200pc	4256	C012	65	15	1
+C013	12 Dram vial with s/cap 100pc	2641	C013	65	15	1
+C014	16 Dram vial with s/cap 100pc	2980	C014	65	15	1
+C015	20 Dram vial with s/cap 100pc	4437	C015	65	15	1
+C016	40 Dram vial with s/cap 50pc	2916	C016	65	15	1
+CC01	Small carry cage	3600	CC01	73	12	1
+CC02	Large carry cage	4760	CC02	73	12	1
+CC05	Small wire carry cage	3200	CC05	73	12	1
+CL212	Chain lead 2x120cm	533	CL212	80	6	1
+CL312	Chain lead 3x120cm	645	CL312	80	6	1
+CL412	Chain lead 2x120cm	752	CL412	80	6	1
+CT008	Litter tray liner bags	250	CT008	112	14	1
+CT009	Assorted pack cat toys 12pc	2100	CT009	155	3	1
+CT011	Catnip furry mice/card 24pc	1800	CT011	155	3	1
+CT012	Barrel of coloured fur mice 60	3100	CT012	155	3	1
+CT013	Colourful rats on card / 12pc	2450	CT013	155	3	1
+CT015	Cat scratch pole w/swing toy	1000	CT015	155	3	1
+CT016	Cat scratch pad mouse design	450	CT016	155	3	1
+CT018	Plush springing cat toy 4pc	668	CT018	155	3	1
+CT019	Moveable mouse cat toy	195	CT019	155	3	1
+CT021	Play & swat cat toy	395		155	3	0
+CT025	Small fur gry rats on crd 12pc	2190	CT025	155	3	1
+CT026	Shake & squeak cat toy pk 18pc	4050	CT026	155	3	1
+CT027	Fluffy tail catnip toy 4pc	516	CT027	155	3	1
+CT028-blk	Cat tnl lge w/2 pop outs black	1695	CT028-blk	156	3	1
+CT028-blu	Cat tnl lge w/2 pop outs blue	1695	CT028-blu	156	3	1
+CT028-red	Cat tnl lge w/2 pop outs red	1695	CT028-red	156	3	1
+CT029	Cat teasers on stick 3pc	675	CT029	155	3	1
+CT030	Pendulum cat toy 3pc	402	CT030	155	3	1
+CT031	Cat critter toy crinkly 3pc	580		155	3	0
+CT031cat	Cat critter toy crinkly cat	290		155	3	0
+CT031fis	Cat critter toy crinkly fish	290		155	3	0
+CT031mou	Cat critter toy crinkly mouse	290		155	3	0
+CT032	Jingle ball double large	145		155	3	0
+CT033	Jingle ball double medium 2pc	145		155	3	0
+CT034	Jingle ball small 10pc	145		155	3	0
+CT035	Cat toy play cylinder	185		155	3	0
+CT036	Hanging cat critter 2 assorted	490		155	3	0
+CT037	Cat scratch pole leopard base	800		155	3	0
+CT038	Cat tnl lge leopard pnt 130cm	1995		155	3	0
+CT039	"Coloured mice 2"" 36pcs"	2500		155	3	0
+CT040	Cat jingle balls w/bell 60pcs	3000		155	3	0
+CT041	Cat jingle balls h/d 36pcs	1800		155	3	0
+CT042	Cat balls w/moving stars 36pcs	3000		155	3	0
+CT043	Cat dangler on stick 90cm	215		155	3	0
+CVR02	Car back seat cover 140x100cm	1360	CVR02	72	16	1
+CVR03	Car back seat h/mock 140x150cm	1960	CVR03	72	16	1
+DBDLGE	Deluxe raised dog bed large	4945	DBDLGE	59	23	1
+DBDMED	Deluxe raised dog bed medium	3967		59	23	0
+DBDRSLGE	Deluxe dog bed sling large	2117	DBDRSLGE	60	23	1
+DBDRSMED	Deluxe dog bed sling medium	1765		60	23	0
+DBDRSSML	Deluxe dog bed sling small	1650	DBDRSSML	60	23	1
+DBDSML	Deluxe raised dog bed small	3579		59	23	0
+DBSJUM	Standard dog bed jumbo	4185		59	23	0
+DBSLGE	Standard dog bed large	3675	DBSLGE	59	23	1
+DBSRSJUM	Standard dog bed sling jumbo	1824	DBSRSJUM	60	23	1
+DBSRSLGE	Standard dog bed sling large	1680	DBSRSLGE	60	23	1
+DBSRSMED	Standard dog bed sling medium	1500	DBSRSMED	60	23	1
+DBSRSMIN	Standard dog bed sling mini	1184	DBSRSMIN	60	23	1
+DBSRSSML	Standard dog bed sling small	1432	DBSRSSML	60	23	1
+DBSSML	Standard dog bed small	3293	DBSSML	59	23	1
+DC001	R/h twist stick 10mm jar 20pc	495	DC001	130	4	1
+DC002	"4"" pressed bone 30pc"	1445	DC002	127	4	1
+DC003	"6"" pressed bone 20pc"	2085	DC003	127	4	1
+DC004	"8"" pressed bone 10pc"	1560		127	4	0
+DC005	"10"" pressed bone 10pc"	2680		127	4	0
+DC006	"12"" pressed bone 10pc"	3815	DC006	127	4	1
+DC007	"4"" knot bone 20pc"	1155	DC007	109	4	1
+DC008	"6"" knot bone 20pc"	1840	DC008	109	4	1
+DC009	"8"" knot bone 10pc"	1715	DC009	109	4	1
+DC010	"12"" knot bone 10pc"	2190		109	4	0
+DC011	"14"" knot bone 10pc"	3150	DC011	109	4	1
+DC012	"5"" white retriever stick 40pc"	2495	DC012	150	4	1
+DC013	"10"" white retriever stick 20pc"	4160	DC013	150	4	1
+DC014	"3"" porkhide drumsticks 45pc"	2485	DC014	29	4	1
+DC015	"4"" porkhide knot bone 25pc"	2240	DC015	30	4	1
+DC016	"8"" porkhide retrievers 10pc"	3360	DC016	125	4	1
+DC017	Porkhide sausage rolls 85pc	2295	DC017	31	4	1
+DC018	Smoked pigs ear 50pc	5500	DC018	37	4	1
+DC019	Clod/femur bones small 35pc	4095	DC019	82	4	1
+DC020	Pork rolls 20pc	2000	DC020	24	4	1
+DC021	Smoked pigs snouts 50pc	2500	DC021	123	4	1
+DC022	Smoked pigs trotter split 20pc	1890	DC022	157	4	1
+DC023	Smoked cows ears 50pc	5250	DC023	36	4	1
+DC024	Rawhide plain puppy chips 1kg	2000	DC024	22	4	1
+DC025	Rawhide baisted puppy chip 1kg	2200	DC025	158	4	1
+DC030	6x20mm munchy sticks 50pc	1314	DC030	159	4	1
+DC032	"1"" munchy bones 100pc"	892	DC032	160	4	1
+DC033	Munchy flat strip 40pc	245		171	4	0
+DC034	Roo tails	189	DC034	47	4	1
+DC035	Roo sausages 25pc	2395	DC035	40	4	1
+DC036	"Smoked pork rolls 6"" 38pc"	3800	DC036	24	4	1
+DC037	Beef crackers 12pc	324	DC037	45	4	1
+DC038	Premium grade beef jerky 1kg	3000	DC038	161	4	1
+DC039	Bull sticks 25pc	3375	DC039	27	4	1
+DC040	Lamb neck	200	DC040	162	4	1
+	Made in Australia x	1500	DC041	44	4	0
+DC042	Turkey jerky 1kg	1975	DC042	33	4	1
+DC044	Clod/femur bones large 8pc	2880	DC044	82	4	1
+DC045	Baisted pringles 1kg	2325	DC045	21	4	1
+DC046	Turkey jerky 120gsm	420	DC046	33	4	1
+DC047	"16"" knot bone 6pc"	1500	DC047	109	4	1
+DC048	Munchy twist stixs 30pc	500	DC048	159	4	1
+DC049	Beef rattles 1kg	2664	DC049	43	4	1
+DC050	R/hide chip pack bacon	350		158	4	0
+DC051	R/hide chip pack peanut butter	350		158	4	0
+DC052	Porkhide pig ears 6pc	450		123	4	0
+DC053	R/hide rolls 22cm cheese 2pc	395		172	4	0
+DC054	R/hide rolls 22cm chicken 2pc	395		172	4	0
+DC055	Smoke flavor pork roll 15cm	100		172	4	0
+DC056	"12"" white retriever stick"	150		125	4	0
+DC057	"Rhide pressed bone 3"" o/s"	33		169	4	0
+DC058	"Rhide pressed bone 5"" o/s"	80		169	4	0
+DC059	"Rhide pressed bone 7"" o/s"	100		169	4	0
+DC060	"Rhide pressed bone 10"" o/s"	200		169	4	0
+DC061	"Rhide pressed bone 12"" o/s"	300		169	4	0
+DC062	"Rhide knot bone 4-4.5"" o/s"	38		170	4	0
+DC063	"Rhide knot bone 5-5.5"" o/s"	63		170	4	0
+DC064	"Rhide knot bone 7-7.5"" o/s"	125		170	4	0
+DC065	"Rhide knot bone 8-8.5"" o/s"	175		170	4	0
+DC066	"Rhide knot bone 10-10.5"" o/s"	200		170	4	0
+DC067	"Munchy flat strips 3"" 5pcs"	80		171	4	0
+DCDC01	Doggie carob buds 1kg	700	DCDC01	23	4	1
+DCDC05	Doggie carob buds 5kg	3000	DCDC05	23	4	1
+DCDC25	Doggie carob buds 250gsm	258	DCDC25	23	4	1
+DCYB01	Doggie yoghurt buds 1kg	1000	DCYB01	34	4	1
+DCYB05	Doggie yoghurt buds 5kg	4200	DCYB05	34	4	1
+DCYB25	Doggie yoghurt buds 250gsm	295	DCYB25	34	4	1
+DONDSET-blu	Donut basket deluxe set3 blue	5700		168	19	0
+DONDSET-brn	Donut basket deluxe set3 brown	5700		168	19	0
+DT008	Sponge rubber balls 24pcs	3000		155	3	0
+DT010	Sponge star ball small	250	DT010	155	3	1
+DT013	Bone shaped tennis ball	330	DT013	155	3	1
+DT018	Jumbo tennis  ball 10cm	350	DT018	155	3	1
+DT019	Fleecy squeaky bone (Sherpa)	350	DT019	155	3	1
+DT021	Rope with 2 tennis balls	350	DT021	155	3	1
+DT022	Plush coloured star with 6 sq	450	DT022	155	3	1
+DT023	Dog chew rope w/3 sausages	350	DT023	155	3	1
+DT027	Back saver grab & throw stick	495	DT027	155	3	1
+DT029	Pet toy dispenser large	495	DT029	155	3	1
+DT030	Heavy duty life ring pull toy	445	DT030	155	3	1
+DT031	Odd shape tennis ball	330	DT031	155	3	1
+DT036	Spike dog squeak ball 24pc	3600	DT036	155	3	1
+DT037	Solid rubber ball with rope	225	DT037	155	3	1
+DT041	Dog beer can 15pc Squeaky	2500	DT041	155	3	1
+DT042	Dog cat sheep squeaky toy 3pc	660	DT042	155	3	1
+DT044	Jumbo rainbow sqky animal 4pc	1160	DT044	155	3	1
+DT045	Jumbo plush dog bone 4 ass	840		155	3	0
+DT046	Tuff Tyre toy with rope	420		155	3	0
+DT047	Tuff tyre toy bone type	500		155	3	0
+DT049	Play n chase ball	575	DT049	155	3	1
+			DT052	155	3	0
+DT053	"Blood hound, Joe dog w/ban 2pc"	490	DT053	155	3	1
+DT054	Tyre tuff buddies dog toy 3pc	585	DT054	155	3	1
+DT055	Astd h/ware buddies w sqk 6pc	1170	DT055	155	3	1
+DT056	Mint fresh dog breath ball	680	DT056	155	3	1
+DT057	Barking dogs display 16pc	9472		155	3	0
+DT058	Plush dog toy v/bl w/sq 2 ass	992		155	3	0
+DT059	Premium gym boot w/sq 3ass	744		155	3	0
+DT060	Dog gift set 6pc (3assorted)	600		155	3	0
+DT061	Plush animal des sq toy 6ass	1500		155	3	0
+DT062	Rope w/rubber solid/rbr cylind	200		155	3	0
+DT063	Plush coloured ball with sq	250		155	3	0
+DT064	Spikey animal sq PVC toy 2pcs	445		155	3	0
+DT065	Rnd animal sq PVC bl toys 4pcs	630		155	3	0
+DT066	"Rope bone coloured 8"""	130		167	3	0
+DT067	"Rope bone coloured 10"""	140		167	3	0
+DT068	"Rope bone coloured 12"""	150		167	3	0
+DT069	"Rope bone white 8"""	140		167	3	0
+DT070	"Rope bone white 10"""	150		167	3	0
+DT071	"Rope bone white 12"""	160		167	3	0
+DT072	Tiny big attitude dogs 12 pc	2376		155	3	0
+DT073	Duck/chicken ltx tget toy 2pc	740		155	3	0
+FF01-blu	K-9 Fun Flyer blue	450	FF01-blu	105	3	1
+FF01-grn	K-9 Fun Flyer green	450	FF01-grn	105	3	1
+FF01-red	K-9 Fun Flyer red	450	FF01-red	105	3	1
+FF01-yel	K-9 Fun Flyer yellow	450	FF01-yel	105	3	1
+FUTDCLGE-dkb	Dlxe futon cvr lge dark blue	2621	FUTDCLGE-xxx	99	22	0
+FUTDCLGE-fle	Dlxe futon cvr lge leopard	2621		99	22	0
+FUTDCLGE-fpa	Dlxe futon cvr lge panther	2621		99	22	0
+FUTDCLGE-nat	Dlxe futon cvr lge natural	2621		99	22	0
+FUTDCMED-dkb	Dlxe futon cvr med dark blue	2004	FUTDCMED-xxx	99	22	0
+FUTDCMED-fle	Dlxe futon cvr med leopard	2004		99	22	0
+FUTDCMED-fpa	Dlxe futon cvr med panther	2004		99	22	0
+FUTDCMED-nat	Dlxe futon cvr med natural	2004		99	22	0
+FUTDCXLG-dkb	Dlxe futon cvr xlg dark blue	3290	FUTDCXLG-xxx	99	22	0
+FUTDCXLG-fle	Dlxe futon cvr xlg leopard	3290		99	22	0
+FUTDCXLG-fpa	Dlxe futon cvr xlg panther	3290		99	22	0
+FUTDCXLG-nat	Dlxe futon cvr xlg natural	3290		99	22	0
+FUTDLGE-dkb	Deluxe futon lge dark blue	4421		99	22	0
+FUTDLGE-fle	Deluxe futon lge leopard	4421		99	22	0
+FUTDLGE-fpa	Deluxe futon lge panther	4421		99	22	0
+FUTDLGE-nat	Deluxe futon lge natural	4421		99	22	0
+FUTDMED-dkb	Deluxe futon med dark blue	3100		99	22	0
+FUTDMED-fle	Deluxe futon med leopard	3100		99	22	0
+FUTDMED-fpa	Deluxe futon med panther	3100		99	22	0
+FUTDMED-nat	Deluxe futon med natural	3100		99	22	0
+FUTDXLG-dkb	Deluxe futon xlg dark blue	5357		99	22	0
+FUTDXLG-fle	Deluxe futon xlg leopard	5357		99	22	0
+FUTDXLG-fpa	Deluxe futon xlg panther	5357		99	22	0
+FUTDXLG-nat	Deluxe futon xlg natural	5357		99	22	0
+FUTPCLGE-fbw	Prem futon cvr lge fur b/w	2921	FUTPLGE-xxx	100	22	0
+FUTPCMED-fbw	Prem futon cvr med fur b/w	2204		100	22	0
+FUTPCXLG-fbw	Prem futon cvr xlg fur b/w	3690		100	22	0
+FUTPLGE-fbw	Premium futon lge fur b/w	4695		100	22	0
+FUTPMED-fbw	Premium futon med fur b/w	3295	FUTPMED-xxx	100	22	0
+FUTPXLG-fbw	Premium futon xlg fur b/w	5695	FUTPXLG-xxx	100	22	0
+FUTSCLGE-xxx	Std futon cvr lge	2121	FUTSCLGE-xxx	99	22	1
+FUTSCMED-xxx	Std futon cvr med	1504	FUTSCMED-xxx	99	22	1
+FUTSCXLG-xxx	Std futon cvr xlg	2790	FUTSCXLG-xxx	99	22	1
+FUTSLGE-xxx	Standard futon lge	3921		99	22	0
+FUTSMED-xxx	Standard futon med	2600		99	22	0
+FUTSXLG-xxx	Standard futon xlg	4707		99	22	0
+GR21	Dog & cat shampoo 500ml	200	GR21	89	11	1
+GR51	Cat repair 9 tubs	2600	GR51	78	11	1
+GR52	Neem pet wash soap 12cakes	2545	GR52	154	11	1
+GR53	Dog polish 9 tubs	2600	GR53	91	11	1
+GR60	Cat garden	642	GR60	166	11	1
+GR61	Bella #5 pooch perfume	525	GR61	63	11	1
+GR62-blk	Dlxe untangling dog comb black	250	GR62-blk	141	11	1
+GR62-blu	Dlxe untangling dog comb blue	250	GR62-blu	141	11	1
+GR63	Dr Dog polish & brush set	762	GR63	95	11	1
+GR64	Dr Dog pet shampoo	925	GR64	94	11	1
+GR65	Dr Dog pet conditioner	585	GR65	93	11	1
+GR66	Pin brush	395		141	11	0
+GR67	Double side brush pin/nylon	350		141	11	0
+GR68	Shedding rake	444		141	11	0
+GR69	18pin rake	317		141	11	0
+GR70	Slicker wire brush	444		141	11	0
+GR71	Double sided comb	444		141	11	0
+GR97	Dog/cat flex massage bsh 2ass	542		141	11	0
+HP009	Dog walk leash bag	495	HP009	143	6	1
+IGLBLGE-xxx	Budget igloo large	2024	IGLBLGE-xxx	103	18	1
+IGLBMED-xxx	Budget igloo medium	1663	IGLBMED-xxx	103	18	1
+IGLDLGE-fle	Deluxe igloo large leopard	3400	IGLDLGE-xxx	103	18	0
+IGLDLGE-fpa	Deluxe igloo large panther	3400	IGLSLGE-xxx	103	18	0
+IGLSLGE-pbl	Standard igloo lge p/blue	2530		103	18	0
+IGLSLGE-ppu	Standard igloo lge p/purple	2530		103	18	0
+IGLSMED-pbl	Standard igloo med p/blue	2079	IGLS-MED-xxx	103	18	0
+IGLSMED-ppu	Standard igloo med p/purple	2079		103	18	0
+K9C20-CB	20cm cloth coat buckle blue	534	K9C20C-blu	14	8	0
+K9C20-CR	20cm cloth coat buckle red	534	K9C20C-red	14	8	0
+K9C20-OB	20cm oil cloth coat buckle	772	K9C20OB	16	8	0
+K9C20-OV	20cm oil cloth coat velcro	734	K9C20OV	15	8	0
+K9C25-CB	25cm cloth coat buckle blue	640	K9C25C-blu	14	8	0
+K9C25-CR	25cm cloth coat buckle red	640	K9C25C-red	14	8	0
+K9C25-OB	25cm oil cloth coat buckle	863	K9C25OB	16	8	0
+K9C25-OV	25cm oil cloth coat velcro	825	K9C25OV	15	8	0
+K9C30-CB	30cm cloth coat buckle blue	939	K9C30C-blu	14	8	0
+K9C30-CR	30cm cloth coat buckle red	939	K9C30C-red	14	8	0
+K9C30-OB	30cm oil cloth coat buckle	1158	K9C30OB	16	8	0
+K9C30-OV	30cm oil cloth coat velcro	1090	K9C30OV	15	8	0
+K9C35-CB	35cm cloth coat buckle blue	1265	K9C35C-blu	14	8	0
+K9C35-CR	35cm cloth coat buckle red	1265	K9C35C-red	14	8	0
+K9C35-OB	35cm oil cloth coat buckle	1488	K9C35OB	16	8	0
+K9C35-OV	35cm oil cloth coat velcro	1420	K9C35OV	15	8	0
+K9C40-CB	40cm cloth coat buckle blue	1384	K9C40C-blu	14	8	0
+K9C40-CR	40cm cloth coat buckle red	1384	K9C40C-red	14	8	0
+K9C40-OB	40cm oil cloth coat buckle	1683	K9C40C-red	14	8	0
+K9C40-OV	40cm oil cloth coat velcro	1613	K9C40OB	16	8	0
+K9C45-CB	45cm cloth coat buckle blue	1465	K9C40OV	15	8	0
+K9C45-CR	45cm cloth coat buckle red	1465	K9C45C-blu	14	8	0
+K9C45-OB	45cm oil cloth coat buckle	1920	K9C45C-red	14	8	0
+K9C45-OV	45cm oil cloth coat velcro	1851	K9C45OB	16	8	0
+K9C50-CB	50cm cloth coat buckle blue	1795	K9C45OV	15	8	0
+K9C50-CR	50cm cloth coat buckle red	1795	K9C50C-blu	14	8	0
+K9C50-OB	50cm oil cloth coat buckle	2285	K9C50C-red	14	8	0
+K9C50-OV	50cm oil cloth coat velcro	2200	K9C50OB	16	8	0
+K9C55-CB	55cm cloth coat buckle blue	2173	K9C50OV	15	8	0
+K9C55-CR	55cm cloth coat buckle red	2173	K9C55C-blu	14	8	0
+K9C55-OB	55cm oil cloth coat buckle	2666	K9C55C-red	14	8	0
+K9C55-OV	55cm oil cloth coat velcro	2597	K9C55OB	16	8	0
+K9C60-CB	60cm cloth coat buckle blue	2467	K9C55OV	15	8	0
+K9C60-CR	60cm cloth coat buckle red	2467	K9C60C-blu	14	8	0
+K9C60-OB	60cm oil cloth coat buckle	2976	K9C60C-red	14	8	0
+K9C60-OV	60cm oil cloth coat velcro	2907	K9C60OB	16	8	0
+K9C65-CB	65cm cloth coat buckle blue	2715	K9C60OV	15	8	0
+K9C65-CR	65cm cloth coat buckle red	2715	K9C65C-blu	14	8	0
+K9C65-OB	65cm oil cloth coat buckle	3224	K9C65C-red	14	8	0
+K9C65-OV	65cm oil cloth coat velcro	3154	K9C65OB	16	8	0
+K9C70-CB	70cm cloth coat buckle blue	2953	K9C65OV	15	8	0
+K9C70-CR	70cm cloth coat buckle red	2953	K9C70C-blu	14	8	0
+K9C70-OB	70cm oil cloth coat buckle	3482	K9C70C-red	14	8	0
+K9C70-OV	70cm oil cloth coat velcro	3402	K9C70OB	16	8	0
+K9C75-OB	75cm oil cloth coat buckle	3633	K9C70OV	15	8	0
+K9C80-OB	80cm oil cloth coat buckle	4109	K9C75OB	16	8	0
+			K9C80OB	16	8	0
+K9CLGE-blu	Polar fleece coat blue large	1350	K9CLGE-blu	17	8	1
+K9CLGE-pur	Polar fleece coat purple large	1350	K9CLGE-pur	17	8	1
+K9CMED-blu	Polar fleece coat blue med	1175	K9CMED-blu	17	8	1
+K9CMED-pur	Polar fleece coat purple med	1175	K9CMED-pur	17	8	1
+K9CSML-blu	Polar fleece coat blue sml	900	K9CSML-blu	17	8	1
+K9CSML-pur	Polar fleece coat purple small	900	K9CSML-pur	17	8	1
+K9CXLG-blu	Polar fleece coat blue xlarge	1970	K9CXLG-blu	17	8	1
+K9CXLG-pur	Polar fleece coat purple xlg	1970	K9CXLG-pur	17	8	1
+K9JSML-blu	Blue knitted dog jumper small	2500	K9JSML-blu	18	10	1
+K9JSML-pur	Purple knitted dog jumper smal	2500	K9JSML-pur	18	10	1
+K9S20-blu	20cm skivvy blue	900	K9S20-blu	19	9	1
+K9S20-pur	20cm skivvy purple	900	K9S20-pur	19	9	1
+K9S20-red	20cm skivvy red	900	K9S20-red	19	9	1
+K9S25-blu	25cm skivvy blue	900	K9S25-blu	19	9	1
+K9S25-pur	25cm skivvy purple	900	K9S25-pur	19	9	1
+K9S25-red	25cm skivvy red	900	K9S25-red	19	9	1
+K9S30-blu	30cm skivvy blue	900	K9S30-blu	19	9	1
+K9S30-pur	30cm skivvy purple	900	K9S30-pur	19	9	1
+K9S30-red	30cm skivvy red	900	K9S30-red	19	9	1
+K9S35-blu	35cm skivvy blue	990	K9S35-blu	19	9	1
+K9S35-pur	35cm skivvy purple	990	K9S35-pur	19	9	1
+K9S35-red	35cm skivvy red	990	K9S35-red	19	9	1
+K9S40-blu	40cm skivvy blue	1080	K9S40-blu	19	9	1
+K9S40-pur	40cm skivvy purple	1080	K9S40-pur	19	9	1
+K9S40-red	40cm skivvy red	1080	K9S40-red	19	9	1
+K9S45-blu	45cm skivvy blue	1170	K9S45-blu	19	9	1
+K9S45-pur	45cm skivvy purple	1170	K9S45-pur	19	9	1
+K9S45-red	45cm skivvy red	1170	K9S45-red	19	9	1
+K9S50-blu	50cm skivvy blue	1890	K9S50-blu	19	9	1
+K9S50-pur	50cm skivvy purple	1890	K9S50-pur	19	9	1
+K9S50-red	50cm skivvy red	1890	K9S50-red	19	9	1
+K9SLGE-blu	Large skivvy blue	2790	K9SLGE-blu	19	9	1
+K9SLGE-pur	Large skivvy purple	2790	K9SLGE-pur	19	9	1
+K9SLGE-red	Large skivvy red	2790	K9SLGE-red	19	9	1
+K9SMED-blu	Medium skivvy blue	2250	K9SMED-blu	19	9	1
+K9SMED-pur	Medium skivvy purple	2250	K9SMED-pur	19	9	1
+K9SMED-red	Medium skivvy red	2250	K9SMED-red	19	9	1
+LC100-blk	Velvet cat collar black	480	LC100-blk	142	6	1
+LC100-blu	Velvet cat collar blue	480	LC100-blu	142	6	1
+LC100-red	Velvet cat collar red	480	LC100-red	142	6	1
+LC101-blk	Diamante web cat collar black	480	LC101-blk	88	6	1
+LC101-blu	Diamante web cat collar blue	480	LC101-blu	88	6	1
+LC101-red	Diamante web cat collar red	480	LC101-red	88	6	1
+LC102-blu	Graduate web cat collar blue	315	LC102-blu	101	6	1
+LC102-grn	Graduate web cat collar green	315	LC102-grn	101	6	1
+LC102-gry	Graduate web cat collar grey	315	LC102-gry	101	6	1
+LC102-pur	Graduate web cat collar purple	315	LC102-pur	101	6	1
+LC102-red	Graduate web cat collar red	315	LC102-red	101	6	1
+LC103-brn	Jungle cat collar brown	445	LC103-brn	104	6	1
+LC103-tan	Jungle cat collar tan	445	LC103-tan	104	6	1
+LC103-wte	Jungle cat collar white	445	LC103-wte	104	6	1
+LC150	15x120cm bowl/bone embr lead	432	LC150	66	6	1
+LC151	20x120cm bowl/bone embr lead	432	LC151	66	6	1
+LC152	25x120cm bowl/bone embr lead	432	LC152	66	6	1
+LC153	15x120cm bowl/bone embr collar	394		66	6	0
+LC154	20x120cm bowl/bone embr collar	394		66	6	0
+LC155	25x120cm bowl/bone embr collar	394		66	6	0
+			LC450-pnk	67	6	0
+LC502-blk	S rfl clr 10x20-30 black	385	LC502-blk	132	6	1
+LC502-dkb	S rfl clr 10x20-30 dark blue	385	LC502-dkb	132	6	1
+LC502-pur	S rfl clr 10x20-30 purple	385	LC502-pur	132	6	1
+LC502-red	S rfl clr 10x20-30 red	385	LC502-red	132	6	1
+LC504-blk	S rfl clr 20x25-45 black	462	LC504-blk	132	6	1
+LC504-dkb	S rfl clr 20x25-45 dark blue	462	LC504-dkb	132	6	1
+LC504-pur	S rfl clr 20x25-45 purple	462	LC504-pur	132	6	1
+LC504-red	S rfl clr 20x25-45 red	462	LC504-red	132	6	1
+LC508-blk	S rfl clr 25x50-70 black	644	LC508-blk	132	6	1
+LC508-dkb	S rfl clr 25x50-70 dark blue	644	LC508-dkb	132	6	1
+LC508-pur	S rfl clr 25x50-70 purple	644	LC508-pur	132	6	1
+LC508-red	S rfl clr 25x50-70 red	644	LC508-red	132	6	1
+LC510-blk	S rfl ld 10x120 black	553	LC510-blk	133	6	1
+LC510-dkb	S rfl ld 10x120 dark blue	553	LC510-dkb	133	6	1
+LC510-pur	S rfl ld 10x120 purple	553	LC510-pur	133	6	1
+LC510-red	S rfl ld 10x120 red	553	LC510-red	133	6	1
+LC512-blk	S rfl ld 20x120 black	756	LC512-blk	133	6	1
+LC512-dkb	S rfl ld 20x120 dark blue	756	LC512-dkb	133	6	1
+LC512-pur	S rfl ld 20x120 purple	756	LC512-pur	133	6	1
+LC512-red	S rfl ld 20x120 red	756	LC512-red	133	6	1
+LC514-blk	S rfl ld 25x120 black	756	LC514-blk	133	6	1
+LC514-dkb	S rfl ld 25x120 dark blue	756	LC514-dkb	133	6	1
+LC514-pur	S rfl ld 25x120 purple	756	LC514-pur	133	6	1
+LC514-red	S rfl ld 25x120 red	756	LC514-red	133	6	1
+LC532	Car harness small	621	LC532	71	6	1
+LC534	Car harness medium	711	LC534	71	6	1
+LC536	Car harness large	867	LC536	71	6	1
+LC538	Car harness extra large	990	LC538	71	6	1
+LC540-blk	Plain lth clr 12x35 black	220	LC540-blk	124	6	1
+LC540-red	Plain lth clr 12x35 red	220	LC540-red	124	6	1
+LC540-tan	Plain lth clr 12x35 tan	220	LC540-tan	124	6	1
+LC542-blk	Plain lth clr 18x45 black	320	LC542-blk	124	6	1
+LC542-red	Plain lth clr 18x45 red	320	LC542-red	124	6	1
+LC542-tan	Plain lth clr 18x45 tan	320	LC542-tan	124	6	1
+LC544-blk	Plain lth clr 25x55 black	440	LC544-blk	124	6	1
+LC544-red	Plain lth clr 25x55 red	440	LC544-red	124	6	1
+LC544-tan	Plain lth clr 25x55 tan	440	LC544-tan	124	6	1
+LC546-blk	Plain lth clr 30x65 black	680	LC546-blk	124	6	1
+LC546-red	Plain lth clr 30x65 red	680	LC546-red	124	6	1
+LC546-tan	Plain lth clr 30x65 tan	680	LC546-tan	124	6	1
+LC620-blk	Suede puppy clr 10x30 black	210	LC620-blk	139	6	1
+LC620-blu	Suede puppy clr 10x30 blue	210	LC620-blu	139	6	1
+LC620-pur	Suede puppy clr 10x30 purple	210	LC620-pur	139	6	1
+LC620-red	Suede puppy clr 10x30 red	210	LC620-red	139	6	1
+LC621	Metallic cat collar	196	LC621	119	6	1
+LC624-blk	Suede puppy ld 10x105cm black	230	LC624-blk	140	6	1
+LC624-blu	Suede puppy ld 10x105cm blue	230	LC624-blu	140	6	1
+LC624-pur	Suede puppy ld 10x105cm purple	230	LC624-pur	140	6	1
+LC624-red	Suede puppy ld 10x105cm red	230	LC624-red	140	6	1
+LC627-blk	Patent puppy collar black	224		122	6	0
+LC627-red	Patent puppy collar red	224	LC627-red	122	6	1
+LC630-blk	WB col adj 20x25-45 black	449	LC630-blk	146	6	1
+LC630-dkb	WB col adj 20x25-45 dark blue	449	LC630-dkb	146	6	1
+LC630-ltb	WB col adj 20x25-45 light blue	449	LC630-ltb	146	6	1
+LC630-pur	WB col adj 20x25-45 purple	449	LC630-pur	146	6	1
+LC630-red	WB col adj 20x25-45 red	449	LC630-red	146	6	1
+LC632-blk	WB col adj 25x50-70 black	486	LC632-blk	146	6	1
+LC632-dkb	WB col adj 25x50-70 dark blue	486	LC632-dkb	146	6	1
+LC632-ltb	WB col adj 25x50-70 light blue	486	LC632-ltb	146	6	1
+LC632-pur	WB col adj 25x50-70 purple	486	LC632-pur	146	6	1
+LC632-red	WB col adj 25x50-70 red	486	LC632-red	146	6	1
+LC634-blk	WB col adj 10x20-30 black	318	LC634-blk	146	6	1
+LC634-dkb	WB col adj 10x20-30 dark blue	318	LC634-dkb	146	6	1
+LC634-ltb	WB col adj 10x20-30 light blue	318	LC634-ltb	146	6	1
+LC634-pur	WB col adj 10x20-30 purple	318	LC634-pur	146	6	1
+LC634-red	WB col adj 10x20-30 red	318	LC634-red	146	6	1
+LC636-blk	WB col adj 15x25-45 black	421	LC636-blk	146	6	1
+LC636-dkb	WB col adj 15x25-45 dark blue	421	LC636-dkb	146	6	1
+LC636-ltb	WB col adj 15x25-45 light blue	421	LC636-ltb	146	6	1
+LC636-pur	WB col adj 15x25-45 purple	421	LC636-pur	146	6	1
+LC636-red	WB col adj 15x25-45 red	421	LC636-red	146	6	1
+LC661	Printed webbed lead 120cm	435	LC661	128	6	1
+LC663-blk	WB lead 10x120 black	299	LC663-blk	148	6	1
+LC663-dkb	WB lead 10x120 dark blue	299	LC663-dkb	148	6	1
+LC663-ltb	WB lead 10x120 light blue	299	LC663-ltb	148	6	1
+LC663-pur	WB lead 10x120 purple	299	LC663-pur	148	6	1
+LC663-red	WB lead 10x120 red	299	LC663-red	148	6	1
+LC664-blk	WB lead 10x180 black	329	LC664-blk	148	6	1
+LC664-dkb	WB lead 10x180 dark blue	329	LC664-dkb	148	6	1
+LC664-ltb	WB lead 10x180 light blue	329	LC664-ltb	148	6	1
+LC664-pur	WB lead 10x180 purple	329	LC664-pur	148	6	1
+LC664-red	WB lead 10x180 red	329	LC664-red	148	6	1
+LC667-blk	WB lead 15x120 black	365	LC667-blk	148	6	1
+LC667-dkb	WB lead 15x120 dark blue	365	LC667-dkb	148	6	1
+LC667-ltb	WB lead 15x120 light blue	365	LC667-ltb	148	6	1
+LC667-pur	WB lead 15x120 purple	365	LC667-pur	148	6	1
+LC667-red	WB lead 15x120 red	365	LC667-red	148	6	1
+LC668-blk	WB lead 15x180 black	411	LC668-blk	148	6	1
+LC668-dkb	WB lead 15x180 dark blue	411	LC668-dkb	148	6	1
+LC668-ltb	WB lead 15x180 light blue	411	LC668-ltb	148	6	1
+LC668-pur	WB lead 15x180 purple	411	LC668-pur	148	6	1
+LC668-red	WB lead 15x180 red	411	LC668-red	148	6	1
+LC672-blk	WB lead 20x120 black	393	LC672-blk	148	6	1
+LC672-dkb	WB lead 20x120 dark blue	393	LC672-dkb	148	6	1
+LC672-ltb	WB lead 20x120 light blue	393	LC672-ltb	148	6	1
+LC672-pur	WB lead 20x120 purple	393	LC672-pur	148	6	1
+LC672-red	WB lead 20x120 red	393	LC672-red	148	6	1
+LC674-blk	WB lead 25x45 black	355	LC674-blk	148	6	1
+LC674-dkb	WB lead 25x45 dark blue	355	LC674-dkb	148	6	1
+LC674-ltb	WB lead 25x45 light blue	355	LC674-ltb	148	6	1
+LC674-pur	WB lead 25x45 purple	355	LC674-pur	148	6	1
+LC674-red	WB lead 25x45 red	355	LC674-red	148	6	1
+LC675-blk	15mm smart lead black	600	LC675-blk	61	6	1
+LC675-dkb	15mm smart lead dark blue	600	LC675-dkb	61	6	1
+LC675-ltb	15mm smart lead light blue	600	LC675-ltb	61	6	1
+LC675-pur	15mm smart lead purple	600	LC675-pur	61	6	1
+LC675-red	15mm smart lead red	600	LC675-red	61	6	1
+LC676-blk	WB lead 25x90 black	402	LC676-blk	148	6	1
+LC676-dkb	WB lead 25x90 dark blue	402	LC676-dkb	148	6	1
+LC676-ltb	WB lead 25x90 light blue	402	LC676-ltb	148	6	1
+LC676-pur	WB lead 25x90 purple	402	LC676-pur	148	6	1
+LC676-red	WB lead 25x90 red	405	LC676-red	148	6	1
+LC677-blk	WB lead 25x120 black	449	LC677-blk	148	6	1
+LC677-dkb	WB lead 25x120 dark blue	449	LC677-dkb	148	6	1
+LC677-ltb	WB lead 25x120 light blue	449	LC677-ltb	148	6	1
+LC677-pur	WB lead 25x120 purple	449	LC677-pur	148	6	1
+LC677-red	WB lead 25x120 red	449	LC677-red	148	6	1
+LC678-blk	WB lead 25x180 black	514	LC678-blk	148	6	1
+LC678-dkb	WB lead 25x180 dark blue	514	LC678-dkb	148	6	1
+LC678-ltb	WB lead 25x180 light blue	514	LC678-ltb	148	6	1
+LC678-pur	WB lead 25x180 purple	514	LC678-pur	148	6	1
+LC678-red	WB lead 25x180 red	514	LC678-red	148	6	1
+LC679-blk	25mm smart lead black	655	LC679-blk	61	6	1
+LC679-dkb	25mm smart lead dark blue	655	LC679-dkb	61	6	1
+LC679-ltb	25mm smart lead light blue	655	LC679-ltb	61	6	1
+LC679-pur	25mm smart lead purple	655	LC679-pur	61	6	1
+LC679-red	25mm smart lead red	655	LC679-red	61	6	1
+LC690-blk	WB dbler lead 25x75 black	691	LC690-blk	147	6	1
+LC690-dkb	WB dbler lead 25x75 dark blue	691	LC690-dkb	147	6	1
+LC690-ltb	WB dbler lead 25x75 light blue	691	LC690-ltb	147	6	1
+LC690-pur	WB dbler lead 25x75 purple	691	LC690-pur	147	6	1
+LC690-red	WB dbler lead 25x75red	691	LC690-red	147	6	1
+LC691-blk	WB dbler lead 15x75 black	650	LC691-blk	147	6	1
+LC691-dkb	WB dbler lead 15x75 dark blue	650	LC691-dkb	147	6	1
+LC691-ltb	WB dbler lead 15x75 light blue	650	LC691-ltb	147	6	1
+LC691-pur	WB dbler lead 15x75 purple	650	LC691-pur	147	6	1
+LC691-red	WB dbler lead 15x75 red	650	LC691-red	147	6	1
+LC694-blk	Ctn wb clr 25x50-70 black	600	LC694-blk	83	6	1
+LC694-blu	Ctn wb clr 25x50-70 blue	600	LC694-blu	83	6	1
+LC694-pur	Ctn wb clr 25x50-70 purple	600	LC694-pur	83	6	1
+LC694-red	Ctn wb clr 25x50-70 red	600	LC694-red	83	6	1
+LC700-blk	Ctn wb lead 25x180 black	800	LC700-blk	84	6	1
+LC700-blu	Ctn wb lead 25x180 blue	800	LC700-blu	84	6	1
+LC700-pur	Ctn wb lead 25x180 purple	800	LC700-pur	84	6	1
+LC700-red	Ctn wb lead 25x180 red	800	LC700-red	84	6	1
+LC704-blk	Ctn wb lead 25x120 black	700	LC704-blk	84	6	1
+LC704-blu	Ctn wb lead 25x120 blue	700	LC704-blu	84	6	1
+LC704-pur	Ctn wb lead 25x120 purple	700	LC704-pur	84	6	1
+LC704-red	Ctn wb lead 25x120 red	700	LC704-red	84	6	1
+LC752-blk	S rfl adj cat cat collar black	392	LC752-blk	131	6	1
+LC752-dkb	S rfl adj cat cat collar dk bl	392	LC752-dkb	131	6	1
+LC752-pur	S rfl adj cat cat collar purpl	392	LC752-pur	131	6	1
+LC752-red	S rfl adj cat cat collar red	392	LC752-red	131	6	1
+LC754-blk	Suede cat collar black	215	LC754-blk	138	6	1
+LC754-blu	Suede cat collar blue	215	LC754-blu	138	6	1
+LC754-jde	Suede cat collar jade	215		138	6	0
+LC754-pnk	Suede cat collar pink	215		138	6	0
+LC754-pur	Suede cat collar purple	215	LC754-pur	138	6	1
+LC754-red	Suede cat collar red	215	LC754-red	138	6	1
+LC756	Leather cat collar	225	LC756	110	6	1
+LC762-blk	WB metal bkle cat collar black	293	LC762-blk	149	6	1
+LC762-dkb	WB metal bkle cat collar dk bl	293	LC762-dkb	149	6	1
+LC762-ltb	WB metal bkle cat collar lt bl	293	LC762-ltb	149	6	1
+LC762-pur	WB metal bkle cat collar purpl	293	LC762-pur	149	6	1
+LC762-red	WB metal bkle cat collar red	293	LC762-red	149	6	1
+LC763	Cat balls with bells 36pcs	2000	LC763	75	6	1
+LC764-blk	WB adj cat collar black	293	LC764-blk	145	6	1
+LC764-dkb	WB adj cat collar dark blue	293	LC764-dkb	145	6	1
+LC764-ltb	WB adj cat collar light blue	293	LC764-ltb	145	6	1
+LC764-pur	WB adj cat collar purple	293	LC764-pur	145	6	1
+LC764-red	WB adj cat collar red	293	LC764-red	145	6	1
+LC765	Cat bell & D ring nickel	40	LC765	76	6	1
+LC766-blu	Elastic cat clr w/bl blue sp	215	LC766	96	6	0
+LC766-grn	Elastic cat clr w/bl green sp	215		96	6	0
+LC766-red	Elastic cat clr w/bl red sp	215		96	6	0
+LC766-yel	Elastic cat clr w/bl yellow sp	215		96	6	0
+LC767	Elastic cat collar with 2 bell	252	LC767	96	6	1
+LC792-blk	Small walking harness black	893	LC792-blk	144	6	1
+LC792-dkb	Small walking harness dk blue	893	LC792-dkb	144	6	1
+LC792-pur	Small walking harness purple	893	LC792-pur	144	6	1
+LC792-red	Small walking harness red	893	LC792-red	144	6	1
+LC794-blk	Medium walking harness black	945	LC794-blk	144	6	1
+LC794-dkb	Medium walking harness dk blue	945	LC794-dkb	144	6	1
+LC794-pur	Medium walking harness purple	945	LC794-pur	144	6	1
+LC794-red	Medium walking harness red	945	LC794-red	144	6	1
+LC796-blk	Large walking harness black	998	LC796-blk	144	6	1
+LC796-dkb	Large walking harness dk blue	998	LC796-dkb	144	6	1
+LC796-pur	Large walking harness purple	998	LC796-pur	144	6	1
+LC796-red	Large walking harness red	998	LC796-red	144	6	1
+LC798-blk	Xlarge walking harness black	1350	LC798-blk	144	6	1
+LC798-dkb	Xlarge walking harness dk blue	1350	LC798-dkb	144	6	1
+LC798-pur	Xlarge walking harness purple	1350	LC798-pur	144	6	1
+LC798-red	Xlarge walking harness red	1350	LC798-red	144	6	1
+LC799	Full elastic paw cat collar	215	LC799	97	6	1
+LC801-grn	Diamante 32cm collar green	250	LC801-grn	87	6	1
+LC801-org	Diamante 32cm collar orange	250	LC801-org	87	6	1
+LC801-yel	Diamante 32cm collar yellow	250	LC801-yel	87	6	1
+LC881-grn	Snake skin lth cat clr green	495		173	6	0
+LC881-red	Snake skin lth cat clr red	495		173	6	0
+LC888-blk	Patent leather cat collar blac	295		121	6	0
+LC888-red	Patent leather cat collar red	295	LC888-red	121	6	1
+LC890-blk	Kitten harness w/lead black	616	LC890-blk	108	6	1
+LC890-blu	Kitten harness w/lead blue	616	LC890-blu	108	6	1
+LC890-pur	Kitten harness w/lead purple	616	LC890-pur	108	6	1
+LC890-red	Kitten harness w/lead red	616	LC890-red	108	6	1
+LC892-blk	Cat harness with lead black	616	LC892-blk	77	6	1
+LC892-blu	Cat harness with lead blue	616	LC892-blu	77	6	1
+LC892-pur	Cat harness with lead purple	616	LC892-pur	77	6	1
+LC892-red	Cat harness with lead red	616	LC892-red	77	6	1
+LC893-blu	Pastel cat collar blue	500	LC893-blu	120	6	1
+LC893-grn	Pastel cat collar green	500	LC893-grn	120	6	1
+LC893-pur	Pastel cat collar purple	500	LC893-pur	120	6	1
+LC920	16mmx40cm leather collar rosco	800	LC920	111	6	1
+LC921	28mmx50cm leather collor rosco	1200	LC921	111	6	1
+LC922	32mmx60cm leather collar rosco	1400	LC922	111	6	1
+LC923	16mmx105cm leather lead rosco	1500	LC923	111	6	1
+LC924	16mmx105cm lth swivel ld rosco	1800	LC924	111	6	1
+LC958	Choker chain 2.0mmx30cm	182	LC958	81	6	1
+LC959	Choker chain 2.0mmx35cm	188	LC959	81	6	1
+LC960	Choker chain 2.0mmx40cm	203	LC960	81	6	1
+LC961	Choker chain 3.0mmx45cm	244	LC961	81	6	1
+LC962	Choker chain 3.0mmx50cm	257	LC962	81	6	1
+LC963	Choker chain 3.0mmx55cm	272	LC963	81	6	1
+LC964	Choker chain 3.0mmx60cm	295	LC964	81	6	1
+LC965	Choker chain 4.0mmx60cm	392	LC965	81	6	1
+LC966	Choker chain 4.0mmx65cm	407	LC966	81	6	1
+LC967	Choker chain 4.0mmx70cm	423	LC967	81	6	1
+LC968	Choker chain 4.8mmx75cm	558	LC968	81	6	1
+LC969	Choker chain 4.8mmx80cm	599	LC969	81	6	1
+LC970-grn	PVC lead 120cm green	1080		129	6	0
+LC970-pur	PVC lead 120cm purple	1080		129	6	0
+LC970-red	PVC lead 120cm red	1080		129	6	0
+LC970-yel	PVC lead 120cm yellow	1080	LC970-yel	129	6	1
+LC971-grn	PVC collar 20x45 green	720		129	6	0
+LC971-pur	PVC collar 20x45 purple	720		129	6	0
+LC971-red	PVC collar 20x45 red	720	LC971-red	129	6	1
+LC971-yel	PVC collar 20x45 yellow	720		129	6	0
+LC972-grn	PVC collar 20x65 green	810		129	6	0
+LC972-pur	PVC collar 20x65 purple	810		129	6	0
+LC972-red	PVC collar 20x65 red	810		129	6	0
+LC972-yel	PVC collar 20x65 yellow	810	LC972-yel	129	6	1
+LC973-grn	PVC collar 20x35 green	625		129	6	0
+LC973-pur	PVC collar 20x35 purple	625		129	6	0
+LC973-red	PVC collar 20x35 red	625		129	6	0
+LC973-yel	PVC collar 20x35 yellow	625	LC973-yel	129	6	1
+MATDD200-dkb	Dlx dac mat 200 dark blue	1350		174	21	0
+MATDDLGE-cbl	Dlxe dacron mat lge cord blue	2069	MATDDLGE-xxx	113	21	0
+MATDDLGE-ccf	Dlxe dacron mat lge cord coffe	2069		113	21	0
+MATDDLGE-cpu	Dlxe dacron mat lge cord purpl	2069		113	21	0
+MATDDLGE-cre	Dlxe dacron mat lge cord red	2069		113	21	0
+MATDDLGE-ctl	Dlxe dacron mat lge cord teal	2069		113	21	0
+MATDDMED-cbl	Dlxe dacron mat med cord blue	1230	MATDDMED-xxx	113	21	0
+MATDDMED-ccf	Dlxe dacron mat med cord coffe	1230		113	21	0
+MATDDMED-cpu	Dlxe dacron mat med cord purpl	1230		113	21	0
+MATDDMED-cre	Dlxe dacron mat med cord red	1230		113	21	0
+MATDDMED-ctl	Dlxe dacron mat med cord teal	1230		113	21	0
+MATDDSML-cbl	Dlxe dacron mat sml cord blue	1009	MATDDSML-xxx	113	21	0
+MATDDSML-ccf	Dlxe dacron mat sml cord coffe	1009		113	21	0
+MATDDSML-cpu	Dlxe dacron mat sml cord purpl	1009		113	21	0
+MATDDSML-cre	Dlxe dacron mat sml cord red	1009		113	21	0
+MATDDSML-ctl	Dlxe dacron mat sml cord teal	1009		113	21	0
+MATDDSML-dkb	Dlxe dacron mat sml dark blue	1009		113	21	0
+MATDDSML-nat	Dlxe dacron mat sml natural	1009		113	21	0
+MATSD060-xxx	Dacron mat suit 60lt kennel	496	MATSD060-xxx	115	21	1
+MATSD200-xxx	Dacron mat suit 200lt kennel	943	MATSD200-xxx	115	21	1
+MATSD300-xxx	Dacron mat suit 300lt kennel	988	MATSD300-xxx	115	21	1
+MATSD600-xxx	Dacron mat suit 600lt kennel	1210	MATSD600-xxx	115	21	1
+MATSD900-xxx	Dacron mat suit 900lt kennel	1644	MATSD900-xxx	115	21	1
+MATSDLGE-xxx	Standard dacron mat large	1644	MATSDLGE-xxx	152	21	1
+MATSDMED-xxx	Standard dacron mat medium	988	MATSDMED-xxx	152	21	1
+MATSDSML-xxx	Standard dacron mat small	859	MATSDSML-xxx	152	21	1
+MATSFJUM-cgn	Standard foam mat jumbo c grn	1290	MATSFJUM-xxx	114	21	0
+MATSFJUM-dbl	Standard foam mat jumbo d blu	1290		114	21	0
+MATSFJUM-dgn	Standard foam mat jumbo d grn	1290		114	21	0
+MATSFJUM-rus	Standard foam mat jumbo rust	1290		114	21	0
+MATSFLGE-cgn	Standard foam mat large c grn	1000	MATSFLGE-xxx	114	21	0
+MATSFLGE-dbl	Standard foam mat large d blu	1000		114	21	0
+MATSFLGE-dgn	Standard foam mat large d grn	1000		114	21	0
+MATSFLGE-rus	Standard foam mat large rust	1000		114	21	0
+MATSFMIN-cgn	Standard foam mat mini c grn	800	MATSFMIN-xxx	114	21	0
+MATSFMIN-dbl	Standard foam mat mini d blue	800		114	21	0
+MATSFMIN-dgn	Standard foam mat mini d grn	800		114	21	0
+MATSFMIN-rus	Standard foam mat mini rust	800		114	21	0
+MATWDLGE-dkb	Sherpa dacron mat dark blue	2295	MATWDLGE-xxx	116	21	0
+MATWDLGE-nat	Sherpa dacron mat natural	2295		116	21	0
+MATWDMED-dkb	Sherpa dacron mat dark blue	1995	MATWDMED-xxx	116	21	0
+MATWDMED-nat	Sherpa dacron mat natural	1995		116	21	0
+MATWDSML-dkb	Sherpa dacron mat dark blue	1295	MATWDSML-xxx	116	21	0
+MATWDSML-nat	Sherpa dacron mat natural	1295		116	21	0
+MUZ01	Nylon dog muzzle small	295	MUZ01	90	6	1
+MUZ02	Nylon dog muzzle medium	295		90	6	0
+MUZ03	Nylon dog muzzle large	295		90	6	0
+MUZ04	Nylon dog muzzle x large	295		90	6	0
+PDL01	Dried liver 1kg	2500	PDL01	35	4	1
+PDL15	Dried lived 150gsm	455	PDL15	35	4	1
+PPDLGE-bei	Deluxe pet pillow large beige	3020		175	21	0
+PPDLGE-blk	Deluxe pet pillow large black	3020		175	21	0
+PPDMED-bei	Deluxe pet pillow medium beige	2470		175	21	0
+PPDMED-blk	Deluxe pet pillow medium black	2470		175	21	0
+PPDSML-bei	Deluxe pet pillow small beige	1760		175	21	0
+PPDSML-blk	Deluxe pet pillow small black	1760		175	21	0
+PPDXLG-bei	Deluxe pet pillow xlarge beige	3640		175	21	0
+PPDXLG-blk	Deluxe pet pillow xlarge black	3640		175	21	0
+PPDXXL-bei	Deluxe pet pillow xxl beige	4200		175	21	0
+PPDXXL-blk	Deluxe pet pillow xxl black	4200		175	21	0
+PPTOPUP	Pet pillow top up pack .75kg	645		176	21	0
+RNDBGNT-xxx	Budget basket giant	2680	RNDBGNT-xxx	68	19	1
+			RNDDGNT-xxx	85	19	0
+RNDBLGE-xxx	Budget basket large	1650		85	19	0
+RNDBMED-xxx	Budget basket medium	1424		85	19	0
+RNDBSML-xxx	Budget basket small	1175		85	19	0
+RNDBXLG-xxx	Budget basket extra large	2250		85	19	0
+RNDDLGE-fle	Deluxe basket large leopard	3595	RNDDLGE-xxx	85	19	0
+RNDDLGE-fpa	Deluxe basket large panther	3595		85	19	0
+RNDDLGE-spw	Deluxe basket large den/polar	3595		85	19	0
+RNDDMED-fle	Deluxe basket medium leopard	2940	RNDDMED-xxx	85	19	0
+RNDDMED-fpa	Deluxe basket medium panther	2940		85	19	0
+RNDDMED-spw	Deluxe basket medium den/sherp	2940		85	19	0
+RNDDSML-fle	Deluxe basket small leopard	2325	RNDDSML-xxx	85	19	0
+RNDDSML-fpa	Deluxe basket small panther	2325		85	19	0
+RNDDSML-spw	Deluxe basket small den/polar	2325		85	19	0
+RNDDXLG-fle	Deluxe basket xlarge leopard	4465	RNDDXLG-xxx	85	19	0
+RNDDXLG-fpa	Deluxe basket xlarge panther	4465		85	19	0
+RNDDXLG-spw	Deluxe basket xlarge den/polar	4465		85	19	0
+RNDPLGE-fbw	Premium basket lge fur b/w	3795	RNDPLGE-xxx	126	19	0
+RNDPMED-fbw	Premium basket med fur b/w	3095	RNDPMED-xxx	126	19	0
+RNDPSML-fbw	Premium basket sml fur b/w	2495	RNDPSML-xxx	126	19	0
+RNDPXLGE-fbw	Premium basket xlg fur b/w	4797	RNDPXLGE-xxx	126	19	0
+RNDSGNT-pbl	Standard basket gnt p/blue	3600	RNDSGNT-xxx	135	19	0
+RNDSGNT-ppu	Standard basket gnt p/purple	3600		135	19	0
+RNDSLGE-pbl	Standard basket lge p/blue	2300	RNDSLGE-xxx	135	19	0
+RNDSLGE-ppu	Standard basket lge p/purple	2300		135	19	0
+RNDSMED-pbl	Standard basket med p/blue	1900	RNDSMED-xxx	135	19	0
+RNDSMED-ppu	Standard basket med p/purple	1900		135	19	0
+RNDSSML-pbl	Standard basket sml p/blue	1500	RNDSSML-xxx	135	19	0
+RNDSSML-ppu	Standard basket sml p/purple	1500		135	19	0
+RNDSXLG-pbl	Standard basket xlge p/blue	3100	RNDSXLG-xxx	135	19	0
+RNDSXLG-ppu	Standard basket xlge p/purple	3100		135	19	0
+XM003	Xmas deluxe dog hat & scarf	225		177	3	0
+XM006	Xmas 4pc cat stocking	250		177	3	0
+XM011	Xmas dog toy set 6pc	800		177	3	0
+XM012	Xmas cat dangler	185		177	3	0
+XM013	Xmas stocking 6 ass	1345		177	3	0

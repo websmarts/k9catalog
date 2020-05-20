@@ -1,0 +1,101 @@
+																					
+	K-9 HOMES																				
+	119 McEwan Road																				
+	"Heidelberg Heights,  3081"																				
+																					
+																					
+	Items List [Summary]																				
+																					
+																					
+	Item #	Item Name	Current Price																		
+	B199	"6"" aluminium dog bowl"	$4.55																		
+	B200	"7"" aluminium dog bowl"	$6.00																		
+	B201	"8"" aluminium dog bowl"	$7.28																		
+	B202	"9"" aluminium dog bowl"	$8.65																		
+	B203	"10"" aluminium dog bowl"	$10.01																		
+	B204	"11"" aluminium dog bowl"	$11.83																		
+	B209-blu	Double plastic diner blue	$1.30													
+	B209-grn	Double plastic diner green	$1.30													
+	B209-red	Double plastic diner red	$1.30													
+	B209-yel	Double plastic diner yellow	$1.30													
+	B210-blu	Small plastic dog bowl blue	$1.30													
+	B210-grn	Small plastic dog bowl green	$1.30													
+	B210-red	Small plastic dog bowl red	$1.30													
+	B210-yel	Small plastic dog bowl yellow	$1.30													
+	B213-blu	Large plastic dog bowl blue	$2.00													
+	B213-grn	Large plastic dog bowl green	$2.00													
+	B213-red	Large plastic dog bowl red	$2.00													
+	B213-yel	Large plastic dog bowl yellow	$2.00													
+	B220-blu	Medium plastic dog bowl blue	$1.50													
+	B220-grn	Medium plastic dog bowl green	$1.50													
+	B220-red	Medium plastic dog bowl red	$1.50													
+	B220-yel	Medium plastic dog bowl yellow	$1.50													
+	B221-blu	Cat shaped plastic bowl blue	$2.96	12.00	10%											
+	B221-red	Cat shaped plastic bowl red	$2.96	12.00	10%											
+	B221-yel	Cat shaped plastic bowl yellow	$2.96	12.00	10%											
+	B227	Heavy duty small square bowl	$3.30													
+	B230	Heavy duty small cat bowl	$2.20													
+	B231	Heavy duty double diner	$2.70													
+	B233	Heavy duty large square bowl	$6.20													
+	B237	Water/food fold up dog bowl	$3.50	12.00	10%											
+	B241-blu	Spill proof water bowl blue	$3.90													
+	B241-gld	Spill proof water bowl gold	$3.90													
+	B241-grn	Spill proof water bowl green	$3.90													
+	B241-red	Spill proof water bowl red	$3.90													
+	B244-blu	Ant free double diner blue	$2.40													
+	B244-gld	Ant free double diner gold	$2.40													
+	B244-grn	Ant free double diner green	$2.40													
+	B244-red	Ant free double diner red	$2.40													
+	B245-blu	Ant free small bowl blue	$2.30													
+	B245-gld	Ant free small bowl gold	$2.30													
+	B245-grn	Ant free small bowl green	$2.30													
+	B245-red	Ant free small bowl red	$2.30													
+	B260	S/S pet bowl embossed small	$5.94													
+	B261	S/S pet bowl embossed medium	$7.77													
+	B262	S/S pet bowl embossed large	$9.90													
+	B271	Water bowl suit sml carry cage	$3.50													
+	B272	Cage bowls	$2.48													
+	B273-blu	Melamine bowl w/r rim blue	$2.50													
+	B273-mti	Melamine bowl w/r rim multi	$2.50													
+	B273-red	Melamine bowl w/r rim red	$2.50													
+	B275	Water bowl suit lge carry cage	$4.50													
+	C001	50ml plastic bottle with cap	$1.10													
+	C002	125ml plastic bottle with cap	$1.15													
+	C010	4 Dram vial with s/cap 200pc	$31.75													
+	C011	6 Dram vial with s/cap 200pc	$39.65													
+	C012	8 Dram vial with s/cap 200pc	$42.56													
+	C013	12 Dram vial with s/cap 100pc	$26.41													
+	C014	16 Dram vial with s/cap 100pc	$29.80													
+	C015	20 Dram vial with s/cap 100pc	$44.37													
+	C016	40 Dram vial with s/cap 50pc	$29.16													
+	GR21	Dog & cat shampoo 500ml	$2.10	12.00	10%											
+	GR51	Cat repair 9 tubs	$27.30													
+	GR52	Neem pet wash soap 12cakes	$26.72													
+	GR53	Dog polish 9 tubs	$27.30													
+	GR60	Cat garden	$6.75													
+	GR61	Bella #5 pooch perfume	$5.51													
+	GR62-blk	Dlxe untangling dog comb black	$2.50													
+	GR62-blu	Dlxe untangling dog comb blue	$2.50													
+	GR63	Dr Dog polish & brush set	$7.95													
+	GR64	Dr Dog pet shampoo	$9.71													
+	GR65	Dr Dog pet conditioner	$6.14		
+	GR66	Pin brush	$3.95	3.00	10%
+	GR67	Double side brush pin/nylon	$3.50	3.00	10%
+	GR68	Shedding rake	$4.44	3.00	10%
+	GR69	18pin rake	$3.17	3.00	10%
+	GR70	Slicker wire brush	$4.44	3.00	10%
+	GR71	Double sided comb	$4.44	3.00	10%
+	GR97	Dog/cat flex massage bsh 2ass	$5.42		
+	B232-blu	H/duty litter tray lge blue	$3.30		
+	B232-grn	H/duty litter tray lge green	$3.30		
+	B232-red	H/duty litter tray lge red	$3.30		
+	B232-yel	H/duty litter tray lge yellow	$3.30		
+	B240-blu	H/duty litter tray sml blue	$2.70		
+	B240-grn	H/duty litter tray sml green	$2.70		
+	B240-red	H/duty litter tray sml red	$2.70		
+	B240-yel	H/duty litter tray sml yellow	$2.70		
+	B242-blu	Cat litter scoop blue	$1.20		
+	B243	H/D pooper scooper pan & scoop	$13.86		
+	B280	Hooded litter tray	$34.85		
+	CT008	Litter tray liner bags	$2.50	12.00	10%
+	HP009	Dog walk leash bag	$4.95	12.00	10%

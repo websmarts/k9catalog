@@ -1,0 +1,82 @@
+body /*normal*/{
+	font-family:arial;
+	font-size:9pt;
+	
+	}
+	
+.heading {
+color:#990000;
+font-size:100%;
+font-weight:700;
+letter-spacing:3px;
+}
+	
+h3 {
+	font-family:arial;
+	/*font-size:140%;*/
+	font-weight:700;
+	}
+	
+th {font-size:120%; background:#ccccff;}
+
+.error_msg {
+	background:red;
+	color:white;
+	font-size:14pt;
+	padding:10px;
+	}
+	
+.product_heading {color:blue;padding-left:2px;font-size:100%; font-weight:600;background:#ffffff;}
+.product_description {padding-left:2px;font-size:100%;}
+.aus_made {font-size:100%; font-weight:700;color:green;background:#FFA600;}
+
+a:VISITED,A:LINK { color:#000000;text-decoration:non;}
+a:HOVER{color:green;}
+
+
+
+.notation {
+ font-size:70%;
+ background:#FFFFc0;
+ }
+.row0{background:#e0e0e0;}
+.row1{background:#fff0f0;}
+
+.catmenu {background:#D6ED7B;}
+
+.list_table{
+	/*border-top:4px solid #FFA600;*/
+	width:100%;
+	}
+	
+.highlight {
+background: yellow;
+}
+
+.normal {
+color:black;
+font-size:80%;
+padding-left:2px;
+}
+
+.input  {
+    font-family : Trebuchet MS;
+    font-size : 100%;
+    font-weight : normal;
+    background-color : #D6ED7B;
+    border-style : inset ;
+    border : 2px solid #cccccc ;
+    color : #ff0000;
+}
+
+/* OPTION CLASSES DISPLAY THE SWATCH COLOR AT THE HEAD OF QTY COLUMNS */
+.opt_ff0000 {
+ background:#ff0000;
+}
+.opt_00ff00 {
+ background:#00ff00;
+}
+.opt_0000ff {
+ background:#0000ff;
+}
+

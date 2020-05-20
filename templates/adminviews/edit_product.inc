@@ -1,0 +1,39 @@
+<?php 
+
+
+?>
+
+<p>edit_product_inc:</p>
+<?php //echo dumper($product); ?>
+
+
+<?php 	
+	if (is_array($product) && count($product)>0) { 
+		echo "<form method=POST ><table>\n";
+		foreach($product as $k => $field) {
+			
+			
+			if ($k =='id' || $k=='modified'|| $k=='product_code' || $k=='qty_ordered' ) {
+				echo "<tr><td>$k</td><td>".$field."<input name=$k type=hidden value=\"".htmlentities(stripslashes($field))."\"></td></tr>\n";
+			} elseif ($k =='typeid') {
+				
+				echo "<tr><td>";
+				echo $k=="typeid"?'<a href="?m=type&a=edit&typeid='.$field.'">'.$k.'</a>':$k;
+				echo "</td><td><select name=$k >\n";
+				foreach ($_v['type'] as $typeid => $name) {
+					$selected = $typeid == $field?" selected ":"";
+					echo "<option value=$typeid $selected >$name </option>\n";
+					
+				}
+				echo "</select>\n";
+				
+			} else {
+				echo "<tr><td>$k</td><td><input type=text name=$k size=40 value=\"".htmlentities(stripslashes($field))."\"></td></tr>\n";
+			}
+		}
+		echo 	"</table>\n";
+		echo 	"<input type=hidden name=m value=product>".
+					"<input type=submit name=a value=update>".
+					"</form>\n";
+	}			
+?>

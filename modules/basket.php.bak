@@ -1,0 +1,58 @@
+<?php
+
+// basket.php
+// get basket data
+
+// DEBUGGING echo dumper ($req);
+
+
+$categories= get_list_hierarchy("category","order by name asc");
+
+
+if(strtolower($req['a']) == "update" ) {
+	//echo dumper($req);
+	// merge session basket with req basket
+	if (strtolower($req['b']) == "clear" ) {
+		unset($_SESSION['basket']);
+	} elseif (strtolower($req['b']) == "saveorder" ){
+		
+		// Update basket before saving - it might have been changed on the basket form
+		update_basket($req);
+		
+		// Now - Save the basket to an order and clear the basket
+		save_basket("saved");
+				
+		// all saved so clear the basket now
+		unset($_SESSION['basket']);
+		unset($_SESSION['basket_instructions']);
+		
+		// force logout
+		unset($SESSION['client_id']);
+		
+	} else {
+		update_basket($req);
+	}
+
+} 
+
+// sort basket into Groups and Items
+$basket = $_SESSION['basket']; // shortcut
+
+
+if (is_array($basket) ) {
+	foreach ($basket as $item =>$qty) {
+		$r = do_query("select * from products,type,type_category where products.typeid=type.typeid and products.typeid=type_category.typeid and  products.product_code='".$item."'");
+		$products[$item] = $r[0];
+		$products[$item]['qty'] = $qty;
+	}		
+}
+ 
+	//	echo dumper($_SESSION);
+
+// get any special prices
+$special_prices = get_client_price_specials($_SESSION['client_id']);
+
+
+
+
+?>

@@ -1,0 +1,741 @@
+	060B	Fineline # 3440744	$63.00																		
+	060D	Dog kennel deluxe 60lt	$79.10																		
+	060S	Dog kennel standard 60lt	$74.00																		
+	200B	Fineline # 3440778	$75.00																		
+	200D	Dog kennel deluxe 200lt	$96.36																		
+	200S	Dog kennel standard 200lt	$81.81																		
+	300D	Dog kennel deluxe 300lt	$180.00																		
+	600D	Dog kennel deluxe 600lt	$250.00																		
+	900D	Dog kennel deluxe 900lt	$280.00																		
+	B199	"6"" aluminium dog bowl"	$4.55																		
+	B200	"7"" aluminium dog bowl"	$6.00																		
+	B201	"8"" aluminium dog bowl"	$7.28																		
+	B202	"9"" aluminium dog bowl"	$8.65																		
+	B203	"10"" aluminium dog bowl"	$10.01																		
+	B204	"11"" aluminium dog bowl"	$11.83																		
+	B209-blu	Double plastic diner blue	$1.30																		
+	B209-grn	Double plastic diner green	$1.30													
+	B209-red	Double plastic diner red	$1.30													
+	B209-yel	Double plastic diner yellow	$1.30													
+	B210-blu	Small plastic dog bowl blue	$1.30													
+	B210-grn	Small plastic dog bowl green	$1.30													
+	B210-red	Small plastic dog bowl red	$1.30													
+	B210-yel	Small plastic dog bowl yellow	$1.30													
+	B213-blu	Large plastic dog bowl blue	$2.00													
+	B213-grn	Large plastic dog bowl green	$2.00													
+	B213-red	Large plastic dog bowl red	$2.00													
+	B213-yel	Large plastic dog bowl yellow	$2.00													
+	B220-blu	Medium plastic dog bowl blue	$1.50													
+	B220-grn	Medium plastic dog bowl green	$1.50													
+	B220-red	Medium plastic dog bowl red	$1.50													
+	B220-yel	Medium plastic dog bowl yellow	$1.50													
+	B221-blu	Cat shaped plastic bowl blue	$2.96													
+	B221-red	Cat shaped plastic bowl red	$2.96													
+	B221-yel	Cat shaped plastic bowl yellow	$2.96													
+	B227	Heavy duty small square bowl	$3.30													
+	B230	Heavy duty small cat bowl	$2.20													
+	B231	Heavy duty double diner	$2.70													
+	B232-blu	H/duty litter tray lge blue	$3.30													
+	B232-grn	H/duty litter tray lge green	$3.30													
+	B232-red	H/duty litter tray lge red	$3.30													
+	B232-yel	H/duty litter tray lge yellow	$3.30													
+	B233	Heavy duty large square bowl	$6.20													
+	B240-blu	H/duty litter tray sml blue	$2.70													
+	B240-grn	H/duty litter tray sml green	$2.70													
+	B240-red	H/duty litter tray sml red	$2.70													
+	B240-yel	H/duty litter tray sml yellow	$2.70													
+	B241-blu	Spill proof water bowl blue	$3.90													
+	B241-gld	Spill proof water bowl gold	$3.90													
+	B241-grn	Spill proof water bowl green	$3.90													
+	B241-red	Spill proof water bowl red	$3.90													
+	B242-blu	Cat litter scoop blue	$1.20													
+	B243	H/D pooper scooper pan & scoop	$13.86													
+	B244-blu	Ant free double diner blue	$2.40													
+	B244-gld	Ant free double diner gold	$2.40													
+	B244-grn	Ant free double diner green	$2.40													
+	B244-red	Ant free double diner red	$2.40													
+	B245-blu	Ant free small bowl blue	$2.30													
+	B245-gld	Ant free small bowl gold	$2.30													
+	B245-grn	Ant free small bowl green	$2.30													
+	B245-red	Ant free small bowl red	$2.30													
+	B260	S/S pet bowl embossed small	$5.94													
+	B261	S/S pet bowl embossed medium	$7.77													
+	B262	S/S pet bowl embossed large	$9.90													
+	B271	Water bowl suit sml carry cage	$3.50													
+	B272	Cage bowls	$2.48													
+	B273-blu	Melamine bowl w/r rim blue	$2.50													
+	B273-mti	Melamine bowl w/r rim multi	$2.50													
+	B273-red	Melamine bowl w/r rim red	$2.50													
+	B275	Water bowl suit lge carry cage	$4.50													
+	B280	Hooded litter tray	$34.85													
+	B281	Deluxe travel foldable bowl	$3.50																								
+	BELDLGE-fle	Deluxe bell igloo lge leopard	$42.00													
+	BELDLGE-fpa	Deluxe bell igloo lge panther	$42.00													
+	BELSLGE-pbl	Standard bell igloo lge p/blue	$32.54													
+	BELSLGE-ppu	Standard bell igloo lge p/purp	$32.54													
+	BK01	Holidaying with dogs book	$10.60													
+	BK02	Walkies in Victoria book	$10.60													
+	BK03	Holidaying with cats book	$10.06													
+	BRD01	Craft perch w-10cm extension	$2.05													
+	BRD03	Twist rope bird perch	$2.64													
+	BRD04	Bird swing perch with bell	$1.85													
+	BRD05	Heavy duty ring bird toy w/bel	$2.95													
+	BRD06	Bird hanging rings & mirror 2p	$2.95													
+	C001	50ml plastic bottle with cap	$1.10													
+	C002	125ml plastic bottle with cap	$1.15													
+	C010	4 Dram vial with s/cap 200pc	$31.75													
+	C011	6 Dram vial with s/cap 200pc	$39.65													
+	C012	8 Dram vial with s/cap 200pc	$42.56													
+	C013	12 Dram vial with s/cap 100pc	$26.41													
+	C014	16 Dram vial with s/cap 100pc	$29.80													
+	C015	20 Dram vial with s/cap 100pc	$44.37													
+	C016	40 Dram vial with s/cap 50pc	$29.16													
+	CB001	Premium pet emperor lounge 2as	$60.54													
+	CC01	Small carry cage	$36.00													
+	CC02	Large carry cage	$47.60																									
+	CC05	Small wire carry cage	$32.00													
+	CL212	Chain lead 2x120cm	$5.33													
+	CL312	Chain lead 3x120cm	$6.45													
+	CT008	Litter tray liner bags	$2.50													
+	CT009	Assorted pack cat toys 12pc	$21.00													
+	CT011	Catnip furry mice/card 24pc	$18.00													
+	CT013	Colourful rats on card / 12pc	$24.50													
+	CT015	Cat scratch pole w/swing toy	$11.70													
+	CT019	Moveable mouse cat toy	$1.95													
+	CT023	Rat Black	$0.95													
+	CT026	Shake & squeak cat toy pk 18pc	$40.50													
+	CT027	Fluffy tail catnip toy 4pc	$5.16													
+	CT028-blk	Cat tnl lge w/2 pop outs black	$16.95													
+	CT028-blu	Cat tnl lge w/2 pop outs blue	$16.95													
+	CT028-red	Cat tnl lge w/2 pop outs red	$16.95													
+	CT030	Pendulum cat toy 3pc	$4.02													
+	CT031	Cat critter toy crinkly 3pc	$5.80													
+	CT035	Cat toy play cylinder	$1.85													
+	CT036	Hanging cat critter 2 assorted	$4.90													
+	CT037	Cat scratch pole leopard base	$11.00													
+	CT038	Cat tnl lge leopard pnt 130cm	$19.95													
+	CT039	"Coloured mice 2"" 36pcs"	$25.00													
+	CT040	Cat jingle balls w/bell 60pcs	$30.00													
+	CT041	Cat jingle balls h/d 36pcs	$18.00													
+	CT042	Cat balls w/moving stars 36pcs	$30.00													
+	CT043	Cat dangler on stick 90cm	$2.15													
+	CT044	Cat krinkle sac leopard print	$9.85													
+	CVR02	Car back seat cover 140x100cm	$13.60													
+	CVR03	Car back seat h/mock 140x150cm	$19.60													
+	DBDLGE	Deluxe raised dog bed large	$49.45													
+	DBDMED	Deluxe raised dog bed medium	$39.67													
+	DBDRSLGE	Deluxe dog bed sling large	$21.17													
+	DBDRSMED	Deluxe dog bed sling medium	$17.65													
+	DBDRSSML	Deluxe dog bed sling small	$16.50													
+	DBDSML	Deluxe raised dog bed small	$35.79													
+	DBSJUM	Standard dog bed jumbo	$41.85													
+	DBSLGE	Standard dog bed large	$36.75													
+	DBSRSJUM	Standard dog bed sling jumbo	$18.24													
+	DBSRSLGE	Standard dog bed sling large	$16.80													
+	DBSRSMED	Standard dog bed sling medium	$15.00													
+	DBSRSMIN	Standard dog bed sling mini	$11.84													
+	DBSRSSML	Standard dog bed sling small	$14.32													
+	DBSSML	Standard dog bed small	$32.93													
+	DC001	R/h twist stick 10mm jar 20pc	$4.95													
+	DC014	"3"" porkhide drumsticks 45pc"	$24.85													
+	DC015	"4"" porkhide knot bone 25pc"	$22.40													
+	DC017	Porkhide sausage rolls 85pc	$22.95													
+	DC018	Smoked pigs ear 50pc	$55.00													
+	DC019	Clod/femur bones small 35pc	$40.95													
+	DC021	Smoked pigs snouts 50pc	$25.00													
+	DC022	Smoked pigs trotter split 20pc	$18.90													
+	DC023	Smoked cows ears 50pc	$52.50													
+	DC024	Rawhide plain puppy chips 1kg	$20.00													
+	DC030	6x20mm munchy sticks 50pc	$13.40													
+	DC032	"1"" munchy bones 100pc"	$8.92													
+	DC033	Munchy flat strip 40pc	$2.45													
+	DC034	Roo tails	$1.89													
+	DC035	Roo sausages 25pc	$23.95													
+	DC037	Beef crackers 12pc	$3.24													
+	DC038	Premium grade beef jerky 1kg	$30.00													
+	DC039	Bull sticks 25pc	$33.75													
+	DC042	Turkey jerky 1kg	$19.75													
+	DC044	Clod/femur bones large 8pc	$28.80													
+	DC045	Baisted pringles 1kg	$23.25													
+	DC046	Turkey jerky 120gsm	$4.20													
+	DC048	Munchy twist stixs 30pc	$5.00													
+	DC049	Beef rattles 1kg	$26.64													
+	DC050	R/hide chip pack bacon	$3.50													
+	DC051	R/hide chip pack peanut butter	$3.50													
+	DC052	Porkhide pig ears 6pc	$4.50													
+	DC053	R/hide rolls 22cm cheese 2pc	$3.95													
+	DC054	R/hide rolls 22cm chicken 2pc	$3.95													
+	DC055	Smoke flavor pork roll 15cmx50	$50.00													
+	DC056	"12"" white retriever stick"	$2.10													
+	DC057	"Rhide pressed bone 3"" 50pc"	$16.50													
+	DC058	"Rhide pressed bone 5"" 50pc"	$40.00													
+	DC059	"Rhide pressed bone 7"" 25pc"	$25.00													
+	DC060	"Rhide pressed bone 10"" 10pc"	$20.00													
+	DC061	"Rhide pressed bone 12"" x5pc"	$15.00													
+	DC062	"Rhide knot bone 4-4.5"" 50pc"	$19.00													
+	DC063	"Rhide knot bone 5-5.5"" 50pc"	$31.50													
+	DC064	"Rhide knot bone 7-7.5"" 25pc"	$31.25													
+	DC065	"Rhide knot bone 8-8.5"" 10pc"	$17.50													
+	DC066	"Rhide knot bone 10-10.5"" 5pc"	$10.00													
+	DC067	"3"" Rawhide pressed bone 5pc/pk"	$1.65													
+	DCDC01	Doggie carob buds 1kg	$7.00													
+	DCDC05	Doggie carob buds 5kg	$30.00													
+	DCDC25	Doggie carob buds 250gsm	$2.58													
+	DCYB01	Doggie yoghurt buds 1kg	$10.00													
+	DCYB05	Doggie yoghurt buds 5kg	$42.00													
+	DCYB25	Doggie yoghurt buds 250gsm	$2.95													
+	DONDSET-blu	Donut basket deluxe set3 blue	$57.00													
+	DONDSET-brn	Donut basket deluxe set3 brown	$57.00													
+	DT008	Sponge rubber balls 24pcs	$30.00													
+	DT010	Sponge star ball small	$2.50													
+	DT013	Bone shaped tennis ball	$3.30													
+	DT018	Jumbo tennis  ball 10cm	$3.50													
+	DT019	Fleecy squeaky bone (Sherpa)	$3.50													
+	DT022	Plush coloured star with 6 sq	$4.50													
+	DT023	Dog chew rope w/3 sausages	$3.50													
+	DT027	Back saver grab & throw stick	$4.95													
+	DT036	Spike dog squeak ball 24pc	$36.00													
+	DT037	Solid rubber ball with rope	$2.25													
+	DT041	Dog beer can 15pc Squeaky	$25.00													
+	DT045	Jumbo plush dog bone 4 ass	$10.60													
+	DT046	Tuff Tyre toy with rope	$5.64													
+	DT047	Tuff tyre toy bone type	$5.00													
+	DT048	20cm Tuff tyre chew chew toy	$6.75													
+	DT053	"Blood hound, Joe dog w/ban 2pc"	$4.90													
+	DT054	Tyre tuff buddies dog toy 3pc	$5.85													
+	DT055	Astd h/ware buddies w sqk 6pc	$11.70													
+	DT056	Mint fresh dog breath ball	$6.80													
+	DT057	Barking dogs display 16pc	$94.72													
+	DT058	Plush dog toy v/bl w/sq 2 ass	$9.92													
+	DT059	Premium gym boot w/sq 3ass	$7.44													
+	DT060	Dog gift set 6pc (3assorted)	$18.00													
+	DT061	Plush animal des sq toy 6ass	$15.00													
+	DT062	Rope w/rubber solid/rbr cylind	$2.25													
+	DT063	Plush coloured ball with sq	$2.95													
+	DT064	Spikey animal sq PVC toy 2pcs	$4.00													
+	DT065	Rnd animal sq PVC bl toys 4pcs	$6.52													
+	DT066	"Rope bone coloured 8"""	$1.30													
+	DT067	"Rope bone coloured 10"""	$1.40													
+	DT068	"Rope bone coloured 12"""	$1.50													
+	DT069	"Rope bone white 8"""	$1.40													
+	DT070	"Rope bone white 10"""	$1.50													
+	DT071	"Rope bone white 12"""	$1.60													
+	DT073	Duck/chicken ltx tget toy 2pc	$7.40													
+	DT074	Spiked squeaky dog balls 24pc	$33.60													
+	DT075	Spge spts bls 30pc + dsply bin	$39.50													
+	DT076	Spike sqk bls 24pc + dsply bin	$36.60													
+	DT077	Water'n tug bone small 2 ass	$5.90													
+	DT078	Water'n tug bone med 2 ass	$7.90													
+	DT079	Water'n tug bone lge 2 ass	$9.90													
+	DT080	Denim/sherpa toy 5 ass design	$14.75													
+	DT081	Plush & rope toy 4 ass	$19.80													
+	DT082	Plush animal ring style 4 ass	$15.80													
+	DT083	Plush bone w/5 rings squeaky	$4.50													
+	FF01-blu	K-9 Fun Flyer blue	$4.50													
+	FF01-grn	K-9 Fun Flyer green	$4.50													
+	FF01-red	K-9 Fun Flyer red	$4.50													
+	FF01-yel	K-9 Fun Flyer yellow	$4.50													
+	FUTDCLGE-dkb	Dlxe futon cvr lge dark blue	$26.21													
+	FUTDCLGE-fle	Dlxe futon cvr lge leopard	$26.21													
+	FUTDCLGE-fpa	Dlxe futon cvr lge panther	$26.21													
+	FUTDCLGE-nat	Dlxe futon cvr lge natural	$26.21													
+	FUTDCMED-dkb	Dlxe futon cvr med dark blue	$20.04													
+	FUTDCMED-fle	Dlxe futon cvr med leopard	$20.04													
+	FUTDCMED-fpa	Dlxe futon cvr med panther	$20.04													
+	FUTDCMED-nat	Dlxe futon cvr med natural	$20.04													
+	FUTDCXLG-dkb	Dlxe futon cvr xlg dark blue	$32.90													
+	FUTDCXLG-fle	Dlxe futon cvr xlg leopard	$32.90													
+	FUTDCXLG-fpa	Dlxe futon cvr xlg panther	$32.90													
+	FUTDCXLG-nat	Dlxe futon cvr xlg natural	$32.90													
+	FUTDLGE-dkb	Deluxe futon lge dark blue	$44.21													
+	FUTDLGE-fle	Deluxe futon lge leopard	$44.21													
+	FUTDLGE-fpa	Deluxe futon lge panther	$44.21													
+	FUTDLGE-nat	Deluxe futon lge natural	$44.21													
+	FUTDMED-dkb	Deluxe futon med dark blue	$31.00													
+	FUTDMED-fle	Deluxe futon med leopard	$31.00													
+	FUTDMED-fpa	Deluxe futon med panther	$31.00													
+	FUTDMED-nat	Deluxe futon med natural	$31.00													
+	FUTDXLG-dkb	Deluxe futon xlg dark blue	$53.57													
+	FUTDXLG-fle	Deluxe futon xlg leopard	$53.57													
+	FUTDXLG-fpa	Deluxe futon xlg panther	$53.57													
+	FUTDXLG-nat	Deluxe futon xlg natural	$53.57													
+	FUTSCLGE-pbl	Std futon cvr lge pol blue	$21.21													
+	FUTSCLGE-ppl	Std futon cvr lge pol purple	$21.21													
+	FUTSCMED-pbl	Std futon cvr med pol blue	$15.04													
+	FUTSCMED-ppl	Std futon cvr med pol purple	$15.04													
+	FUTSCXLG-pbl	Std futon cvr xlg pol purple	$27.90													
+	FUTSCXLG-ppl	Std futon cvr xlg pol purple	$27.90													
+	FUTSLGE-pbl	Standard futon lge pol blue	$39.21													
+	FUTSLGE-ppl	Standard futon lge pol purple	$39.21													
+	FUTSMED-pbl	Standard futon med pol blue	$26.00													
+	FUTSMED-ppl	Standard futon med pol purple	$26.00													
+	FUTSXLG-pbl	Standard futon xlg pol blue	$47.07													
+	FUTSXLG-ppl	Standard futon xlg pol purple	$47.07													
+	GIFT01	Complementary gift enc (torch)	$0.00													
+	GIFT02	Complementary gift enc (cal)	$0.00													
+	GIFT03	Complementary gift enc (marsh)	$0.00													
+	GIFT04	Complementary gift enc (mug)	$0.00													
+	GIFT05	Complementary gift enc (nbook)	$0.00													
+	GIFT06	Complementary gift enc (bin)	$0.00													
+	GIFT07	Xmas topiary reindeer gift	$0.00													
+	GIFT08	Xmas crystal angel gift	$0.00													
+	GIFT09	Xmas sitting santa gift	$0.00													
+	GIFT10	Xmas blown glass ball gift	$0.00													
+	GIFT11	Xmas puppy/bear gift	$0.00													
+	GIFT12	Xmas santa head gift	$0.00													
+	GIFT13	Xmas sitting music bear gift	$0.00													
+	GIFT14	Xmas plush reindeer gift	$0.00													
+	GIFT15	Xmas floating candles 10p gift	$0.00													
+	GR21	Dog & cat shampoo 500ml	$2.10													
+	GR51	Cat repair 9 tubs	$27.30													
+	GR52	Neem pet wash soap 12cakes	$26.72													
+	GR53	Dog polish 9 tubs	$27.30													
+	GR60	Cat garden	$6.75													
+	GR61	Bella #5 pooch perfume	$5.51													
+	GR62-blk	Dlxe untangling dog comb black	$2.50													
+	GR62-blu	Dlxe untangling dog comb blue	$2.50													
+	GR63	Dr Dog polish & brush set	$7.95													
+	GR64	Dr Dog pet shampoo	$9.71													
+	GR65	Dr Dog pet conditioner	$6.41													
+	GR66	Pin brush	$3.95													
+	GR67	Double side brush pin/nylon	$3.50													
+	GR68	Shedding rake	$4.44													
+	GR69	18pin rake	$3.17													
+	GR70	Slicker wire brush	$4.44													
+	GR71	Double sided comb	$4.44													
+	GR97	Dog/cat flex massage bsh 2ass	$5.42													
+	HP009	Dog walk leash bag	$4.95													
+	IGLDLGE-fle	Deluxe igloo large leopard	$34.00													
+	IGLDLGE-fpa	Deluxe igloo large panther	$34.00													
+	IGLSLGE-pbl	Standard igloo lge p/blue	$25.30													
+	IGLSLGE-ppu	Standard igloo lge p/purple	$25.30													
+	IGLSMED-pbl	Standard igloo med p/blue	$20.79													
+	IGLSMED-ppu	Standard igloo med p/purple	$20.79													
+	K9C20B	20cm oil cloth coat buckle	$7.72													
+	K9C20F-CB	20cm cloth coat buckle blue	$5.34													
+	K9C20F-CR	20cm cloth coat buckle red	$5.34													
+	K9C20V	20cm oil cloth coat velcro	$7.34													
+	K9C25B	25cm oil cloth coat buckle	$8.63													
+	K9C25F-CB	25cm cloth coat buckle blue	$6.40													
+	K9C25F-CR	25cm cloth coat buckle red	$6.40													
+	K9C25V	25cm oil cloth coat velcro	$8.25													
+	K9C30B	30cm oil cloth coat buckle	$11.58													
+	K9C30F-CB	30cm cloth coat buckle blue	$9.39													
+	K9C30F-CR	30cm cloth coat buckle red	$9.39													
+	K9C30V	30cm oil cloth coat velcro	$10.90													
+	K9C35B	35cm oil cloth coat buckle	$14.88													
+	K9C35F-CB	35cm cloth coat buckle blue	$12.65													
+	K9C35F-CR	35cm cloth coat buckle red	$12.65													
+	K9C35V	35cm oil cloth coat velcro	$14.20													
+	K9C40B	40cm oil cloth coat buckle	$16.83													
+	K9C40F-CB	40cm cloth coat buckle blue	$13.84													
+	K9C40F-CR	40cm cloth coat buckle red	$13.84													
+	K9C40V	40cm oil cloth coat velcro	$16.13													
+	K9C45B	45cm oil cloth coat buckle	$19.20													
+	K9C45F-CB	45cm cloth coat buckle blue	$14.65													
+	K9C45F-CR	45cm cloth coat buckle red	$14.65													
+	K9C45V	45cm oil cloth coat velcro	$18.51													
+	K9C50B	50cm oil cloth coat buckle	$22.85													
+	K9C50F-CB	50cm cloth coat buckle blue	$17.95													
+	K9C50F-CR	50cm cloth coat buckle red	$17.95													
+	K9C50V	50cm oil cloth coat velcro	$22.00													
+	K9C55B	55cm oil cloth coat buckle	$26.66													
+	K9C55F-CB	55cm cloth coat buckle blue	$21.73													
+	K9C55F-CR	55cm cloth coat buckle red	$21.73													
+	K9C55V	55cm oil cloth coat velcro	$25.97													
+	K9C60B	60cm oil cloth coat buckle	$29.76													
+	K9C60F-CB	60cm cloth coat buckle blue	$24.67													
+	K9C60F-CR	60cm cloth coat buckle red	$24.67													
+	K9C60V	60cm oil cloth coat velcro	$29.07													
+	K9C65B	65cm oil cloth coat buckle	$32.24													
+	K9C65F-CB	65cm cloth coat buckle blue	$27.15													
+	K9C65F-CR	65cm cloth coat buckle red	$27.15													
+	K9C65V	65cm oil cloth coat velcro	$31.54													
+	K9C70B	70cm oil cloth coat buckle	$34.82													
+	K9C70F-CB	70cm cloth coat buckle blue	$29.53													
+	K9C70F-CR	70cm cloth coat buckle red	$29.53													
+	K9C70V	70cm oil cloth coat velcro	$34.02													
+	K9C75B	75cm oil cloth coat buckle	$36.33													
+	K9C80B	80cm oil cloth coat buckle	$41.09													
+	K9CLGE-blu	Polar fleece coat blue large	$13.50													
+	K9CLGE-pur	Polar fleece coat purple large	$13.50													
+	K9CMED-blu	Polar fleece coat blue med	$11.75													
+	K9CMED-pur	Polar fleece coat purple med	$11.75													
+	K9CSML-blu	Polar fleece coat blue sml	$9.00													
+	K9CSML-pur	Polar fleece coat purple small	$9.00													
+	K9CXLG-blu	Polar fleece coat blue xlarge	$19.70													
+	K9CXLG-pur	Polar fleece coat purple xlg	$19.70													
+	K9JSML-blu	Blue knitted dog jumper small	$25.00													
+	K9JSML-pur	Purple knitted dog jumper smal	$25.00													
+	K9S20-blu	20cm skivvy blue	$9.00													
+	K9S20-pur	20cm skivvy purple	$9.00													
+	K9S20-red	20cm skivvy red	$9.00													
+	K9S25-blu	25cm skivvy blue	$9.00													
+	K9S25-pur	25cm skivvy purple	$9.00													
+	K9S25-red	25cm skivvy red	$9.00													
+	K9S30-blu	30cm skivvy blue	$9.00													
+	K9S30-pur	30cm skivvy purple	$9.00													
+	K9S30-red	30cm skivvy red	$9.00													
+	K9S35-blu	35cm skivvy blue	$9.90													
+	K9S35-pur	35cm skivvy purple	$9.90													
+	K9S35-red	35cm skivvy red	$9.90													
+	K9S40-blu	40cm skivvy blue	$10.80													
+	K9S40-pur	40cm skivvy purple	$10.80													
+	K9S40-red	40cm skivvy red	$10.80													
+	K9S45-blu	45cm skivvy blue	$11.70													
+	K9S45-pur	45cm skivvy purple	$11.70													
+	K9S45-red	45cm skivvy red	$11.70													
+	K9S50-blu	50cm skivvy blue	$18.90													
+	K9S50-pur	50cm skivvy purple	$18.90													
+	K9S50-red	50cm skivvy red	$18.90													
+	K9SLGE-blu	Large skivvy blue	$27.90													
+	K9SLGE-pur	Large skivvy purple	$27.90													
+	K9SLGE-red	Large skivvy red	$27.90													
+	K9SMED-blu	Medium skivvy blue	$22.50													
+	K9SMED-pur	Medium skivvy purple	$22.50													
+	K9SMED-red	Medium skivvy red	$22.50													
+	LC100-blu	Velvet cat collar blue	$4.80													
+	LC101-blk	Diamante web cat collar black	$4.80													
+	LC101-blu	Diamante web cat collar blue	$4.80													
+	LC101-red	Diamante web cat collar red	$4.80													
+	LC102-blu	Graduate web cat collar blue	$3.15													
+	LC102-grn	Graduate web cat collar green	$3.15													
+	LC102-gry	Graduate web cat collar grey	$3.15													
+	LC102-pur	Graduate web cat collar purple	$3.15													
+	LC102-red	Graduate web cat collar red	$3.15													
+	LC103-brn	Jungle cat collar brown	$4.45													
+	LC103-tan	Jungle cat collar tan	$4.45													
+	LC103-wte	Jungle cat collar white	$4.45													
+	LC104	Puppy collar chkd	$1.10													
+	LC150	15x120cm bowl/bone embr lead	$4.32													
+	LC151	20x120cm bowl/bone embr lead	$4.32													
+	LC152	25x120cm bowl/bone embr lead	$4.32													
+	LC153	15mm bowl/bone embr collar	$3.94													
+	LC154	20mm bowl/bone embr collar	$3.94													
+	LC155	25mm bowl/bone embr collar	$3.94													
+	LC502-blk	S rfl clr 10x20-30 black	$3.85													
+	LC502-dkb	S rfl clr 10x20-30 dark blue	$3.85													
+	LC502-pur	S rfl clr 10x20-30 purple	$3.85													
+	LC502-red	S rfl clr 10x20-30 red	$3.85													
+	LC504-blk	S rfl clr 20x25-45 black	$4.62													
+	LC504-dkb	S rfl clr 20x25-45 dark blue	$4.62													
+	LC504-pur	S rfl clr 20x25-45 purple	$4.62													
+	LC504-red	S rfl clr 20x25-45 red	$4.62													
+	LC508-blk	S rfl clr 25x50-70 black	$6.44													
+	LC508-dkb	S rfl clr 25x50-70 dark blue	$6.44													
+	LC508-pur	S rfl clr 25x50-70 purple	$6.44													
+	LC508-red	S rfl clr 25x50-70 red	$6.44													
+	LC510-blk	S rfl ld 10x120 black	$5.53													
+	LC510-dkb	S rfl ld 10x120 dark blue	$5.53													
+	LC510-pur	S rfl ld 10x120 purple	$5.53													
+	LC510-red	S rfl ld 10x120 red	$5.53													
+	LC512-blk	S rfl ld 20x120 black	$7.56													
+	LC512-dkb	S rfl ld 20x120 dark blue	$7.56													
+	LC512-pur	S rfl ld 20x120 purple	$7.56													
+	LC512-red	S rfl ld 20x120 red	$7.56													
+	LC514-blk	S rfl ld 25x120 black	$7.56													
+	LC514-dkb	S rfl ld 25x120 dark blue	$7.56													
+	LC514-pur	S rfl ld 25x120 purple	$7.56													
+	LC514-red	S rfl ld 25x120 red	$7.56													
+	LC532	Car harness small	$6.21													
+	LC534	Car harness medium	$7.11													
+	LC536	Car harness large	$8.67													
+	LC538	Car harness extra large	$9.90													
+	LC540-blk	Plain lth clr 12x35 black	$2.20													
+	LC540-red	Plain lth clr 12x35 red	$2.20													
+	LC540-tan	Plain lth clr 12x35 tan	$2.20													
+	LC542-blk	Plain lth clr 18x45 black	$3.20													
+	LC542-red	Plain lth clr 18x45 red	$3.20													
+	LC542-tan	Plain lth clr 18x45 tan	$3.20													
+	LC544-blk	Plain lth clr 25x55 black	$4.40													
+	LC544-red	Plain lth clr 25x55 red	$4.40													
+	LC544-tan	Plain lth clr 25x55 tan	$4.40													
+	LC546-blk	Plain lth clr 30x65 black	$6.80													
+	LC546-red	Plain lth clr 30x65 red	$6.80													
+	LC546-tan	Plain lth clr 30x65 tan	$6.80													
+	LC620-blk	Suede puppy clr 10x30 black	$2.10													
+	LC620-blu	Suede puppy clr 10x30 blue	$2.10													
+	LC620-pur	Suede puppy clr 10x30 purple	$2.10													
+	LC620-red	Suede puppy clr 10x30 red	$2.10													
+	LC624-blk	Suede puppy ld 10x105cm black	$2.30													
+	LC624-blu	Suede puppy ld 10x105cm blue	$2.30													
+	LC624-pur	Suede puppy ld 10x105cm purple	$2.30													
+	LC624-red	Suede puppy ld 10x105cm red	$2.30													
+	LC627-blk	Patent puppy collar black	$2.24													
+	LC627-red	Patent puppy collar red	$2.24													
+	LC630-blk	WB col adj 20x25-45 black	$4.49													
+	LC630-dkb	WB col adj 20x25-45 dark blue	$4.49													
+	LC630-ltb	WB col adj 20x25-45 light blue	$4.49													
+	LC630-pur	WB col adj 20x25-45 purple	$4.49													
+	LC630-red	WB col adj 20x25-45 red	$4.49													
+	LC632-blk	WB col adj 25x50-70 black	$4.86													
+	LC632-dkb	WB col adj 25x50-70 dark blue	$4.86													
+	LC632-ltb	WB col adj 25x50-70 light blue	$4.86													
+	LC632-pur	WB col adj 25x50-70 purple	$4.86													
+	LC632-red	WB col adj 25x50-70 red	$4.86													
+	LC634-blk	WB col adj 10x20-30 black	$3.18													
+	LC634-dkb	WB col adj 10x20-30 dark blue	$3.18													
+	LC634-ltb	WB col adj 10x20-30 light blue	$3.18													
+	LC634-pur	WB col adj 10x20-30 purple	$3.18													
+	LC634-red	WB col adj 10x20-30 red	$3.18													
+	LC636-blk	WB col adj 15x25-45 black	$4.21													
+	LC636-dkb	WB col adj 15x25-45 dark blue	$4.21													
+	LC636-ltb	WB col adj 15x25-45 light blue	$4.21													
+	LC636-pur	WB col adj 15x25-45 purple	$4.21													
+	LC636-red	WB col adj 15x25-45 red	$4.21													
+	LC661	Printed webbed lead 120cm	$4.35													
+	LC663-blk	WB lead 10x120 black	$2.99													
+	LC663-dkb	WB lead 10x120 dark blue	$2.99													
+	LC663-ltb	WB lead 10x120 light blue	$2.99													
+	LC663-pur	WB lead 10x120 purple	$2.99													
+	LC663-red	WB lead 10x120 red	$2.99													
+	LC664-blk	WB lead 10x180 black	$3.29													
+	LC664-dkb	WB lead 10x180 dark blue	$3.29													
+	LC664-ltb	WB lead 10x180 light blue	$3.29													
+	LC664-pur	WB lead 10x180 purple	$3.29													
+	LC664-red	WB lead 10x180 red	$3.29													
+	LC667-blk	WB lead 15x120 black	$3.65													
+	LC667-dkb	WB lead 15x120 dark blue	$3.65													
+	LC667-ltb	WB lead 15x120 light blue	$3.65													
+	LC667-pur	WB lead 15x120 purple	$3.65													
+	LC667-red	WB lead 15x120 red	$3.65													
+	LC668-blk	WB lead 15x180 black	$4.11													
+	LC668-dkb	WB lead 15x180 dark blue	$4.11													
+	LC668-ltb	WB lead 15x180 light blue	$4.11													
+	LC668-pur	WB lead 15x180 purple	$4.11													
+	LC668-red	WB lead 15x180 red	$4.11													
+	LC672-blk	WB lead 20x120 black	$3.93													
+	LC672-dkb	WB lead 20x120 dark blue	$3.93													
+	LC672-ltb	WB lead 20x120 light blue	$3.93													
+	LC672-pur	WB lead 20x120 purple	$3.93													
+	LC672-red	WB lead 20x120 red	$3.93													
+	LC674-blk	WB lead 25x45 black	$3.55													
+	LC674-dkb	WB lead 25x45 dark blue	$3.55													
+	LC674-ltb	WB lead 25x45 light blue	$3.55													
+	LC674-pur	WB lead 25x45 purple	$3.55													
+	LC674-red	WB lead 25x45 red	$3.55													
+	LC675-blk	15mm smart lead black	$6.00													
+	LC675-dkb	15mm smart lead dark blue	$6.00													
+	LC675-ltb	15mm smart lead light blue	$6.00													
+	LC675-pur	15mm smart lead purple	$6.00													
+	LC675-red	15mm smart lead red	$6.00													
+	LC676-blk	WB lead 25x90 black	$4.02													
+	LC676-dkb	WB lead 25x90 dark blue	$4.02													
+	LC676-ltb	WB lead 25x90 light blue	$4.02													
+	LC676-pur	WB lead 25x90 purple	$4.02													
+	LC676-red	WB lead 25x90 red	$4.02													
+	LC677-blk	WB lead 25x120 black	$4.49													
+	LC677-dkb	WB lead 25x120 dark blue	$4.49													
+	LC677-ltb	WB lead 25x120 light blue	$4.49													
+	LC677-pur	WB lead 25x120 purple	$4.49													
+	LC677-red	WB lead 25x120 red	$4.49													
+	LC678-blk	WB lead 25x180 black	$5.14													
+	LC678-dkb	WB lead 25x180 dark blue	$5.14													
+	LC678-ltb	WB lead 25x180 light blue	$5.14													
+	LC678-pur	WB lead 25x180 purple	$5.14													
+	LC678-red	WB lead 25x180 red	$5.14													
+	LC679-blk	25mm smart lead black	$6.55													
+	LC679-dkb	25mm smart lead dark blue	$6.55													
+	LC679-ltb	25mm smart lead light blue	$6.55													
+	LC679-pur	25mm smart lead purple	$6.55													
+	LC679-red	25mm smart lead red	$6.55													
+	LC690-blk	WB dbler lead 25x75 black	$6.91													
+	LC690-dkb	WB dbler lead 25x75 dark blue	$6.91													
+	LC690-ltb	WB dbler lead 25x75 light blue	$6.91													
+	LC690-pur	WB dbler lead 25x75 purple	$6.91													
+	LC690-red	WB dbler lead 25x75red	$6.91													
+	LC691-blk	WB dbler lead 15x75 black	$6.50													
+	LC691-dkb	WB dbler lead 15x75 dark blue	$6.50													
+	LC691-ltb	WB dbler lead 15x75 light blue	$6.50													
+	LC691-pur	WB dbler lead 15x75 purple	$6.50													
+	LC691-red	WB dbler lead 15x75 red	$6.50													
+	LC694-blk	Ctn wb clr 25x50-70 black	$6.00													
+	LC694-blu	Ctn wb clr 25x50-70 blue	$6.00													
+	LC694-pur	Ctn wb clr 25x50-70 purple	$6.00													
+	LC694-red	Ctn wb clr 25x50-70 red	$6.00													
+	LC700-blk	Ctn wb lead 25x180 black	$8.00													
+	LC700-blu	Ctn wb lead 25x180 blue	$8.00													
+	LC700-pur	Ctn wb lead 25x180 purple	$8.00													
+	LC700-red	Ctn wb lead 25x180 red	$8.00													
+	LC704-blk	Ctn wb lead 25x120 black	$7.00													
+	LC704-blu	Ctn wb lead 25x120 blue	$7.00													
+	LC704-pur	Ctn wb lead 25x120 purple	$7.00													
+	LC704-red	Ctn wb lead 25x120 red	$7.00													
+	LC752-blk	S rfl adj cat cat collar black	$3.92													
+	LC752-dkb	S rfl adj cat cat collar dk bl	$3.92													
+	LC752-pur	S rfl adj cat cat collar purpl	$3.92													
+	LC752-red	S rfl adj cat cat collar red	$3.92													
+	LC754-blk	Suede cat collar black	$2.15													
+	LC754-blu	Suede cat collar blue	$2.15													
+	LC754-jde	Suede cat collar jade	$2.15													
+	LC754-pnk	Suede cat collar pink	$2.15													
+	LC754-pur	Suede cat collar purple	$2.15													
+	LC754-red	Suede cat collar red	$2.15													
+	LC756	Leather cat collar	$2.25													
+	LC762-blk	WB metal bkle cat collar black	$2.93													
+	LC762-dkb	WB metal bkle cat collar dk bl	$2.93													
+	LC762-ltb	WB metal bkle cat collar lt bl	$2.93													
+	LC762-pur	WB metal bkle cat collar purpl	$2.93													
+	LC762-red	WB metal bkle cat collar red	$2.93													
+	LC763	Cat balls with bells 36pcs	$20.00													
+	LC764-blk	WB adj cat collar black	$2.93													
+	LC764-dkb	WB adj cat collar dark blue	$2.93													
+	LC764-ltb	WB adj cat collar light blue	$2.93													
+	LC764-pur	WB adj cat collar purple	$2.93													
+	LC764-red	WB adj cat collar red	$2.93													
+	LC765	Cat bell & D ring nickel	$0.40													
+	LC766-blu	Elastic cat clr w/bl blue sp	$2.15													
+	LC766-grn	Elastic cat clr w/bl green sp	$2.15													
+	LC766-red	Elastic cat clr w/bl red sp	$2.15													
+	LC766-yel	Elastic cat clr w/bl yellow sp	$2.15													
+	LC767	Elastic cat collar with 2 bell	$2.52													
+	LC792-blk	Small walking harness black	$8.93													
+	LC792-dkb	Small walking harness dk blue	$8.93													
+	LC792-pur	Small walking harness purple	$8.93													
+	LC792-red	Small walking harness red	$8.93													
+	LC794-blk	Medium walking harness black	$9.45													
+	LC794-dkb	Medium walking harness dk blue	$9.45													
+	LC794-pur	Medium walking harness purple	$9.45													
+	LC794-red	Medium walking harness red	$9.45													
+	LC796-blk	Large walking harness black	$9.98													
+	LC796-dkb	Large walking harness dk blue	$9.98													
+	LC796-pur	Large walking harness purple	$9.98													
+	LC796-red	Large walking harness red	$9.98													
+	LC798-blk	Xlarge walking harness black	$13.50													
+	LC798-dkb	Xlarge walking harness dk blue	$13.50													
+	LC798-pur	Xlarge walking harness purple	$13.50													
+	LC798-red	Xlarge walking harness red	$13.50													
+	LC799	Full elastic paw cat collar	$2.15													
+	LC801-grn	Diamante 32cm collar green	$2.50													
+	LC801-org	Diamante 32cm collar orange	$2.50													
+	LC801-yel	Diamante 32cm collar yellow	$2.50													
+	LC881-grn	Snake skin lth cat clr green	$4.95													
+	LC881-red	Snake skin lth cat clr red	$4.95													
+	LC888-blk	Patent leather cat collar blac	$2.95													
+	LC888-red	Patent leather cat collar red	$2.95													
+	LC890-blk	Kitten harness w/lead black	$6.16													
+	LC890-blu	Kitten harness w/lead blue	$6.16													
+	LC890-pur	Kitten harness w/lead purple	$6.16													
+	LC890-red	Kitten harness w/lead red	$6.16													
+	LC892-blk	Cat harness with lead black	$6.16													
+	LC892-blu	Cat harness with lead blue	$6.16													
+	LC892-pur	Cat harness with lead purple	$6.16													
+	LC892-red	Cat harness with lead red	$6.16													
+	LC893-grn	Pastel cat collar green	$5.00													
+	LC893-pur	Pastel cat collar purple	$5.00													
+	LC924	16mmx105cm lth swivel ld rosco	$18.00													
+	LC959	Choker chain 2.0mmx35cm	$1.88													
+	LC960	Choker chain 2.0mmx40cm	$2.03													
+	LC961	Choker chain 3.0mmx45cm	$2.44													
+	LC962	Choker chain 3.0mmx50cm	$2.57													
+	LC963	Choker chain 3.0mmx55cm	$2.72													
+	LC965	Choker chain 4.0mmx60cm	$3.92													
+	LC966	Choker chain 4.0mmx65cm	$4.07													
+	LC967	Choker chain 4.0mmx70cm	$4.23													
+	LC968	Choker chain 4.8mmx75cm	$5.58													
+	LC969	Choker chain 4.8mmx80cm	$5.99													
+	LC970-grn	PVC lead 120cm green	$10.80													
+	LC970-pur	PVC lead 120cm purple	$10.80													
+	LC970-red	PVC lead 120cm red	$10.80													
+	LC970-yel	PVC lead 120cm yellow	$10.80													
+	LC971-grn	PVC collar 20x45 green	$7.20													
+	LC971-pur	PVC collar 20x45 purple	$7.20													
+	LC971-red	PVC collar 20x45 red	$7.20													
+	LC971-yel	PVC collar 20x45 yellow	$7.20													
+	LC972-grn	PVC collar 20x65 green	$8.10													
+	LC972-pur	PVC collar 20x65 purple	$8.10													
+	LC972-red	PVC collar 20x65 red	$8.10													
+	LC972-yel	PVC collar 20x65 yellow	$8.10													
+	LC973-grn	PVC collar 20x35 green	$6.25													
+	LC973-pur	PVC collar 20x35 purple	$6.25													
+	LC973-red	PVC collar 20x35 red	$6.25													
+	LC973-yel	PVC collar 20x35 yellow	$6.25													
+	MATDD200-dkb	Dlx dac mat 200 dark blue	$13.50													
+	MATDDLGE-cbl	Dlxe dacron mat lge cord blue	$20.69													
+	MATDDLGE-ccf	Dlxe dacron mat lge cord coffe	$20.69													
+	MATDDLGE-cpu	Dlxe dacron mat lge cord purpl	$20.69													
+	MATDDLGE-cre	Dlxe dacron mat lge cord red	$20.69													
+	MATDDLGE-ctl	Dlxe dacron mat lge cord teal	$20.69													
+	MATDDMED-cbl	Dlxe dacron mat med cord blue	$12.30													
+	MATDDMED-ccf	Dlxe dacron mat med cord coffe	$12.30													
+	MATDDMED-cpu	Dlxe dacron mat med cord purpl	$12.30													
+	MATDDMED-cre	Dlxe dacron mat med cord red	$12.30													
+	MATDDMED-ctl	Dlxe dacron mat med cord teal	$12.30													
+	MATDDSML-cbl	Dlxe dacron mat sml cord blue	$10.09													
+	MATDDSML-ccf	Dlxe dacron mat sml cord coffe	$10.09													
+	MATDDSML-cpu	Dlxe dacron mat sml cord purpl	$10.09													
+	MATDDSML-cre	Dlxe dacron mat sml cord red	$10.09													
+	MATDDSML-ctl	Dlxe dacron mat sml cord teal	$10.09													
+	MATDDSML-dkb	Dlxe dacron mat sml dark blue	$10.09													
+	MATDDSML-nat	Dlxe dacron mat sml natural	$10.09													
+	MATSD060-xxx	Dacron mat suit 60lt kennel	$4.96													
+	MATSD200-xxx	Dacron mat suit 200lt kennel	$9.43													
+	MATSD300-xxx	Dacron mat suit 300lt kennel	$9.88													
+	MATSD600-xxx	Dacron mat suit 600lt kennel	$12.10													
+	MATSD900-xxx	Dacron mat suit 900lt kennel	$16.44													
+	MATSDLGE-xxx	Standard dacron mat large	$16.44													
+	MATSDMED-xxx	Standard dacron mat medium	$9.88													
+	MATSDSML-xxx	Standard dacron mat small	$8.59													
+	MATSFJUM-cgn	Standard foam mat jumbo c grn	$12.90													
+	MATSFJUM-dbl	Standard foam mat jumbo d blu	$12.90													
+	MATSFJUM-dgn	Standard foam mat jumbo d grn	$12.90													
+	MATSFJUM-rus	Standard foam mat jumbo rust	$12.90													
+	MATSFLGE-cgn	Standard foam mat large c grn	$10.00													
+	MATSFLGE-dbl	Standard foam mat large d blu	$10.00													
+	MATSFLGE-dgn	Standard foam mat large d grn	$10.00													
+	MATSFLGE-rus	Standard foam mat large rust	$10.00													
+	MATSFMIN-cgn	Standard foam mat mini c grn	$8.00													
+	MATSFMIN-dbl	Standard foam mat mini d blue	$8.00													
+	MATSFMIN-dgn	Standard foam mat mini d grn	$8.00													
+	MATSFMIN-rus	Standard foam mat mini rust	$8.00													
+	MATWDLGE-dkb	Sherpa dacron mat lge dk blue	$22.95													
+	MATWDLGE-nat	Sherpa dacron mat lge natural	$22.95													
+	MATWDMED-dkb	Sherpa dacron mat med dk blue	$19.95													
+	MATWDMED-nat	Sherpa dacron mat med natural	$19.95													
+	MATWDSML-dkb	Sherpa dacron mat sml dk blue	$12.95													
+	MATWDSML-nat	Sherpa dacron mat sml natural	$12.95													
+	MUZ01	Nylon dog muzzle small	$2.95													
+	MUZ02	Nylon dog muzzle medium	$2.95													
+	MUZ03	Nylon dog muzzle large	$2.95													
+	MUZ04	Nylon dog muzzle x large	$2.95													
+	PDL01	Dried liver 1kg	$25.00													
+	PDL15	Dried lived 150gsm	$4.55													
+	PPDLGE-bei	Deluxe pet pillow large beige	$30.20													
+	PPDLGE-blk	Deluxe pet pillow large black	$30.20													
+	PPDMED-bei	Deluxe pet pillow medium beige	$24.70													
+	PPDMED-blk	Deluxe pet pillow medium black	$24.70													
+	PPDSML-bei	Deluxe pet pillow small beige	$17.60													
+	PPDSML-blk	Deluxe pet pillow small black	$17.60													
+	PPDXLG-bei	Deluxe pet pillow xlarge beige	$36.40													
+	PPDXLG-blk	Deluxe pet pillow xlarge black	$36.40													
+	PPDXXL-bei	Deluxe pet pillow xxl beige	$42.00													
+	PPDXXL-blk	Deluxe pet pillow xxl black	$42.00													
+	PPTOPUP	Pet pillow top up pack .75kg	$6.45													
+	RNDDLGE-fle	Deluxe basket large leopard	$35.95													
+	RNDDLGE-fpa	Deluxe basket large panther	$35.95													
+	RNDDLGE-spw	Deluxe basket large den/polar	$35.95													
+	RNDDMED-fle	Deluxe basket medium leopard	$29.40													
+	RNDDMED-fpa	Deluxe basket medium panther	$29.40													
+	RNDDMED-spw	Deluxe basket medium den/sherp	$29.40													
+	RNDDSML-fle	Deluxe basket small leopard	$23.25													
+	RNDDSML-fpa	Deluxe basket small panther	$23.25													
+	RNDDSML-spw	Deluxe basket small den/polar	$23.25													
+	RNDDXLG-fle	Deluxe basket xlarge leopard	$44.65													
+	RNDDXLG-fpa	Deluxe basket xlarge panther	$44.65													
+	RNDDXLG-spw	Deluxe basket xlarge den/polar	$44.65													
+	RNDSGNT-pbl	Standard basket gnt p/blue	$36.00													
+	RNDSGNT-ppu	Standard basket gnt p/purple	$36.00													
+	RNDSLGE-pbl	Standard basket lge p/blue	$23.00													
+	RNDSLGE-ppu	Standard basket lge p/purple	$23.00													
+	RNDSMED-pbl	Standard basket med p/blue	$19.00													
+	RNDSMED-ppu	Standard basket med p/purple	$19.00													
+	RNDSSML-pbl	Standard basket sml p/blue	$15.00													
+	RNDSSML-ppu	Standard basket sml p/purple	$15.00													
+	RNDSXLG-pbl	Standard basket xlge p/blue	$31.00													
+	RNDSXLG-ppu	Standard basket xlge p/purple	$31.00																							
+	XM003	Xmas deluxe dog hat & scarf	$2.85													
+	XM011	Xmas dog toy set 6pc	$8.00													
+	XM012	Xmas cat dangler	$2.95													
+	XM013	Xmas stocking 6 ass	$13.45													
+	XM014	Xmas stkg dog/cat w/photo 2 as	$7.00													
+	

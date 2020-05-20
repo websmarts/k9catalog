@@ -1,0 +1,169 @@
+body /*normal*/{
+	font-family:arial;
+	font-size:9pt;
+	margin:0px;
+	padding:6px;
+	}
+	
+.heading {
+color:#990000;
+font-size:100%;
+font-weight:700;
+letter-spacing:3px;
+}
+.login_form {
+	background:#e0e0e0;
+	border:1px solid #000080;
+}
+.error_msg {
+background:#ffcc00;
+color:#444;
+font-size:120%;
+}
+.orderinstructions {
+ color:#ff0000;
+}
+.client_name {
+font-size:120%;
+font-weight:600;
+color:#fff;
+background:#000;
+padding:5px;
+}
+.total {
+padding-top:5px;
+padding-bottom:5px;
+border-top:1px solid #000;
+
+font-weight:700;
+}
+	
+H3 {
+	font-family:arial;
+	/*font-size:140%;*/
+	font-weight:700;
+	}
+	
+TH {font-size:120%; background:#ccccff;}
+	
+.product_heading {color:blue;padding-left:2px;font-size:100%; font-weight:600;background:#ffffff;}
+.product_description {padding-left:2px;font-size:100%;}
+.aus_made {font-size:100%; font-weight:700;color:green;background:#FFA600;}
+
+A:VISITED,A:LINK { color:#000000;text-decoration:non;}
+A:HOVER:{color:green;}
+
+
+
+.notation {
+ font-size:70%;
+ background:#FFFFc0;
+ }
+.row0{background:#e0e0e0;}
+.row1{background:#fff0f0;}
+
+.catmenu {
+	background:#444;;
+	border-right:3px groove #888;
+	padding-left:5px;
+	
+	
+	}
+.catmenu A:Link,.catmenu A:VISITED {
+color:#e0e0e0;
+}
+.catmenu A:HOVER, {
+	background:#fff;
+	color:#000;
+}
+
+.list_table{
+	/*border-top:4px solid #FFA600;*/
+	width:100%;
+	}
+	
+.highlight {
+background: yellow;
+}
+.special_price{ color:red;}
+.qty_disc_price{ color:magenta;}
+
+.normal {
+color:black;
+font-size:80%;
+padding-left:2px;
+}
+
+.input  {
+    font-family : Trebuchet MS;
+    font-size : 80%;
+    height:12px;
+    font-weight : normal;
+    background-color : #e0e0e0;
+    border-color : #cccccc;
+    border-style : inset;
+    border : 1px ;
+    color : #000000
+}
+
+/* style of product_name in listing */
+.product_name {
+font-size:160%;
+font:weight:700;
+}
+
+.instock {
+	font-size:70%;
+	 background-color : #e0e0e0;
+	 padding-left:2px;
+	
+	}
+.discount {
+ color:magenta;
+ font-size:80%;
+ }
+
+
+/* OPTION CLASSES DISPLAY THE SWATCH COLOR AT THE HEAD OF QTY COLUMNS */
+.opt_ff0000 {/* Red*/
+ background:#ff0000;
+}
+.opt_00ff00 {/*green*/
+ background:#00ff00;
+}
+.opt_0000ff {/*blue*/
+ background:#0000ff;
+ color:#fff;
+}
+.opt_8080ff {/*lightblue*/
+ background:#8080ff;
+}
+.opt_000066 {/*darkblue*/
+ background:#000066;
+ color:#fff;
+}
+.opt_ff00ff {/*Purple*/
+ background:#ff00ff;
+}
+.opt_ffff00{/* yellow */
+	background:#ffff00;	
+}
+.opt_ffff40{/* gold */
+	background:#ffff40;	
+}
+.opt_663300{/* brown */
+	background:#663300;	
+	color:#ffffff;
+}
+.opt_ff8000{/* orange */
+	background:#ff8000;	
+	color:#ffffff;
+}
+.opt_000000{/* black */
+	background:#000000;	
+	color:#ffffff;
+}
+.opt_998855{/* beige */
+	background:#998855;	
+	color:#000;
+}

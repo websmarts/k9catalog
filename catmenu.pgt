@@ -1,0 +1,14 @@
+========== Description Part Begin ==========
+ProgID = PageletServer.DynamicMenu
+Version = 6.00
+========== Description Part End ==========
+========== Parameter Part Begin ==========
+CrossFrame = 0;0;0;0;Main_frame;1;;Navigation_frame;0
+MenuBody0 = 1;0;2;3;0;0;0;0;0;0;10066329 ~#999999;0;0;50;1;1;1;0 ~#000000;0;0;0;16252927 ~#FFFFF7;1;;3
+MenuBody1 = 1;1;2;3;0;0;0;0;0;0;10066329 ~#999999;0;0;50;1;1;1;0 ~#000000;0;0;0;16252927 ~#FFFFF7;1;;3
+MenuItem0_0 = 2;2;\r\n<?\r\nforeach ($categories as $cat)\r\n{\r\n$catName = $cat[0]['name']\s\r\n?>\r\n;<?\r\n}\r\n?>\r\n;1;<?=$catName?>;1;0;1;;;_self;;1;16252927 ~#FFFFF7;14073525 ~#B5BED6;0;0;;;3;3;1;1;1;1;16252927 ~#FFFFF7;16252927;16252927;16252927;0 ~#000000;0;0;0;;;-1;-1;0;;;-1;-1;0;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\arrow_r.gif;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\arrow_r.gif;7;7;0;Verdana;Verdana;8;8;0;0;0 ~#000000;0 ~#000000;0;0;0;0;0;0;0;0;0;0;0;0
+MenuItem1_0 = 1;1;\r\n<? foreach ( $cat[1] as $i) {\r\n$subCat = $i[0]['name']\s\r\n$link = $i[0]['id']\s\r\n?>\r\n\r\n;<? } ?>;1;<?=$subCat?>;1;0;1;;<?=$link?>;_self;;1;16252927 ~#FFFFF7;14073525 ~#B5BED6;0;0;;;3;3;1;1;1;1;16252927 ~#FFFFF7;16252927;16252927;16252927;0 ~#000000;0;0;0;;;-1;-1;0;;;-1;-1;0;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\arrow_r.gif;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\arrow_r.gif;7;7;0;Verdana;Verdana;8;8;0;0;0 ~#000000;0 ~#000000;0;0;0;0;0;0;0;0;0;0;0;0
+Scrolling0 = 0;16252927 ~#FFFFF7;1;14073525 ~#B5BED6;1;;;3;3;0;1;1;16252927 ~#FFFFF7;16252927;16252927;16252927;1;0 ~#000000;0;0;0;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\left_disabled.gif;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\left_enabled.gif;9;7;0;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\right_disabled.gif;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\right_enabled.gif;9;7;0;0;200
+Scrolling1 = 0;16252927 ~#FFFFF7;1;14073525 ~#B5BED6;1;;;3;3;0;1;1;16252927 ~#FFFFF7;16252927;16252927;16252927;1;0 ~#000000;0;0;0;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\up_disabled.gif;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\up_enabled.gif;7;9;0;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\down_disabled.gif;C:\\Program Files\\SourceTec\\Sothink DHTMLMenu\\Resource\\down_enabled.gif;7;9;0;0;200
+TopMenuBody = 2;600;menu269a;0;0;0;0;0;0;0;1000;250;0;;1;0;0;;1;0;100;0;;67108896;;0;1;2;default;hand
+========== Parameter Part End ==========

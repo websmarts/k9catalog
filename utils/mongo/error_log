@@ -1,0 +1,8 @@
+[04-Feb-2016 12:40:48 Australia/Melbourne] PHP Fatal error:  Class 'MongoClient' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 6
+[04-Feb-2016 12:46:05 Australia/Melbourne] PHP Fatal error:  Class 'MongoClient' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 6
+[04-Feb-2016 13:10:29 Australia/Melbourne] PHP Fatal error:  Class 'MongoClient' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 8
+[04-Feb-2016 13:20:32 Australia/Melbourne] PHP Fatal error:  Class 'MongoClient' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 6
+[04-Feb-2016 13:21:33 Australia/Melbourne] PHP Fatal error:  Class 'MongoClient' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 6
+[04-Feb-2016 13:23:16 Australia/Melbourne] PHP Fatal error:  Class 'MongoDB\Driver\Client' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 6
+[04-Feb-2016 13:24:33 Australia/Melbourne] PHP Fatal error:  Class 'MongoDB\Driver\Client' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 6
+[04-Feb-2016 13:31:41 Australia/Melbourne] PHP Fatal error:  Class 'MongoDate' not found in /home/k9homes/public_html/catalog/utils/mongo/index.php on line 14

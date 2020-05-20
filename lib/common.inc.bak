@@ -1,0 +1,285 @@
+<?php
+/*
+*
+*  COMMONLY USED FUNCTIONS
+*
+*/
+
+/* Serious error handler
+*/
+function abort ($msg) {
+	echo "</option></select><pre>$msg</pre>\n";
+	exit;	
+}
+
+
+/* Process form string data for inserting into database
+*/
+function quote_str($str) {
+	
+	return "'".html_entity_decode(addslashes($str))."'";
+}
+
+/*
+* function for making remote procedure calls
+*/
+
+function rpc($procedure,$params) {
+	return XMLRPC_request(RPCHOST,RPCSERVER,$procedure,array(XMLRPC_prepare($params)));	
+}
+
+/* Returns the client details
+*/
+function get_client_details($client_id) {
+	return do_query("select * from clients where client_id=$client_id");
+}
+
+function get_types() {
+	$res = do_query("select typeid,name from type order by name asc");
+	if (is_array($res) && count($res) > 0) {
+		foreach ($res as $v){
+			$r[$v['typeid']] = $v['name'];
+		}
+		
+	}
+	
+	return $r;
+	
+}
+
+/* Retreive the http request vars and put into $req
+*/
+function http_request () {
+		foreach ($_GET as $key => $value) {
+			$request[$key] = $value;
+		}
+		foreach ($_POST as $key => $value) {
+			$request[$key] = $value;
+		}	
+		return $request;
+}
+
+function dumper ($a,$msg="") {
+	$html  = "<pre>$msg\n";
+	$html .= print_r($a,true); // set 'true' to return string rather than print it
+	$html .= "</pre>\n";
+	return $html;
+}
+
+
+function get_list_hierarchy($table,$order="") {
+	$query = "SELECT * FROM $table WHERE parent_id =0 order by name asc";
+
+	$depth = 0;
+	$list = do_query($query);
+	if (is_array($list) && count($list > 0) ) {
+		foreach ($list as $key => $rec) {
+			$nlist[$rec['id']] = array($rec,get_hierarchy_children($rec['id'],$depth,$table,$order));
+		}
+	}
+
+	return $nlist;
+}
+
+
+function get_hierarchy_children ($id,$depth,$table,$order="") {
+	$query = "SELECT * FROM $table WHERE parent_id =".$id ." ".$order;
+	
+	$list = do_query($query);
+	
+	if (is_array($list) && count($list > 0) ) {
+			foreach ($list as $key => $rec) {
+				$nlist[$rec['id']] = array( $rec,get_hierarchy_children($rec['id'],$depth,$table));
+			}
+	}
+	
+	return $nlist;	
+}
+
+function get_product_types(){
+	$sql = "select * from type order by name asc";
+	$result = do_query($sql);
+	
+	if (is_array($result) ) {
+		foreach ($result as $v) {
+			$list[$v['typeid']] = $v;
+		}
+	}	
+	return $list;	
+}
+
+function get_type_options() {
+	$sql = "select distinct  * from type,type_options where type.typeid = type_options.typeid";
+	$r = do_query($sql);	
+	//echo dumper($r);
+	if (is_array($r) ) {
+		foreach ($r as $v) {
+			$t[$v['typeid']][] = $v;			
+		}
+	}
+	//echo dumper($t);
+	//exit;
+	return($t);	
+}
+
+function get_category_name($id) {
+	$r = do_query("select name from category where id=$id");	
+	return $r[0]['name'];
+}
+
+
+function save_basket($order_status) {
+	global $db_debug;
+		
+	$db_debug = false;
+	
+	$client_id = $_SESSION['client_id'];
+	
+	// get open order ids - should only be one!
+	$basket_order_ids = do_query("select order_id from orders where client_id=$client_id and status='basket'");
+	// Delete current order details
+	if (is_array($basket_order_ids)) {
+		foreach ($basket_order_ids as $k=>$order) {
+			do_query("delete from order_items where order_id = ".$order['order_id']);
+			do_query("delete from orders where status='basket' and client_id=$client_id");
+		}
+	}
+	
+	// only save this if there are order instructions or order items to be saved
+	if ($_SESSION['basket_instructions'] > "" || count($_SESSION['basket']) > 0) {	
+		// create the new open order 	
+		$order_id = do_query("INSERT INTO orders (client_id,status,instructions) VALUES ($client_id,'".$order_status."','".$_SESSION['basket_instructions']."')");
+	}
+	
+	
+	// Only do the save items if there are some items to save
+	if (count($_SESSION['basket'])) {
+		// get the prices to save with the order
+		// There may be special prices that override standard prices
+		$special_prices = get_client_price_specials ($_SESSION['client_id']);
+		
+		//echo dumper($_SESSION);
+		
+		foreach ($_SESSION['basket'] as $product_code =>$qty ) {
+			if (isSet($special_prices[$product_code])) {
+				$price = $special_prices[$product_code];
+			} else { // use standard price - may be discounted if qty > qty_break
+				$price = get_standard_product_price($product_code,$qty); // returns normal or qty_disc price if approp
+			}
+			// save items to order_items table
+			do_query("INSERT INTO order_items (order_id,product_code,qty,price) values($order_id,'".$product_code."',".$qty.",$price )"); 		
+			
+			// update products.qty_ordered value
+			do_query ("UPDATE products set qty_ordered = qty_ordered + $qty where product_code='".$product_code."'");
+	
+		}	
+	}
+	$db_debug = false;// turn of any db debugging
+}
+
+function get_type_catid ($typeid) {
+	
+	$sql = "select catid from type_category where typeid=$typeid";
+	$res = do_query($sql);
+	
+	if (is_array($res) and count($res) > 0) {
+		foreach ($res as $c) {
+			$ids[] = $c['catid'];
+		}		
+	}
+	return $ids;	
+}
+
+function get_product_details ($product_code) {
+	$res = do_query("select * from products where product_code='".$product_code."'");
+	return $res[0];
+	
+}
+function get_standard_product_price($product_code,$qty) {
+	
+	$res = get_product_details($product_code);
+	
+	
+	if ($res['qty_break'] > 0 && $qty >= $res['qty_break']) { // apply qty_discount to price
+		$price = $res['price'] * (1-($res['qty_discount']/100));		
+	} else {
+		$price = $res['price'];
+	}
+	return $price;	
+}
+
+function update_basket ($req) {
+		if (is_array($req['basket']) ) { // transfer req basket to session basket
+			foreach ($req['basket'] as $product_code => $item) {			
+				if ($item['qty'] > 0 ) {
+					$_SESSION['basket'][$product_code]= $item['qty'];
+				} else {
+					// unset the basket key
+					unset($_SESSION['basket'][$product_code]);
+				}							
+			}
+			// update the basket instructions
+			$_SESSION['basket_instructions'] = $req['basket_instructions'];
+		}
+}
+
+
+function restore_client_basket() {
+	
+	if (isSet($_SESSION['client_id']) ) {
+		$order_id = do_query("select order_id,instructions from orders where status='basket' and client_id=".$_SESSION['client_id']);
+		//echo "ORDER_IDS =".dumper($order_id);
+		
+		if (is_array($order_id)) {
+			$basket = do_query("select product_code,qty from order_items where order_id=".$order_id[0]['order_id']);	
+			//echo "RESTORING BASKET with".dumper($basket);		
+			foreach ($basket as $k => $item) {
+				$_SESSION['basket'][$item['product_code']] = $item['qty'];
+			}
+			// restore basket instructions
+			$_SESSION['basket_instructions'] = $order_id[0]['instructions'];
+									
+		}
+				
+	}	
+}
+
+function get_client_price_specials ($client_id) {
+		$client_prices=do_query("select products.product_code,client_price from products,client_prices where products.product_code=client_prices.product_code and client_prices.client_id=".$client_id);
+		if (is_array($client_prices) ) {
+			foreach($client_prices as $k => $v) {
+				$special_prices[$v['product_code']]=$v['client_price'];
+			}
+		}
+		return $special_prices;
+}
+
+function get_order_details($order_id) {
+	
+	$res = do_query("select * from orders where order_id=$order_id");
+	 return $res[0];
+	
+}
+
+function get_orders($status) {
+	
+	$sql = "select orders.*,clients.name from orders,clients where orders.client_id = clients.client_id and orders.status='$status'";
+	$res = do_query($sql);
+	return $res;	
+}
+
+function get_system_orders($status,$orderby="order by modified desc") {
+	
+	$sql = "select system_orders.*,clients.name from system_orders,clients where system_orders.client_id = clients.client_id and system_orders.status='$status' ".$orderby;
+	$res = do_query($sql);
+	return $res;	
+}
+
+function get_system_order_total($order_id) {
+	
+	$sql = "select sum(qty*price) as total from system_order_items where order_id='".$order_id."'";
+	$res= do_query($sql);
+	return $res[0]['total'];
+	
+}
+?>

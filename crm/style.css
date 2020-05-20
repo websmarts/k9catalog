@@ -1,0 +1,61 @@
+body {font-family:arial;text-align:center;margin:0;margin-top:10px;background-color:#fff; }
+
+#container {position:relative;width:900px;margin:0 auto;text-align:left;background: #6111b0;border:2px solid #6111b0}
+
+#login {min-height:30px;text-align:right;}
+#login a {1em;color:#eee}
+
+#main {background-color:white;}
+#left_panel {float:left;width:200px;background:#eee;}
+#right_panel {float:right;width:200px;background:#fff;}
+#usermenu {text-align:right;padding-top:.2em;margin:.5em 0 1em 0;background:#b6da48;border-top:0px ridge #90f;height:30px;}
+#usermenu div  {display:inline;text-align:center;}
+#usermenu div  a {display:inline-block;padding-left:5px;padding-right: 5px;padding-top:3px;border:1px solid #999;font-weight:bold; text-decoration: none;}
+#usermenu div a:link, #usermenu div a:visited {background-color:#fff;color:#161}
+#usermenu div a:hover{background-color:#393;color:#fff;} 
+
+#usersubmenu {margin-top:.1em;margin-bottom:1.5em;padding:5px;background-color:#fff;border:1px solid green}
+#usersubmenu div  {display:inline;text-align:center;}
+#usersubmenu div  a {display:inline-block;padding-left:5px;padding-right: 5px;margin-right:0px; text-decoration: underline; color:#fff;}
+#usersubmenu div a:link, #usersubmenu div a:visited {color:#00f}
+#usersubmenu div a:hover{color:#606;} 
+
+#footer {font-size:8pt;background:#ccc;color:#333;text-align:center}
+
+#content {margin:0 15px 0 15px;}
+#datediv {position:absolute;top:0px;left:250px;color:#333;font-size:10pt;}
+
+.pagename {padding-left:1em;letter-spacing:.1em;font-weight:bold;color:#000;font-size:1.5em;border-bottom:0px solid green;background-color:#c9c;color:white;}
+
+#listing_table {width:100%;}
+#listing_table th {background-color:#39f;color:#fff}
+#listing_table td {vertical-align:top;padding-bottom:10px;}
+#listing_table tr.odd {background-color:#eee;}
+#listing_table tr td .businessflag {color:#f0f;}
+#listing_table .title {font-weight:bold;}
+
+#nolistresults {padding:2em;background-color:#fcc;}
+
+
+#search_panel {height:3em;background-color:#fc3} 
+#search_box {padding-top:5px;padding-left:5px;float:left;background-color:#fc3;} 
+#search_extras {float:right;padding-right:10px;padding-top:5px;} 
+.display_inline {display:inline;}
+
+
+/* input item styling */
+form {padding:0;margin:0;}
+.inputbutton { background:#ccc;font-size:.9em; font-weight:500; color:#000; border:1px solid #666; padding:2px; cursor:pointer;}
+
+/* POPUP classes eg city to postcode popup & job response popup*/
+.popup {border:1px solid #f00;}
+.listinfo_popup{border:1px dotted #90f}
+.popupcontrol {background:#fff;text-align:right;}
+.ishidden{visibility:hidden;}
+
+#vnavbar {background-color:#fff;padding:0;margin:0}/* coupon index category menu */
+#vnavbar ul {list-style-type:none;padding:0; margin:0;}
+#navbar ul li {padding:0;margin:0}
+#vnavbar ul li a {display:block;text-decoration:none;padding:2px;}
+#vnavbar ul li a:link, #vnavbar ul li a:visited {background-color:ccc;color:333}
+#vnavbar ul li a:hover {background-color:red;color:white}

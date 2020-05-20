@@ -1,0 +1,58 @@
+<?php 
+
+
+function list_type_options(){
+	global $_v,$req;
+	//echo dumper($_v);
+	
+	$opts = $_v['type_options'];
+	if (is_array($opts[$req['typeid']]) ) {
+		//echo dumper($opts[$req['typeid']]);
+		foreach ($opts[$req['typeid']] as $o) {			
+			if (is_array($o)) {
+				
+					echo 	"<tr>".
+								"<td>".$o['name']."</td> ".
+								"<td><a href=\"?m=type&v=edit_opt&typeid=".$req['typeid']."&opt_code=".$o['opt_code']."\" >".$o['opt_code']."</a></td> ".
+								"<td>".$o['opt_desc']."</td> ".
+								"<td>".$o['opt_class']."</td> ".
+							"</tr>";
+					
+			}
+		}	
+				
+	}		
+}	
+
+	
+?>
+
+edit_options.inc
+
+<form action=index.php method=post>
+<input type=hidden name=a value=add_options>
+<input type=hidden name=m value=type >
+<input type=hidden name=v value=editopts>
+<input type=hidden name=typeid value="<? echo $req['typeid'];?>">
+
+<p>List of options for product:</p>
+<table border=1 width=500 >
+<tr><td colspan=4 >Product Options</td></tr>
+<tr><td>Product type</td><td>opt_code</td><td>opt_desc</td><td>opt_class</td></tr>
+<?php list_type_options(); ?>
+<tr>
+	<td>&nbsp;</td>
+	<td><input type=text size=3 name=opt[1][<? echo $req['typeid'];?>][opt_code] ></td>
+	<td><input type=text size=20 name=opt[1][<? echo $req['typeid'];?>][opt_desc] ></td>
+	<td><input type=text size=8 name=opt[1][<? echo $req['typeid'];?>][opt_class] ></td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td><input type=text size=3 name=opt[2][<? echo $req['typeid'];?>][opt_code] ></td>
+	<td><input type=text size=20 name=opt[2][<? echo $req['typeid'];?>][opt_desc] ></td>
+	<td><input type=text size=8 name=opt[2][<? echo $req['typeid'];?>][opt_class] ></td>
+</tr>
+<tr>
+	<td colspan=4 ><input type=submit name=b value=Add ></td></tr>
+</table>
+</form>
