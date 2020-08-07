@@ -7,9 +7,9 @@
 // CRUD Controller
 
 
+$e = isSet($req['e']) ? strtolower($req['e']) : '';
 
-
-switch( strtolower($req['e']) ) {
+switch( $e ) {
     
     case 'import_basket': // import pet warehous order items into a basket
         if(($_POST) ){

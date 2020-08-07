@@ -146,6 +146,8 @@ class State
 
             $this->client = array(); //clear an residual client ID
 
+            
+
         }
 
 
@@ -510,6 +512,8 @@ class State
     {
 
         $_SESSION['S'] = $this;
+
+        
 
     }
 

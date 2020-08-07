@@ -4,7 +4,7 @@
 
 /*Development environment */
 
- if($_SERVER['HTTP_HOST'] == 'ecat.test') {
+ if(APP_MODE == 'development') {
 
 	$dbhost = "localhost";
 

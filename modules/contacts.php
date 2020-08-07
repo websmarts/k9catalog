@@ -13,7 +13,7 @@
 //echo dumper($req);
 
 // Hack to show contact notes for a client other than the selctected client
-if($req['report_client_id']){
+if(isSet($req['report_client_id']) ){
     $clientID = $req['report_client_id'];
 } else {
     $clientID = $S->client['client_id'] ;
