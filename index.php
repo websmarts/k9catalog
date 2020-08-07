@@ -1,45 +1,36 @@
 <?php
 
-switch ($_SERVER['HTTP_HOST']) {
-
-    case 'k9web.test':
-        // echo 'Local testing environment';
-        define('APP_MODE', 'development');
-
-        define('FIDO_BASE_URL', 'http://k9web.test/fido/public/');
-    
-        define('ECAT_BASE_URL', 'http://k9web.test/');
-        
-    break;
-
-    case 'webdev.k9homes.com.au':
-
-        echo 'looks like we are finally running on websmarts webdev server';
-        exit;
-        define('APP_MODE', 'production');
-
-        // Switch to https if http
-
-        if ($_SERVER['REQUEST_SCHEME'] != 'https') {
-
-            header('Location: https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
-
-        }
 
 
 
-        define('FIDO_BASE_URL', 'https://fidodev.k9homes.com.au/');
 
-        define('ECAT_BASE_URL', 'https://wwwdev.k9homes.com.au/catalog/');
+if ($_SERVER['HTTP_HOST'] == 'ecat.test') {
 
-    break;
+    define('APP_MODE', 'development');
 
-    default:
-     echo $_SERVER['HTTP_HOST'] . 'host not recognised in setup';
-     exit;
+    define('FIDO_BASE_URL', 'http://k9project.test/');
+
+    define('ECAT_BASE_URL', 'http://ecat.test/');
+
+} else {
+
+    define('APP_MODE', 'production');
+
+    // Switch to https if http
+
+    if ($_SERVER['REQUEST_SCHEME'] != 'https') {
+
+        header('Location: https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+
+    }
+
+
+
+    define('FIDO_BASE_URL', 'https://fido.k9homes.com.au/');
+
+    define('ECAT_BASE_URL', 'https://k9homes.com.au/catalog/');
 
 }
-
 
 
 
@@ -49,6 +40,21 @@ define('LOG_ERRORS', true); // set true to log errors to following file
 
 define('LOG_ERROR_FILE', 'k9.errors.log');
 
+
+
+// if ($_SERVER['HTTP_HOST'] == 'k9catalog.dev') {
+
+//     $sessionID = 'evoipoqt9';
+
+// } else {
+
+//     $sessionID = 'evor2irae';
+
+// }
+
+
+
+// $sessionID = 'k9catalog';
 
 
 
@@ -65,9 +71,10 @@ define('LOG_ERROR_FILE', 'k9.errors.log');
  */
 
 
-error_reporting(E_ERROR | E_PARSE);
+//error_reporting(E_ERROR | E_PARSE);
 // error_reporting(E_ERROR | E_WARNING | E_PARSE);
-// error_reporting(E_ALL);
+
+error_reporting(E_ALL);
 
 
 
@@ -87,14 +94,17 @@ define("STOCK_QTY_OFFSET", 0); // Fudge figure that is added to real stock quant
 
 require_once 'adodb_lite/adodb.inc.php';
 
+
 include_once 'lib/db.inc';
+
 
 include_once 'lib/common.inc';
 
+
 require_once 'lib/State.class.php';
 
-include_once 'lib/session.php';
 
+include_once 'lib/session.php';
 
 
 // Collect Request Vars
@@ -116,11 +126,10 @@ $template = "templates/main";
 
 
 //echo "START SESSION<br>";
+
 //echo dumper ($_COOKIE);
 
- // echo dumper($_SESSION);
-
- //echo dumper ($S);
+//echo dumper($_SESSION);
 
 
 
@@ -141,8 +150,6 @@ if (isset($_SESSION['S']) && !empty($_SESSION['S'])) {
     $S = new State($db); // need to pass database object for class to use
 
 }
-
-//echo dumper ($S);
 
 // if a view is requested then safe to set nextview to it - it may get altered later
 
@@ -234,11 +241,11 @@ if ($S->isInternalUser() && $S->client['client_id'] && empty($S->client['login_u
 
 
 
-if (isSet($S->nextview ) && $S->nextview > "") {
+if ($S->nextview > "") {
 
     // use it
 
-} elseif (isSEt($S->lastview) && $S->lastview > "") {
+} elseif ($S->lastview > "") {
 
     $S->nextview = $S->lastview;
 
@@ -605,25 +612,21 @@ unset($S->module); // clear
 
 
 
-// $T = $S; // Hack because the following line if PHP5 causes $S to be serialised as well
+$T = $S; // Hack because the following line if PHP5 causes $S to be serialised as well
 
 //$_SESSION['S']=$S; // for php4 = serialise($S)
 
-//echo dumper($S);
-
 $S->save();
 
-// echo dumper($_SESSION);
 
 
+if ($T->id > 0 && !empty($T->role)) {
 
-if ($S->id > 0 && !empty($S->role)) {
+    $_SESSION['PASS']['user'] = $T->id;
 
-    $_SESSION['PASS']['user'] = $S->id;
+    $_SESSION['PASS']['role'] = $T->role;
 
-    $_SESSION['PASS']['role'] = $S->role;
-
-    $_SESSION['PASS']['privileges'] = $S->privileges;
+    $_SESSION['PASS']['privileges'] = $T->privileges;
 
 } else {
 
