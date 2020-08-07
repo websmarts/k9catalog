@@ -1,4 +1,9 @@
 <?php
+
+function sanitize_xss($value) {
+	return htmlspecialchars(strip_tags($value));
+}
+
 function log_error($msg="Error:"){
     global $S,$req,$db;
     if(!LOG_ERRORS || LOG_ERROR_FILE < "" ){

@@ -384,7 +384,7 @@ For :<select name="k9user" >
 
    //echo dumper($data);
 
-    $reps = array(6,10,13,12); // The reps that are reported on
+    $reps = array(6,10,9,12); // The reps that are reported on
 
     if(is_array($data) && count($data)){
 

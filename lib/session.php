@@ -2,7 +2,7 @@
 
 $sessionId = 'k9bravo';
 
-$lifetime = 7200;
+$lifetime = 33200;//7200 = 2hr 14400:4hr  28800:8hr 
 
 $maxCookieLifetimeInBrowser = 33200; // 12 hours
 
