@@ -40,7 +40,7 @@
 
 	if (!$db->Connect("$dbhost","$dbuname","$dbpass","$dbname")) {
 
-		exit ("Cannot connect to the database");
+		exit ("Cannot connect to the database. APP_MODE = ".APP_MODE);
 
 	}
 

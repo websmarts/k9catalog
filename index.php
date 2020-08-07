@@ -1,18 +1,24 @@
 <?php
 
 
-
-
-
-if ($_SERVER['HTTP_HOST'] == 'ecat.test') {
-
+if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au.test') {
     define('APP_MODE', 'development');
-
-    define('FIDO_BASE_URL', 'http://k9project.test/');
-
-    define('ECAT_BASE_URL', 'http://ecat.test/');
-
+} else if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au') {
+    define('APP_MODE', 'production');
 } else {
+    define('APP_MODE', 'undefined');
+}
+
+
+
+
+if ( APP_MODE == 'development') {
+
+    define('FIDO_BASE_URL', 'http://k9homes.com.au.test/');
+
+    define('ECAT_BASE_URL', 'http://k9homes.com.au.test/');
+
+} else if (APP_MODE =='production') {
 
     define('APP_MODE', 'production');
 
@@ -30,6 +36,8 @@ if ($_SERVER['HTTP_HOST'] == 'ecat.test') {
 
     define('ECAT_BASE_URL', 'https://k9homes.com.au/catalog/');
 
+} else {
+    die ('no valid environment found');
 }
 
 
