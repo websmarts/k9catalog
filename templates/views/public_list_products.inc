@@ -17,7 +17,6 @@ function product_list_vertical($products)
         if ($p['status'] == 'pending' && !$S->checkPrivileges('updateparts')) {
 
             continue;
-
         }
 
         echo "<tr  class=\"item\">";
@@ -31,19 +30,15 @@ function product_list_vertical($products)
         if (empty($p['description']) && !empty($p['size'])) {
 
             $description = $p['size'];
-
         } elseif (!empty($p['description']) && empty($p['size'])) {
 
             $description = $p['description'];
-
         } elseif (!empty($p['description']) && !empty($p['size'])) {
 
             $description = $p['description'] . '<br />' . $p['size'];
-
         } else {
 
             $description = '';
-
         }
 
         // add in color name if not empty
@@ -51,7 +46,6 @@ function product_list_vertical($products)
         if (!empty($p['color_name'])) {
 
             $description .= ' - ' . $p['color_name'];
-
         }
 
         echo "<td width=\"200\"  >" . stripslashes($description) . "</td>";
@@ -63,11 +57,9 @@ function product_list_vertical($products)
         if ($p['qty_instock'] > 0) {
 
             echo '<img src="images/tick.jpg">';
-
         } else {
 
             echo '-';
-
         }
 
         echo '</td>';
@@ -79,7 +71,6 @@ function product_list_vertical($products)
         if ($p['rrp'] > 0) {
 
             $rrp = 'RRP $' . number_format($p['rrp'] / 100, 2);
-
         }
 
         echo "<td width=120 >" . $rrp . "</td>\n";
@@ -87,11 +78,9 @@ function product_list_vertical($products)
 
 
         echo "<td >&nbsp;</td></tr>\n";
-
     }
 
     echo "</table>\n";
-
 }
 
 
@@ -111,6 +100,8 @@ function product_list_horizontal($products)
     //echo dumper($special_prices);
 
     //break;
+    $done = [];
+    $counter = 0;
 
     foreach ($products as $p) {
 
@@ -138,10 +129,9 @@ function product_list_horizontal($products)
 
         }
 
-        if ($done[$basename]) {
+        if (isset($done[$basename])) {
 
             continue;
-
         }
 
         $counter++; // count the number of products listed
@@ -161,13 +151,10 @@ function product_list_horizontal($products)
                 foreach ($options[$p['typeid']] as $opt) {
 
                     echo "<td width=25 class=\"" . strtolower($opt['opt_class']) . "\">" . $opt['opt_code'] . "&nbsp;</td>";
-
                 }
 
                 echo "</tr>\n";
-
             }
-
         }
 
 
@@ -181,19 +168,15 @@ function product_list_horizontal($products)
         if (empty($p['description']) && !empty($p['size'])) {
 
             $description = $p['size'];
-
         } elseif (!empty($p['description']) && empty($p['size'])) {
 
             $description = $p['description'];
-
         } elseif (!empty($p['description']) && !empty($p['size'])) {
 
             $description = $p['description'] . '<br />' . $p['size'];
-
         } else {
 
             $description = '';
-
         }
 
         echo "<td width=200 >" . stripslashes($description) . "</td>";
@@ -211,7 +194,6 @@ function product_list_horizontal($products)
         if ($p['rrp'] > 0) {
 
             $rrp = 'RRP $' . number_format($p['rrp'] / 100, 2);
-
         }
 
         echo "<td width=120 >" . $rrp . "</td>\n";
@@ -235,23 +217,17 @@ function product_list_horizontal($products)
                     if ($stocked_products[$product_code]['qty_instock'] > 0) {
 
                         echo '<img src="images/tick.jpg">';
-
                     } else {
 
                         echo '-';
-
                     }
-
                 } else {
 
                     echo "-";
-
                 }
 
                 echo "</td>";
-
             }
-
         }
 
         echo "<td >&nbsp;</td></tr>\n";
@@ -263,7 +239,6 @@ function product_list_horizontal($products)
     }
 
     echo "</table>\n";
-
 }
 
 ?>
@@ -276,209 +251,198 @@ function product_list_horizontal($products)
 
 <form method="post" action="">
 
-			<table width="100%" class="section_header">
+    <table width="100%" class="section_header">
 
-                <tr>
+        <tr>
 
-                    <td class = "subcatmenu">
+            <td class="subcatmenu">
 
 
 
                 <?php
 
-if (isset($req['catid'])) {
+                if (isset($req['catid'])) {
 
-    //echo get_category_name($req['catid']);
+                    //echo get_category_name($req['catid']);
 
-    //echo dumper($categoryData);
+                    //echo dumper($categoryData);
 
-    if ($categoryData[$req['catid']]['parent_id'] == 0) {
+                    if ($categoryData[$req['catid']]['parent_id'] == 0) {
 
-        $catid = $req['catid'];
+                        $catid = $req['catid'];
+                    } else {
 
-    } else {
-
-        $catid = $categoryData[$req['catid']]['parent_id'];
-
-    }
+                        $catid = $categoryData[$req['catid']]['parent_id'];
+                    }
 
 
 
-    do_menu_row(array($categories[$catid]), 0, 2, $req['catid']);
+                    do_menu_row(array($categories[$catid]), 0, 2, $req['catid']);
+                } elseif (isset($req['q'])) {
 
-} elseif (isset($req['q'])) {
+                    echo "Search results for '" . $req['q'] . "' ";
+                }
 
-    echo "Search results for '" . $req['q'] . "' ";
-
-}
-
-?>
+                ?>
 
             </td>
 
-                </tr>
+        </tr>
 
-            </table>
-
-
-
-<?php
-
-// Check for page insert
-
-$insert = 'category_info/' . $req['catid'] . '/insert.php';
-
-if ($req['catid'] && file_exists($insert)) {
-
-    include $insert;
-
-}
+    </table>
 
 
 
-?>
+    <?php
+
+    // Check for page insert
+    if (isset($req['catid'])) {
+        $insert = 'category_info/' . $req['catid'] . '/insert.php';
+
+        if ($req['catid'] && file_exists($insert)) {
+
+            include $insert;
+        }
+    }
+    ?>
 
 
 
-<input type=hidden name=catid value=<?php echo $req['catid']; ?> >
+    <input type=hidden name=catid value=<?php echo $req['catid'] ?? 0;; ?>>
 
 
 
 
 
-	<table  width="100%">
-
-	 <tr><td>
-
-			<?php
-
-if (is_array($group_products)) {
-
-    foreach ($group_products as $typeid => $products) {
-
-        // Display the group image
 
 
 
-        echo "<table class=\"product_group_table\" ><tr><td valign=\"top\" width=\"150\" >";
 
-        //echo "<p>".$products[0]['name']."</p>\n";
+    <table width="100%">
 
-        $img = "../fido/public/source/tn/" . strtolower($products[0]['typeid']) . '.jpg';
+        <tr>
+            <td>
 
-        if (file_exists($img)) {
+                <?php
 
-            $filetime = filemtime($img);
+                if (isSet($group_products) && is_array($group_products) && count($group_products) > 0) {
 
-            echo "<a href=\"http://fido.k9homes.com.au/source/" . strtolower($products[0]['typeid'])
+                    foreach ($group_products as $typeid => $products) {
 
-            . ".jpg?" . $filetime . "\" target=_blank ><img src=\"../fido/public/source/tn/"
-
-            . strtolower($products[0]['typeid']) . ".jpg?" . $filetime . "\" border=0  title=\""
-
-                . $products[0]['typeid'] . "\" ></a>\n";
-
-            // could also look for asociated images and display
-
-            $n = 2;
+                        // Display the group image
 
 
 
-            while ($n < 60) {
+                        echo "<table class=\"product_group_table\" ><tr><td valign=\"top\" width=\"150\" >";
 
-                $img = "../fido/public/source/tn/" . strtolower($products[0]['typeid']) . "_" . $n
+                        //echo "<p>".$products[0]['name']."</p>\n";
 
-                    . '.jpg';
+                        $img = "../fido/public/source/tn/" . strtolower($products[0]['typeid']) . '.jpg';
 
-                if (file_exists($img)) {
+                        if (file_exists($img)) {
 
-                    $filetime = filemtime($img);
+                            $filetime = filemtime($img);
 
-                    echo "<a href=\"http://fido.k9homes.com.au/source/" . strtolower($products[0]['typeid']) . "_" . $n
+                            echo "<a href=\"http://fido.k9homes.com.au/source/" . strtolower($products[0]['typeid'])
 
-                    . ".jpg?" . $filetime . "\" target=_blank ><img src=\"../fido/public/source/tn/"
+                                . ".jpg?" . $filetime . "\" target=_blank ><img src=\"../fido/public/source/tn/"
 
-                    . strtolower($products[0]['typeid']) . "_" . $n
+                                . strtolower($products[0]['typeid']) . ".jpg?" . $filetime . "\" border=0  title=\""
 
-                        . ".jpg?" . $filetime . "\" border=0  title=\"" . $products[0]['typeid'] . "_"
+                                . $products[0]['typeid'] . "\" ></a>\n";
 
-                        . $n . "\" ></a>\n";
+                            // could also look for asociated images and display
 
-                } else {
+                            $n = 2;
 
-                    break; // gap in seq so end early
 
+
+                            while ($n < 60) {
+
+                                $img = "../fido/public/source/tn/" . strtolower($products[0]['typeid']) . "_" . $n
+
+                                    . '.jpg';
+
+                                if (file_exists($img)) {
+
+                                    $filetime = filemtime($img);
+
+                                    echo "<a href=\"http://fido.k9homes.com.au/source/" . strtolower($products[0]['typeid']) . "_" . $n
+
+                                        . ".jpg?" . $filetime . "\" target=_blank ><img src=\"../fido/public/source/tn/"
+
+                                        . strtolower($products[0]['typeid']) . "_" . $n
+
+                                        . ".jpg?" . $filetime . "\" border=0  title=\"" . $products[0]['typeid'] . "_"
+
+                                        . $n . "\" ></a>\n";
+                                } else {
+
+                                    break; // gap in seq so end early
+
+                                }
+
+                                $n++;
+                            }
+                        } else {
+
+                            echo "<center><span style=\"color:green;\">" . $products[0]['typeid'] . " no image available</span></center>";
+                        }
+
+
+
+                        // check for modx_page for this typeid
+
+                        if (isset($typeInfoPageIndex[$typeid])) {
+
+                            echo '<a class="moreinfo" href="/cms/product-info?pid=' . $typeInfoPageIndex[$typeid] . '&ref=' . base64_encode($_SERVER['QUERY_STRING']) . '">more info</a>';
+                        }
+
+
+
+                        echo "</td>";
+
+                        echo "<td valign=top> \n";
+
+                        if (isset($products[0]['aus_made'])) {
+                            $aus_made_image = $products[0]['aus_made'] > 0 ? ' <img style="float: left;" src="images/ausmade.jpg" />' : '';
+                            echo "<p class=product_name >" . $products[0]['name'] .  $aus_made_image . "</p>\n";
+                        }
+
+
+
+
+                        if (isSet($products[0]['type_description']) && !empty($products[0]['type_description'])) {
+
+                            echo '<p class="type_description">' . nl2br(stripslashes($products[0]['type_description'])) . '</p>';
+                        }
+
+
+
+                        $inTable = 1;
+
+                        if (isSet($products[0]['display_format']) && $products[0]['display_format'] == 'h') {
+
+                            product_list_horizontal($products);
+                        } else {
+
+                            product_list_vertical($products);
+                        }
+
+                        echo '</td></tr></table>' . "\n";
+                    }
                 }
 
-                $n++;
+                ?>
 
-            }
-
-        } else {
-
-            echo "<center><span style=\"color:green;\">" . $products[0]['typeid'] . " no image available</span></center>";
-
-        }
+    </table>
+    </td>
+    </tr>
 
 
 
-        // check for modx_page for this typeid
-
-        if (isset($typeInfoPageIndex[$typeid])) {
-
-            echo '<a class="moreinfo" href="/cms/product-info?pid=' . $typeInfoPageIndex[$typeid] . '&ref=' . base64_encode($_SERVER['QUERY_STRING']) . '">more info</a>';
-
-        }
-
-
-
-        echo "</td>";
-
-        echo "<td valign=top> \n";
-
-        $aus_made_image = $products[0]['aus_made'] > 0 ? ' <img style="float: left;" src="images/ausmade.jpg" />' : '';
-
-
-        echo "<p class=product_name >" . $products[0]['name'] .  $aus_made_image . "</p>\n";
-
-
-        if (!empty($products[0]['type_description'])) {
-
-            echo '<p class="type_description">' . nl2br(stripslashes($products[0]['type_description'])) . '</p>';
-
-        }
-
-
-
-        $inTable = 1;
-
-        if ($products[0]['display_format'] == 'h') {
-
-            product_list_horizontal($products);
-
-        } else {
-
-            product_list_vertical($products);
-
-        }
-
-        echo '</td></tr></table>' . "\n";
-
-    }
-
-
-
-}
-
-?>
-
-			</table></td></tr>
-
-
-
-	</table>
+    </table>
 
 
 
 </form>
-

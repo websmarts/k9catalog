@@ -51,9 +51,6 @@ class State
     {
 
         $this->db = $db;
-
-
-
     }
 
 
@@ -73,7 +70,6 @@ class State
     {
 
         $this->db = $db;
-
     }
 
 
@@ -111,7 +107,6 @@ class State
         if (empty($username) || empty($password)) {
 
             return;
-
         }
 
         // Check if User login
@@ -144,9 +139,9 @@ class State
 
             $this->loggedIn = true;
 
-            $this->client = array(); //clear an residual client ID
+            $this->client = array(); //clear any residual client ID
 
-            
+
 
         }
 
@@ -164,7 +159,7 @@ class State
 
 
                 // Logit
-                $qry = 'INSERT into logins (`email`,`datetime`) VALUES("' .$username .'","'. date("Y-m-d H:i:s") .'")';
+                $qry = 'INSERT into logins (`email`,`datetime`) VALUES("' . $username . '","' . date("Y-m-d H:i:s") . '")';
                 //echo dumper($qry); exit;
 
                 $this->db->execute($qry);
@@ -186,9 +181,7 @@ class State
                 $this->newLogin = true;
 
                 restore_client_basket();
-
             }
-
         }
 
 
@@ -196,13 +189,7 @@ class State
         if (!$this->loggedIn) {
 
             $this->logout();
-
-
-
         }
-
-
-
     }
 
     public function recoverPassword($email)
@@ -229,26 +216,18 @@ class State
 
                 $headers = 'From: webmaster@k9homes.com.au' . "\r\n" .
 
-                'Reply-To: info@k9home.com.au' . "\r\n" .
+                    'Reply-To: info@k9home.com.au' . "\r\n" .
 
-                'X-Mailer: PHP/' . phpversion();
+                    'X-Mailer: PHP/' . phpversion();
 
 
 
                 return mail($email, $subject, $message, $headers);
-
-
-
             }
-
         } else {
 
             return 0;
-
         }
-
-
-
     }
 
     public function is_valid()
@@ -256,7 +235,6 @@ class State
     {
 
         return $this->loggedIn;
-
     }
 
 
@@ -268,13 +246,10 @@ class State
         if ($this->role == 'client' && $this->getClientId() > 0 && $this->id == 0) {
 
             return $this->getClientId();
-
         } else {
 
             return 0;
-
         }
-
     }
 
     public function isInternalUser()
@@ -286,13 +261,10 @@ class State
         if ($this->loggedIn && $this->id > 0) {
 
             return 1;
-
         } else {
 
             return 0;
-
         }
-
     }
 
 
@@ -301,16 +273,13 @@ class State
 
     {
 
-        if (is_array($this->client) && isset($this->client['client_id']) && $this->client['client_id'] > 0) {
+        if (isSet($this->client['client_id']) && $this->client['client_id'] > 0) {
 
             return $this->client['client_id'];
-
         } else {
 
             return 0;
-
         }
-
     }
 
     public function getClientData()
@@ -320,13 +289,10 @@ class State
         if (is_array($this->client) && isset($this->client['client_id']) && $this->client['client_id'] > 0) {
 
             return $this->client;
-
         } else {
 
             return 0;
-
         }
-
     }
 
 
@@ -336,7 +302,6 @@ class State
     {
 
         return $this->id;
-
     }
 
 
@@ -386,7 +351,6 @@ class State
 
 
         $this->nextview = "default";
-
     }
 
 
@@ -399,26 +363,25 @@ class State
 
         $r = "<p>S->id=" . $this->id .
 
-        "<br>S->role=" . $this->role .
+            "<br>S->role=" . $this->role .
 
-        "<br>client_id=" . $this->getClientId() .
+            "<br>client_id=" . $this->getClientId() .
 
-        "<br>count(S->basket)=" . count($this->basket) .
+            "<br>count(S->basket)=" . count($this->basket) .
 
-        "<br>S->lastview=" . $this->lastview .
+            "<br>S->lastview=" . $this->lastview .
 
-        "<br>S->nextview=" . $this->nextview .
+            "<br>S->nextview=" . $this->nextview .
 
-        "<br>S->newLogin=" . $this->newLogin .
+            "<br>S->newLogin=" . $this->newLogin .
 
-        "<br>S->module=" . $this->module .
+            "<br>S->module=" . $this->module .
 
             "</p>";
 
 
 
         return $r;
-
     }
 
 
@@ -428,7 +391,6 @@ class State
     {
 
         return $this->role;
-
     }
 
 
@@ -446,7 +408,6 @@ class State
         unset($this->order_contact);
 
         unset($this->freight_charge);
-
     }
 
 
@@ -463,16 +424,13 @@ class State
 
     {
 
-        if (is_array($this->basket)) {
+        if (isSet($this->basket) && is_array($this->basket)) {
 
             return count($this->basket);
-
         } else {
 
             return 0;
-
         }
-
     }
 
 
@@ -490,13 +448,10 @@ class State
         if (!empty($key)) {
 
             return preg_match('/' . $key . '/i', $this->privileges);
-
         } else {
 
             return false;
-
         }
-
     }
 
     /**
@@ -512,10 +467,5 @@ class State
     {
 
         $_SESSION['S'] = $this;
-
-        
-
     }
-
 }
-

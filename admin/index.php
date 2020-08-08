@@ -2,20 +2,13 @@
 
 // Initial setup //
 
-if ($_SERVER['HTTP_HOST'] == 'k9web.test') {
-
+if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au.test') {
     define('APP_MODE', 'development');
-
-
-
-} else {
-
+} else if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au') {
     define('APP_MODE', 'production');
-
-
-
+} else {
+    define('APP_MODE', 'undefined');
 }
-
 
 
 require_once '../adodb_lite/adodb.inc.php';
@@ -50,14 +43,13 @@ if ($req['a'] == "login") {
 
     if (try_login($req['user'])) {
 
-// success
+        // success
 
         // set admin cookie
 
         setcookie("admin", $req['user'], time() + 3600); /* expire in 1 hour */
 
         $user = $req['user'];
-
     } else {
 
         $user = "";
@@ -65,7 +57,6 @@ if ($req['a'] == "login") {
         setcookie("admin", "", time() + 2); // expire after 2 seconds
 
     }
-
 }
 
 //echo dumper ($req);
@@ -147,9 +138,6 @@ switch ($m) {
     default:
 
         $module = "default";
-
-
-
 }
 
 //echo "Using module=".$module.".php<br>\n";
@@ -159,11 +147,9 @@ $file = "modules/" . $module . ".php";
 if (file_exists($file)) {
 
     include $file;
-
 } else {
 
     $error_msg .= "<p>Module '" . "modules/" . $module . ".php" . " is not available</p>\n";
-
 }
 
 
@@ -191,19 +177,15 @@ switch ($m) {
         if ($req['a'] == 'edit') {
 
             $_view = "edit_product";
-
         } elseif ($req['a'] == 'specialprices') {
 
             $_view = "edit_specialprices";
-
         } elseif ($req['a'] == 'stockadjust') {
 
             $_view = "stockadjust";
-
         } else {
 
             $_view = "edit_product";
-
         }
 
         break;
@@ -221,10 +203,8 @@ switch ($m) {
     default:
 
         $_view = "default";
-
 }
 
 //echo "Using template=$template with view= $_view <br>\n";
 
 include_once $template;
-

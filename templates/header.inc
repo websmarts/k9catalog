@@ -96,7 +96,9 @@ function do_menu_row($cats, $depth,$depthLimit=1,$current_catid=0)
 
 $title='K9Homes eCatalog Pet Products ';
 
-if (isSet($req['catid']) )
+$_catId = $req['catid'] ?? null;
+
+if ($_catId )
 
                     {
 
@@ -252,7 +254,7 @@ if (isSet($req['catid']) )
 
              // import my pet warehous orders
 
-             if($S->checkPrivileges('import_basket') && preg_match('/my pet warehouse/i',$S->client['name'])){
+             if($S->checkPrivileges('import_basket') && isSet($S->client['name']) && preg_match('/my pet warehouse/i',$S->client['name'])){
 
                 echo ' | <a href="?v=basket_import" >Import Basket</a> | '."\n";
 
@@ -306,7 +308,7 @@ if (isSet($req['catid']) )
 
             }
 
-            if($S->client['client_id'] > 0 && $S->checkPrivileges('officeadmin')){
+            if(isSet($S->client['client_id']) && $S->client['client_id'] > 0 && $S->checkPrivileges('officeadmin')){
 
                 
 
@@ -618,19 +620,24 @@ if (isSet($req['catid']) )
 
 <div id="leftbar" >
 
-    <?php if ($req['m'] != "order") : ?>              
+    <?php 
+    
+    $_m = $req['m'] ?? null;
+
+    $_q = $req['q'] ?? null;
+    if ($_m != "order") : ?>              
 
             <form  id="searchform" name="search_form">
 
                 find:
 
-                <?php if($req['q'] == 'core' || $req['q'] == 'special' || $req['q'] == 'new product' || $req['q'] == 'clearance'){
+                <?php if($_q == 'core' || $_q == 'special' || $_q == 'new product' || $_q == 'clearance'){
 
                     $q = '';
 
                 } else {
 
-                    $q = $req['q'];
+                    $q = $_q;
 
                 }
 
@@ -707,26 +714,31 @@ if (isSet($req['catid']) )
     //$error_msg .= "NEXTVIEW=".$S->nextview." ROLE=".$S->role;
 
     //echo dumper($_SESSION['messages']);
+    if(isSet($_SESSION['messages'])){
 
-    $error_msg .= $_SESSION['messages']['error'];
+        $error_msg .= isSet($_SESSION['messages']['error']) ? $_SESSION['messages']['error'] : null;
 
-    $flash_msg .= $_SESSION['messages']['success'];
+        $flash_msg .= isSet($_SESSION['messages']['success']) ? $_SESSION['messages']['success'] : null;
 
-    if (!empty($error_msg))
+        if (!empty($error_msg))
 
-        {
+            {
 
-        echo '<div class="error_msg">'.$error_msg.'</div>'."\n";
+            echo '<div class="error_msg">'.$error_msg.'</div>'."\n";
 
-        }
+            }
 
-    if (!empty($flash_msg))
+        if (!empty($flash_msg))
 
-        {
+            {
 
-        echo '<div class="flash_msg">'.$flash_msg.'</div>'."\n";
+            echo '<div class="flash_msg">'.$flash_msg.'</div>'."\n";
 
-        }
+            }
+
+    }
+
+    
 
 ?>
 

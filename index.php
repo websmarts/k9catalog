@@ -12,13 +12,12 @@ if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au.test') {
 
 
 
-if ( APP_MODE == 'development') {
+if (APP_MODE == 'development') {
 
-    define('FIDO_BASE_URL', 'http://k9homes.com.au.test/');
+    define('FIDO_BASE_URL', 'http://k9homes.com.au.test/fido/public/');
 
-    define('ECAT_BASE_URL', 'http://k9homes.com.au.test/');
-
-} else if (APP_MODE =='production') {
+    define('ECAT_BASE_URL', 'http://k9homes.com.au.test/catalog/');
+} else if (APP_MODE == 'production') {
 
     define('APP_MODE', 'production');
 
@@ -27,7 +26,6 @@ if ( APP_MODE == 'development') {
     if ($_SERVER['REQUEST_SCHEME'] != 'https') {
 
         header('Location: https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
-
     }
 
 
@@ -35,9 +33,8 @@ if ( APP_MODE == 'development') {
     define('FIDO_BASE_URL', 'https://fido.k9homes.com.au/');
 
     define('ECAT_BASE_URL', 'https://k9homes.com.au/catalog/');
-
 } else {
-    die ('no valid environment found');
+    die('no valid environment found');
 }
 
 
@@ -49,34 +46,6 @@ define('LOG_ERRORS', true); // set true to log errors to following file
 define('LOG_ERROR_FILE', 'k9.errors.log');
 
 
-
-// if ($_SERVER['HTTP_HOST'] == 'k9catalog.dev') {
-
-//     $sessionID = 'evoipoqt9';
-
-// } else {
-
-//     $sessionID = 'evor2irae';
-
-// }
-
-
-
-// $sessionID = 'k9catalog';
-
-
-
-/**
-
- *  user priviliges:
-
- *  cosreport - view cost of sales report
-
- *  printorders - can print orders
-
- *  changeprices - can update prices in basket view
-
- */
 
 
 //error_reporting(E_ERROR | E_PARSE);
@@ -149,10 +118,8 @@ if (isset($_SESSION['S']) && !empty($_SESSION['S'])) {
 
     $S->setDB($db); // need to refresh the objects DB connection
 
-    unset($S->nextview); // Next view  will be calculated make sure it starts off blank
-
-
-
+    //unset($S->nextview); // Next view  will be calculated make sure it starts off blank
+    $nextview = '';
 } else {
 
     $S = new State($db); // need to pass database object for class to use
@@ -164,7 +131,6 @@ if (isset($_SESSION['S']) && !empty($_SESSION['S'])) {
 if (isset($req['v'])) {
 
     $S->nextview = $req['v'];
-
 }
 
 
@@ -202,11 +168,9 @@ if ($S->getUserRole() == "rep" or $S->getUserRole() == "client" or $S->getUserRo
 
 
     include "controllers/client.controller.inc.php";
-
 } elseif ($S->role == "admin") {
 
     include "controllers/admin.controller.inc.php";
-
 } else {
 
     include "controllers/public.controller.inc.php";
@@ -216,19 +180,16 @@ if ($S->getUserRole() == "rep" or $S->getUserRole() == "client" or $S->getUserRo
     if (isset($chain_to_controller)) {
 
         include $chain_to_controller;
-
     }
-
 }
 
 
 
 /* Hack to force the add email address to client if not set */
 
-if ($S->isInternalUser() && $S->client['client_id'] && empty($S->client['login_user'])) {
+if ($S->isInternalUser() && isset($S->client['client_id']) && empty($S->client['login_user'])) {
 
     $S->nextview = 'get_client_email';
-
 }
 
 
@@ -256,11 +217,9 @@ if ($S->nextview > "") {
 } elseif ($S->lastview > "") {
 
     $S->nextview = $S->lastview;
-
 } else {
 
     $S->nextview = "default";
-
 }
 
 
@@ -308,11 +267,9 @@ switch ($S->nextview) {
         if (isset($req['catid']) && $req['catid'] > 0) {
 
             include "modules/list.php";
-
         } elseif (isset($req['q'])) {
 
             include "modules/product_search.php";
-
         } else {
 
             include "modules/list.php"; // we will show specials if no caitid and no search query string
@@ -358,11 +315,9 @@ switch ($S->nextview) {
             include "modules/order_for_client.php";
 
             $S->nextview = "list_client_orders";
-
         } else {
 
             include "modules/order.php";
-
         }
 
 
@@ -394,11 +349,9 @@ switch ($S->nextview) {
             $special_prices = get_client_price_specials($order[0]['client_id']);
 
             $order_detail = get_system_order_details($order[0]['order_id']);
-
         } else {
 
             die('invalid request');
-
         }
 
         //echo $S->nextview;
@@ -430,7 +383,6 @@ switch ($S->nextview) {
                 // only set sttus to PRINTED if it is Darren or Kerry viewing the order
 
                 update_order_status($req['order_id'], "printed");
-
             } else {
 
                 //$error_msg = "you dont have permission to print orders";
@@ -438,7 +390,6 @@ switch ($S->nextview) {
                 //$S->nextview = "default";
 
             }
-
         }
 
         break;
@@ -504,7 +455,6 @@ switch ($S->nextview) {
                 $S->nextview = "list_products"; // just use the same template for search or browse
 
             }
-
         } else {
 
             $S->nextview = "public_list_products"; // just use the same template for search or browse
@@ -583,9 +533,6 @@ switch ($S->nextview) {
 
 
     default:
-
-
-
 }
 
 
@@ -635,11 +582,9 @@ if ($T->id > 0 && !empty($T->role)) {
     $_SESSION['PASS']['role'] = $T->role;
 
     $_SESSION['PASS']['privileges'] = $T->privileges;
-
 } else {
 
     unset($_SESSION['PASS']);
-
 }
 
 
@@ -649,4 +594,3 @@ clearTmpSessionVars();
 //echo dumper($S);
 
 //echo dumper($_SESSION);
-

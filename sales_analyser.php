@@ -26,7 +26,7 @@ $time = $time[1] + $time[0];
 
 $start_time = $time;
 
-if ($_SERVER['HTTP_HOST'] == 'ecat.test') {
+if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au.test') {
 
     /*Development environment */
 
@@ -365,6 +365,7 @@ Who
 
    <option value="10" <?=$_GET['user'] == "10" ? "selected" : ''?>>Kerry</option>
    <option value="13" <?=$_GET['user'] == "13" ? "selected" : ''?>>Trudy</option>
+   <option value="13" <?=$_GET['user'] == "9" ? "selected" : ''?>>Cathy</option>
 
 
    <!-- <option value="11" <?=$_GET['user'] == "11" ? "selected" : ''?>>Michael</option>
