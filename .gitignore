@@ -1,3 +1,7 @@
 source/
 imports/
+tmp/
+error_log
+k9.errors.log
+
 
