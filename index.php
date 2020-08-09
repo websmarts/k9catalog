@@ -1,62 +1,12 @@
 <?php
 
 
-if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au.test') {
-    define('APP_MODE', 'development');
-} else if ($_SERVER['HTTP_HOST'] == 'k9homes.com.au') {
-    define('APP_MODE', 'production');
-} else {
-    define('APP_MODE', 'undefined');
-}
-
-
-
-
-if (APP_MODE == 'development') {
-
-    define('FIDO_BASE_URL', 'http://k9homes.com.au.test/fido/public/');
-
-    define('ECAT_BASE_URL', 'http://k9homes.com.au.test/catalog/');
-} else if (APP_MODE == 'production') {
-
-    define('APP_MODE', 'production');
-
-    // Switch to https if http
-
-    if ($_SERVER['REQUEST_SCHEME'] != 'https') {
-
-        header('Location: https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
-    }
-
-
-
-    define('FIDO_BASE_URL', 'https://fido.k9homes.com.au/');
-
-    define('ECAT_BASE_URL', 'https://k9homes.com.au/catalog/');
-} else {
-    die('no valid environment found');
-}
-
-
-
+include_once('../config.php');
 
 
 define('LOG_ERRORS', true); // set true to log errors to following file
 
 define('LOG_ERROR_FILE', 'k9.errors.log');
-
-
-
-
-//error_reporting(E_ERROR | E_PARSE);
-// error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
-error_reporting(E_ALL);
-
-
-
-date_default_timezone_set('Australia/Melbourne');
-
 
 
 define("TERMINALID", 'T0'); // legacy define
@@ -71,55 +21,31 @@ define("STOCK_QTY_OFFSET", 0); // Fudge figure that is added to real stock quant
 
 require_once 'adodb_lite/adodb.inc.php';
 
-
 include_once 'lib/db.inc';
-
 
 include_once 'lib/common.inc';
 
-
 require_once 'lib/State.class.php';
-
 
 include_once 'lib/session.php';
 
 
 // Collect Request Vars
-
 $req = http_request(); // Populate global var $req from $_GET and $_POST
 
 
-
-//echo dumper($req);
-
-//exit;
-
-
-
 // Default template to use - controllers may override
-
 $template = "templates/main";
 
 
-
-//echo "START SESSION<br>";
-
-//echo dumper ($_COOKIE);
-
-//echo dumper($_SESSION);
-
-
-
 if (isset($_SESSION['S']) && !empty($_SESSION['S'])) {
-
-
 
     $S = $_SESSION['S'];
 
     $S->setDB($db); // need to refresh the objects DB connection
 
-    //unset($S->nextview); // Next view  will be calculated make sure it starts off blank
     $nextview = '';
+
 } else {
 
     $S = new State($db); // need to pass database object for class to use

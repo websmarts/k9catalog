@@ -2,9 +2,7 @@
 
 
 
-/*Development environment */
-
- if(APP_MODE == 'development') {
+if (APP_MODE == 'development') {
 
 	$dbhost = "localhost";
 
@@ -18,43 +16,28 @@
 
 	//www.k9homes.com.au environment
 
-    $dbhost = "127.0.0.1";
+	$dbhost = "127.0.0.1";
 
-    $dbname = "k9homes_db";
+	$dbname = "k9homes_db";
 
-    $dbuname = "k9homes_dbuser";
+	$dbuname = "k9homes_dbuser";
 
-    $dbpass = "Kh56D6en";
+	$dbpass = "Kh56D6en";
+}
 
+// Connect to database	
+
+$db = ADONewConnection('mysqli');
+
+if (!$db->Connect("$dbhost", "$dbuname", "$dbpass", "$dbname")) {
+
+	exit("Cannot connect to the database. APP_MODE = " . APP_MODE);
 }
 
 
 
-  
-
-    
-
-	
-
-	$db = ADONewConnection('mysqli');
-
-	if (!$db->Connect("$dbhost","$dbuname","$dbpass","$dbname")) {
-
-		exit ("Cannot connect to the database. APP_MODE = ".APP_MODE);
-
-	}
-
-
-
-	
-
-	
-
-
-
-	
-
-function do_query($query) {
+function do_query($query)
+{
 
 	global $db;
 
@@ -62,108 +45,63 @@ function do_query($query) {
 
 	$ret = false;
 
-		// set $db->debug for debug info
+	// set $db->debug for debug info
 
-        if($db_debug){
+	if ($db_debug) {
 
-            $db->debug = true;
+		$db->debug = true;
+	} else {
 
-        } else {
+		$db->debug = false;
+	}
 
-            $db->debug = false;
 
-        }
 
-		
+	if (preg_match("/^[\s]*select[\s]+/im", $query)) {
 
-        
+		// return assoc array		 
 
-		//$db->debug = true;
+		$ret = $db->GetArray($query);
+	}
 
-		// if select query then get data
 
-		//echo $query;
 
-		if (preg_match("/^[\s]*select[\s]+/im",$query) ){
+	if (preg_match("/^[ ]*insert /im", $query)) {
 
-			
+		$res = $db->Execute($query);
 
-			// return assoc array
+		$ret =  $db->Insert_ID();
+	}
 
-			 
 
-			$ret = $db->GetArray($query);
 
-			
+	if (preg_match("/^[ ]*delete /im", $query)) {
 
-			
+		$ret = $db->Execute($query);
+	}
 
+	if (preg_match("/^[ ]*update /im", $query)) {
+
+		$ret = $db->Execute($query);
+	}
+
+	return $ret;
+}
+
+
+
+function query_to_array($res, $key = 'id')
+{
+
+	$ret = array();
+
+	if (is_array($res) && count($res) > 0) {
+
+		foreach ($res as $row) {
+
+			$ret[$row[$key]] = $row;
 		}
+	}
 
-		
-
-		if (preg_match("/^[ ]*insert /im",$query) ){
-
-			
-
-			$res = $db->Execute($query);
-
-			
-
-			$ret =  $db->Insert_ID();			
-
-		}	
-
-		
-
-		if (preg_match("/^[ ]*delete /im",$query) ){
-
-			
-
-			$ret = $db->Execute($query);		
-
-			
-
-		}	
-
-		if (preg_match("/^[ ]*update /im",$query) ){
-
-			
-
-			$ret = $db->Execute($query);
-
-						
-
-		}	
-
-		
-
-			
-
-		return $ret;		
-
+	return $ret;
 }
-
-
-
-function query_to_array($res, $key='id'){
-
-    $ret = array();
-
-    if(is_array($res) && count($res) > 0){
-
-        foreach ($res as $row){
-
-            $ret[$row[$key]]=$row;
-
-        }
-
-    }
-
-    return $ret;
-
-}
-
-
-
-?>

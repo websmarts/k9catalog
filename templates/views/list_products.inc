@@ -417,7 +417,7 @@ function product_list_horizontal($products)
 
 
 
-                if (isSet($req['highlight']) && $basename . '-' . $opt['opt_code'] == $req['highlight']) {
+                if (isset($req['highlight']) && $basename . '-' . $opt['opt_code'] == $req['highlight']) {
 
                     $highlight = ' highlight ';
                 }
@@ -669,15 +669,19 @@ function client_selector($clients)
     <?php
 
     // Check for page insert - hack for putting in Darens XMAS coming soon page
+    if(isSet($req['catid'])) {
+        $insert = 'category_info/' . $req['catid'] . '/insert.php';
 
-    $insert = 'category_info/' . $req['catid'] . '/insert.php';
 
 
+        if ($req['catid'] && file_exists($insert)) {
+    
+            include($insert);
+        }
 
-    if ($req['catid'] && file_exists($insert)) {
-
-        include($insert);
     }
+
+  
 
     ?>
 
@@ -693,13 +697,11 @@ function client_selector($clients)
 
                 <?php
 
-                if (is_array($group_products)) {
+                if (isset($group_products) && is_array($group_products) && count($group_products) > 0) {
 
                     foreach ($group_products as $typeid => $products) {
 
                         // Display the group image
-
-
 
                         echo
 
