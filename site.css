@@ -190,7 +190,7 @@ td.subcatmenu p {
 
     padding: 6px;
 
-    background: #e0d9c6;
+    background: #f4f4ff;
 
     overflow: hidden;
 
@@ -202,11 +202,11 @@ td.subcatmenu p {
 
     clear:both;
 
-    border-bottom: 4px solid #e0d9c6;;
+    border-bottom: 4px solid #000088;
 
     height: 123px;
 
-    background: #e0d9c6;
+    background: #f4f4ff;
 
 }
 
@@ -318,7 +318,7 @@ body /*normal*/{
 
     text-align: left;
 
-    background: #e0d9c6;
+    background: #eef;
 
     overflow: hidden;
 
@@ -354,7 +354,7 @@ body /*normal*/{
 
     padding:10px;
 
-    background: #e0d9c6;
+    background: #fff;
 
     text-align: center;
 
