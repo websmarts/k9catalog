@@ -206,7 +206,7 @@ $clients = mysqli_query($mysqli, $sql2) or die('Clients Query failed: ');
 
 </style>
 
-<p> <a href="/catalog" >Back to catalog </a></p>
+
 
 
 
