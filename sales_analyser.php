@@ -110,7 +110,7 @@ if ($endDatetime < $startDatetime) {
 
 if ($startDatetime > 0 && $endDatetime > 0) {
 
-    $sql = "select type.name,category.name as catname,sum(products.cost * system_order_items.qty )   as cost,sum(system_order_items.qty * system_order_items.price) as total,(sum(system_order_items.qty * system_order_items.price)-sum(products.cost * system_order_items.qty )) as gp ";
+    $sql = "select type.name,sum(products.cost * system_order_items.qty )   as cost,sum(system_order_items.qty * system_order_items.price) as total,(sum(system_order_items.qty * system_order_items.price)-sum(products.cost * system_order_items.qty )) as gp ";
 
     $sql .= "from system_orders ";
 
@@ -124,9 +124,7 @@ if ($startDatetime > 0 && $endDatetime > 0) {
 
     $sql .= "join type on products.typeid = type.typeid ";
 
-    $sql .= "join type_category on type_category.typeid=products.typeid ";
-
-    $sql .= "join category on category.id = type_category.catid ";
+    
 
     //$sql .=    "where DATE_FORMAT(system_orders.modified,'%Y%m') >= '".$startYear.$startMonth."' "   ;
 
@@ -168,7 +166,7 @@ if ($startDatetime > 0 && $endDatetime > 0) {
 
     //echo $sql;
 
-    $result = mysqli_query($mysqli, $sql) or die('Query failed: ' . mysql_error());
+    $result = mysqli_query($mysqli, $sql);
 
 }
 
@@ -410,7 +408,7 @@ while ($client = mysqli_fetch_assoc($clients)) {
 
 echo "<table id=listtable cellspacing=0 cellpadding=0 >\n";
 
-echo "<tr><th></th><th>Category</th><th>ProductType</th><th>Sales</th><th>Cost</th><th>GP($)</th><th>GP(%)</th><th>Sales(%)</th><th>Cum Sales(%)</th></tr>";
+echo "<tr><th></th><th>ProductType</th><th>Sales</th><th>Cost</th><th>GP($)</th><th>GP(%)</th><th>Sales(%)</th><th>Cum Sales(%)</th></tr>";
 
 
 
@@ -478,7 +476,7 @@ foreach ($lines as $line) {
 
 
 
-    echo "<td>" . $line['catname'] . "</td>";
+    //echo "<td>" . $line['catname'] . "</td>";
 
     echo "<td>" . $line['name'] . "</td>";
 
