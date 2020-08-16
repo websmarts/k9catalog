@@ -51,9 +51,9 @@ if ($_catId) {
 
 
 
-    <link rel="stylesheet" type="text/css" media="screen" href="site.css?b=refresh" />
+    <link rel="stylesheet" type="text/css" media="screen" href="site.css?b=refresh20200816" />
 
-    <link rel="stylesheet" type="text/css" media="print" href="print.css?a=refresh" />
+    <link rel="stylesheet" type="text/css" media="print" href="print.css?a=refresh20200816" />
 
 
 
