@@ -153,7 +153,7 @@ function product_list_vertical($products)
 
                 echo "<td class=\"input \" ><input type=\"number\" class=\"input $highlight\" name=\"basket["
 
-                    . $p['product_code'] . "][qty]\" value=" . $S->basket[$p['product_code']] . "  ></td>";
+                    . $p['product_code'] . "][qty]\" value=" . @$S->basket[$p['product_code']] . "  ></td>";
             } else {
 
                 if (($p['notify_when_instock'] && $p['notify_when_instock'] == 'y') && !isset($client_notifies[$p['product_code']])) {
@@ -479,9 +479,11 @@ function product_list_horizontal($products)
 
                     if ($S->checkPrivileges('updateparts')) {
 
+                        
+
                         echo "<input $sprice type=\"number\"  class=\"input $highlight $sclass\" name=\"basket[" . $basename . "-"
 
-                            . $opt['opt_code'] . "][qty]\" value=" . $S->basket[$basename . "-" . $opt['opt_code']]
+                            . $opt['opt_code'] . "][qty]\" value=" . @$S->basket[$basename . "-" . $opt['opt_code']]
 
                             . "  >" . '<br /><a href="' . fido_gateway_link("product/" . $stocked_products[$basename . "-" . $opt['opt_code']]['id'] . "/edit") . '" target="fido">';
 
@@ -607,7 +609,7 @@ function client_selector($clients)
 
     <input type=hidden name=catid value="<?php echo $req['catid']; ?>">
 
-    <input type=hidden name=q value="<?php echo $req['q']; ?>">
+    <input type=hidden name=q value="<?php echo isSet($req['q']) ? $req['q'] :''; ?>">
 
     <table width="100%" class="section_header">
 

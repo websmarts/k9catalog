@@ -33,6 +33,11 @@ include_once 'lib/session.php';
 // Collect Request Vars
 $req = http_request(); // Populate global var $req from $_GET and $_POST
 
+// if($_POST){
+//     echo dumper($_POST);
+//     exit;
+// }
+
 
 // Default template to use - controllers may override
 $template = "templates/main";
@@ -58,11 +63,6 @@ if (isset($req['v'])) {
 
     $S->nextview = $req['v'];
 }
-
-
-
-//$db->debug=false;      // set to true to see database querys
-
 
 
 /*

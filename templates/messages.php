@@ -2,9 +2,9 @@
 
     if (isset($_SESSION['messages'])) {
 
-        $error_msg .= isset($_SESSION['messages']['error']) ? $_SESSION['messages']['error'] : null;
+        $error_msg = isset($_SESSION['messages']['error']) ? $_SESSION['messages']['error'] : null;
 
-        $flash_msg .= isset($_SESSION['messages']['success']) ? $_SESSION['messages']['success'] : null;
+        $flash_msg = isset($_SESSION['messages']['success']) ? $_SESSION['messages']['success'] : null;
 
         if (!empty($error_msg)) {
 

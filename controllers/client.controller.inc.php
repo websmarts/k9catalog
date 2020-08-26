@@ -106,10 +106,12 @@ switch ($_e) {
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
 
+        break;
+
     case "addtobasket":
-    case "update": // Updates from eCat
-        // add to basket is same as update basket !
-        update_basket($req, false); // just the $S_basket - not the db basket
+    case "update": // Updates from eCat product list view
+        
+        update_basket($req, false); // just the session_basket - not the db_basket
 
         $returnUrl = preg_replace('/\#.*/', '', $_SERVER['REQUEST_URI']);
         $returnUrl .= '#' . $_POST['typeid'];
@@ -120,9 +122,9 @@ switch ($_e) {
         break;
 
 
-    case "updatebasket": // updates from basket view
-        //echo dumper($req);
-        update_basket($req, true); // just the $S_basket - not the db basket
+    case "updatebasket": // updates from basket view - NOTE CLEAR PRICES set to TRUE for update_basket call
+
+        update_basket($req, true); // just the session_basket - not the db_basket
 
         $returnUrl = preg_replace('/\#.*/', '', $_SERVER['REQUEST_URI']);
         $returnUrl .= '#' . $_POST['typeid'];
@@ -134,7 +136,6 @@ switch ($_e) {
 
 
     case "clearbasket";
-        $S->basket = false;
         delete_basket($S->getClientId());
         break;
 

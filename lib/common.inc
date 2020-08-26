@@ -411,8 +411,13 @@ function get_category_list()
 function delete_basket($client_id)
 {
     global $S;
+
+    // Get Basket order id(s)
+
+
+    // Delete basket items is system_orders table
     do_query("delete from system_orders where client_id=$client_id and status='basket'");
-    //echo "doing delete basket ????<p>";
+    
     $S->clearBasket();
 }
 function basketMargin()
@@ -460,11 +465,9 @@ function productMarginHintCode($cost, $price)
     }
 }
 
-function save_basket()
+function get_basket_order_ids()
 {
     global $S, $db;
-
-    // get open order ids - should only be one!
 
     if (!$S->getClientId()) {
         //log_error('No ClientId selected in save_basket()');
@@ -479,78 +482,198 @@ function save_basket()
     }
     $basket_order_ids = $db->GetArray($sql);
 
-    // Delete current order details before replacing with items from session basket
-    if (isset($basket_order_ids[0]) && is_array($basket_order_ids[0]) && count($basket_order_ids) > 0) {
-        foreach ($basket_order_ids as $k => $order) {
-            $db->Execute("delete from system_order_items where order_id = " . $db->qstr($order['order_id']));
-            $S->orderId = $order['order_id'];
+    return $basket_order_ids;
+
+}
+
+function clear_db_basket_order_items($basket_order_ids)
+{
+    global $S, $db;
+
+    $orderId =0;
+    
+    foreach ($basket_order_ids as $k => $order) {
+        $db->Execute("delete from system_order_items where order_id = " . $db->qstr($order['order_id']));
+        $orderId = $order['order_id'];// remember system_order.order_id 
+    }
+
+    return $orderId;
+}
+
+function save_session_basket_to_db_basket($orderId)
+{
+    global $S, $db;
+    
+    if (is_array($S->basket) && count($S->basket) > 0) {
+        // get the prices to save with the order
+        // There may be special prices that override standard prices
+        $special_prices = get_client_price_specials($S->getClientId());
+
+        foreach ($S->basket as $product_code => $qty) {
+            if (isset($special_prices[$product_code])) {
+                $price = $special_prices[$product_code];
+            } else { // use standard price - may be discounted if qty > qty_break
+                $price = get_standard_product_price(
+                    $product_code,
+                    $qty
+                ); // returns normal or qty_disc price if approp
+            }
+
+            // Now get the price that was on the order form if it has been updated
+            if (isset($S->basket_prices[$product_code]))
+                $price = $S->basket_prices[$product_code]; // price hack
+
+            // paranoid price must be zero if empty
+            if (empty($price))
+                $price = 0;
+
+            // save items to order_items table
+            $sql = "INSERT INTO system_order_items (order_id,product_code,qty,price) values('"
+                . $orderId . "'," . $db->qstr($product_code) . "," . $qty . ",$price )";
+
+            $rs = $db->Execute($sql);
+            if (!$rs) {
+                log_error($sql);
+            }
+        }
+    }
+
+    if (isset($S->basket_instructions) && !empty($S->basket_instructions)) {
+        $sql = "Update system_orders set instructions=" . quote_str($S->basket_instructions)
+            . " where order_id=" . $db->qstr($orderId);
+        $rs = $db->Execute($sql);
+        if (!$rs) {
+            log_error($sql);
+        }
+    }
+    if (isset($S->order_contact) && !empty($S->order_contact)) {
+        $sql = "Update system_orders set order_contact=" . quote_str($S->order_contact)
+            . " where order_id=" . $db->qstr($orderId);
+        $rs = $db->Execute($sql);
+        if (!$rs) {
+            log_error($sql);
+        }
+    }
+    if (isset($S->freight_charge)) {
+        $sql = "Update system_orders set freight_charge=" . (float) $S->freight_charge
+            . " where order_id=" . $db->qstr($orderId);
+        $rs = $db->Execute($sql);
+        if (!$rs) {
+            log_error($sql);
+        }
+    }
+}
+
+function save_session_basket_items_to_db_basket_items($orderId='')
+{
+    global $S, $db;
+
+    if(empty($orderId)) { // need system_order.order_id
+        return;
+    }
+
+    // get the prices to save with the order
+        // There may be special prices that override standard prices
+    $special_prices = get_client_price_specials($S->getClientId());
+
+    foreach ($S->basket as $product_code => $qty) {
+        $qty = (int) $qty; // paranoid maybe but clean up stupid qty entered
+
+        if (isset($special_prices[$product_code])) {
+            $price = $special_prices[$product_code];
+        } else { // use standard price - may be discounted if qty > qty_break
+            $price = get_standard_product_price(
+                $product_code,
+                $qty
+            ); // returns normal or qty_disc price if approp
         }
 
-        // we already have an order so
-        // now add in the session basket items to the order items table
-        if (isset($S->basket_instructions) || count($S->basket) > 0) {
-            // okay we already have an order number so now save session basket to db
-            if (is_array($S->basket) && count($S->basket) > 0) {
-                // get the prices to save with the order
-                // There may be special prices that override standard prices
-                $special_prices = get_client_price_specials($S->getClientId());
+        // Now get the price that was on the order form if it has been updated
+        if (isset($S->basket_prices[$product_code]))
+            $price = $S->basket_prices[$product_code]; // price hack
 
-                foreach ($S->basket as $product_code => $qty) {
-                    if (isset($special_prices[$product_code])) {
-                        $price = $special_prices[$product_code];
-                    } else { // use standard price - may be discounted if qty > qty_break
-                        $price = get_standard_product_price(
-                            $product_code,
-                            $qty
-                        ); // returns normal or qty_disc price if approp
-                    }
+        // paranoid price must be zero if empty
+        if (empty($price))
+            $price = 0;
 
-                    // Now get the price that was on the order form if it has been updated
-                    if (isset($S->basket_prices[$product_code]))
-                        $price = $S->basket_prices[$product_code]; // price hack
+        // save items to order_items table
+        $sql = "INSERT INTO system_order_items (order_id,product_code,qty,price) values('" . $orderId
+            . "'," . $db->qstr($product_code) . "," . $qty . ",$price )";
 
-                    // paranoid price must be zero if empty
-                    if (empty($price))
-                        $price = 0;
+        $rs = $db->Execute($sql);
+        if (!$rs) {
+            log_error($sql);
+        }
+    }
+}
 
-                    // save items to order_items table
-                    $sql = "INSERT INTO system_order_items (order_id,product_code,qty,price) values('"
-                        . $order['order_id'] . "'," . $db->qstr($product_code) . "," . $qty . ",$price )";
+function create_new_db_basket_order_from_session()
+{
+    global $S, $db;
 
-                    $rs = $db->Execute($sql);
-                    if (!$rs) {
-                        log_error($sql);
-                    }
-                }
-            }
+    $basketInstructions = isSet($S->basket_instructions) ? $S->basket_instructions : '';
+    $orderContact = isSet($S->order_contact) ? $S->order_contact : '';
+    $freightCharge = isSet($S->freight_charge) ? $S->freight_charge : 0;
 
-            if (isset($S->basket_instructions) && !empty($S->basket_instructions)) {
-                $sql = "Update system_orders set instructions=" . quote_str($S->basket_instructions)
-                    . " where order_id=" . $db->qstr($order['order_id']);
-                $rs = $db->Execute($sql);
-                if (!$rs) {
-                    log_error($sql);
-                }
-            }
-            if (isset($S->order_contact) && !empty($S->order_contact)) {
-                $sql = "Update system_orders set order_contact=" . quote_str($S->order_contact)
-                    . " where order_id=" . $db->qstr($order['order_id']);
-                $rs = $db->Execute($sql);
-                if (!$rs) {
-                    log_error($sql);
-                }
-            }
-            if (isset($S->freight_charge)) {
-                $sql = "Update system_orders set freight_charge=" . (float) $S->freight_charge
-                    . " where order_id=" . $db->qstr($order['order_id']);
-                $rs = $db->Execute($sql);
-                if (!$rs) {
-                    log_error($sql);
-                }
-            }
+
+    $sql = "INSERT INTO system_orders (client_id,`status`,instructions,order_contact,freight_charge,reference_id,ordered_by,modified) VALUES ("
+                . $S->getClientId() . ",'basket'," . quote_str($basketInstructions)  . "," . $db->qstr($orderContact) . "," . (float) $freightCharge . ",'" . $S->id . "','" . $S->is_valid_client() . "','" . date("Y-m-j H:i:s") . "')";
+
+    // echo $sql;  exit; 
+    $rs = $db->Execute($sql);
+    if (!$rs) {
+        log_error($sql);
+    }
+
+    $id = $db->Insert_ID();
+    // now we need to update the order with its alph order_id
+    $orderId = TERMINALID . "_" . $id;
+    $S->orderId = $orderId;
+
+    $sql = "Update system_orders set order_id ='" . $orderId . "' where id=" . $id;
+    $rs = $db->Execute($sql);
+    if (!$rs) {
+        log_error($sql);
+    }
+
+    
+
+    // Only do the save items if there are some items to save
+    if (!empty($orderId) && is_array($S->basket) && count($S->basket)) {
+
+        save_session_basket_items_to_db_basket_items($orderId);
+
+        
+    }
+
+}
+function save_basket()
+{
+    global $S, $db;
+
+    // get open order ids - should only be one!
+    $basket_order_ids = get_basket_order_ids();
+
+    // Delete current order details before replacing with items from session basket
+    if (isset($basket_order_ids[0]) && is_array($basket_order_ids[0]) && count($basket_order_ids) > 0) {
+
+        // So we have a basket system_order
+
+        // clear current items and sets $S->orderId to the system_order.order_id  
+        $S->orderId = clear_db_basket_order_items($basket_order_ids); // returns the system_order.order_id of basket order
+
+        // now add in the session basket items to the system order items table
+        if (isset($S->basket_instructions) || count($S->basket) > 0) {;
+            
+            // okay we have something worth saving and
+            // we already have an order number in $S->orderId so now save session basket to db
+            save_session_basket_to_db_basket($S->orderId);
+            
         } else { // nothing to save - should we delete the ORDER NOW!!! could be dangerous if another user is using it
             // for now we will  delete the empty order
-            $rs = $db->Execute("delete from system_orders where order_id = " . $db->qstr($order['order_id']));
+            $rs = $db->Execute("delete from system_orders where order_id = " . $db->qstr($S->orderId));
+            $S->clearBasket(); // clear out the session basket just to be sure
+
             if (!$rs) {
                 log_error($sql);
             }
@@ -559,65 +682,11 @@ function save_basket()
 
         // only save this order if there are order instructions or order items to be saved
         if (isset($S->basket_instructions) || count($S->basket) > 0) {
-            // create the new open order
 
-            $sql = "INSERT INTO system_orders (client_id,`status`,instructions,order_contact,freight_charge,reference_id,ordered_by,modified) VALUES ("
-                . $S->getClientId() . ",'basket'," . quote_str($S->basket_instructions)  . "," . $db->qstr($S->order_contact) . "," . (float) $S->freight_charge . ",'" . $S->id . "','" . $S->is_valid_client() . "','" . date("Y-m-j H:i:s") . "')";
-
-            // echo $sql;  exit; 
-            $rs = $db->Execute($sql);
-            if (!$rs) {
-                log_error($sql);
-            }
-
-            $id = $db->Insert_ID();
-            // now we need to update the order with its alph order_id
-            $order_id = TERMINALID . "_" . $id;
-            $S->orderId = $order_id;
-            $sql = "Update system_orders set order_id ='" . $order_id . "' where id=" . $id;
-            $rs = $db->Execute($sql);
-            if (!$rs) {
-                log_error($sql);
-            }
+            create_new_db_basket_order_from_session();
+            
         }
-        // echo dumper($S->basket); exit;
 
-        // Only do the save items if there are some items to save
-        if (is_array($S->basket) && count($S->basket)) {
-            // get the prices to save with the order
-            // There may be special prices that override standard prices
-            $special_prices = get_client_price_specials($S->getClientId());
-
-            foreach ($S->basket as $product_code => $qty) {
-                $qty = (int) $qty; // paranoid maybe but clean up stupid qty entered
-
-                if (isset($special_prices[$product_code])) {
-                    $price = $special_prices[$product_code];
-                } else { // use standard price - may be discounted if qty > qty_break
-                    $price = get_standard_product_price(
-                        $product_code,
-                        $qty
-                    ); // returns normal or qty_disc price if approp
-                }
-
-                // Now get the price that was on the order form if it has been updated
-                if (isset($S->basket_prices[$product_code]))
-                    $price = $S->basket_prices[$product_code]; // price hack
-
-                // paranoid price must be zero if empty
-                if (empty($price))
-                    $price = 0;
-
-                // save items to order_items table
-                $sql = "INSERT INTO system_order_items (order_id,product_code,qty,price) values('" . $order_id
-                    . "'," . $db->qstr($product_code) . "," . $qty . ",$price )";
-
-                $rs = $db->Execute($sql);
-                if (!$rs) {
-                    log_error($sql);
-                }
-            }
-        }
 
         $db->debug = false;
     }
@@ -787,6 +856,9 @@ function clean_string($string)
     return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $string);
 }
 
+/**
+ * Updates the session_basket values (but not the db_basket)
+ */
 function update_basket($req, $priceClear = false)
 {
     global $S;
@@ -800,9 +872,6 @@ function update_basket($req, $priceClear = false)
         foreach ($req['basket'] as $product_code => $item) {
             if ($item['qty'] > 0) {
                 $S->basket[$product_code] = $item['qty'];
-
-
-
 
                 // Check if update is being done from basket view where
                 // prices can be updated
@@ -835,17 +904,21 @@ function update_basket($req, $priceClear = false)
         if (isset($req['basket_instructions'])) {
             $S->basket_instructions = clean_string($req['basket_instructions']);
         }
+
         // update the order contact
         if (isset($req['order_contact'])) {
             $S->order_contact = $req['order_contact'];
         }
-        // update the freight charge
-        if (isset($req['freight_charge'])) {
-            $S->freight_charge = $req['freight_charge'];
-        }
+
+        // update the freight charge - default to 0
+        $S->freight_charge = isSet($req['freight_charge']) ? $req['freight_charge'] : 0;
+        
     }
 }
 
+/**
+ * Loads the first of any client db_basket and restores the session_basket
+ */
 function restore_client_basket()
 {
     global $S;
@@ -853,10 +926,10 @@ function restore_client_basket()
     //echo dumper($S);
 
     if ($S->getClientId()) {
-        $qry = "select order_id,instructions,order_contact from system_orders where status='basket' and client_id=" . $S->getClientId();
+        $qry = "select order_id,instructions,order_contact,freight_charge from system_orders where status='basket' and client_id=" . $S->getClientId();
 
         if ($S->id > 0) { // this is a rep not a client
-            // exclue client created baskets = eg where reference_id=0
+            // exclude client created baskets = eg where reference_id=0
             $qry .= ' and reference_id=' . $S->id;
         }
 
@@ -876,6 +949,8 @@ function restore_client_basket()
             $S->basket_instructions = $order_id[0]['instructions'];
             // restore basket instructions
             $S->order_contact = $order_id[0]['order_contact'];
+            // restore freight charge
+            $S->freight_charge = $order_id[0]['freight_charge'];
         }
     }
 }
@@ -1073,6 +1148,7 @@ function update_client_email($email)
     }
 }
 
+// Saves the order and removes the items out of stock
 function save_order()
 {
     global $db, $S, $req;
@@ -1103,13 +1179,17 @@ function save_order()
 function remove_order_items_from_stock($orderId)
 {
     global $db, $S;
+
+    // $db->debug = true;
     $items = get_order_items($orderId);
+
+
     if (is_array($items) && count($items) > 0) {
         foreach ($items as $item) {
 
-
             // Check if item is a bom
             $bom_items = $db->getArray("select * from boms where parent_product_code ='" . $item['product_code'] . "'");
+            
             if (is_array($bom_items) && count($bom_items) > 0) {
                 foreach ($bom_items as $bom_item) {
                     $item_qty = $item['qty'] * $bom_item['item_qty']; // bom qty * number of items in bom
@@ -1121,6 +1201,7 @@ function remove_order_items_from_stock($orderId)
             }
         }
     }
+    
 }
 
 function update_order_status($order_id, $status)

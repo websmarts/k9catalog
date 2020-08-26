@@ -273,7 +273,7 @@ class State
 
     {
 
-        if (isSet($this->client['client_id']) && $this->client['client_id'] > 0) {
+        if (isset($this->client['client_id']) && $this->client['client_id'] > 0) {
 
             return $this->client['client_id'];
         } else {
@@ -424,7 +424,7 @@ class State
 
     {
 
-        if (isSet($this->basket) && is_array($this->basket)) {
+        if (isset($this->basket) && is_array($this->basket)) {
 
             return count($this->basket);
         } else {
