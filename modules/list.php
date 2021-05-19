@@ -120,6 +120,8 @@ if (0 && $S->id > 0 && empty($_catid) && empty($_q)) {
 
     $g = do_query($sql);
 
+    //echo dumper($sql);exit;
+
 
 
     if (is_array($g) && count($g) > 0) {
