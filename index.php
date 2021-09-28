@@ -229,6 +229,16 @@ switch ($S->nextview) {
 
 
     case "list_clients_orders":
+       
+
+        if ($S->is_valid_client()) {
+
+            include "modules/order_for_client.php";
+
+            $S->nextview = "list_client_orders";
+        } 
+        break;
+
 
     case "sales_report":
 
@@ -236,15 +246,15 @@ switch ($S->nextview) {
 
         // change view from list_clients_orders if logged in user is a client
 
-        if ($S->is_valid_client()) {
+        // if ($S->is_valid_client()) {
 
-            include "modules/order_for_client.php";
+        //     include "modules/order_for_client.php";
 
-            $S->nextview = "list_client_orders";
-        } else {
+        //     $S->nextview = "list_client_orders";
+        // } else {
 
-            include "modules/order.php";
-        }
+        //    include "modules/order.php";
+        // }
 
 
 
@@ -469,7 +479,7 @@ switch ($S->nextview) {
 
  */
 
-// echo dumper($S->nextview);
+//echo dumper($S->nextview);
 
 
 

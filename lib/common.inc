@@ -807,14 +807,18 @@ function isBomAndAvailable($product_code)
     // Check if product is BOM 
 
     $res = getProductBOM($product_code);
+
+    //echo dumper($res);
     $numboms = array();
     if (!empty($res)) { // it is a BOM
         //echo dumper($res); 
         // check if  bom items and qty are instock
 
         foreach ($res as $item) {
-            $res2 = do_query('select qty_instock from products where product_code="' . $item['item_product_code'] . '" and `status` != "inactive" ');
-            // echo dumper($res2);
+            $sql = 'select qty_instock from products where product_code="' . $item['item_product_code'] . '" and `status` != "inactive" ';
+            //echo dumper($sql);
+            $res2 = do_query($sql);
+            //echo dumper($res2);
             if ($res2) {
 
                 if ($item['item_qty'] > 0) {
