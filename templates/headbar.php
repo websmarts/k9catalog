@@ -181,7 +181,9 @@
 
                         echo '<h3>' . $S->client['name'] . '</h3>' . "\n";
 
-                        echo '<p><a href="?v=list_clients_orders">My orders</a></p><br />';
+                        echo '<p><a href="'.CMS_BASE_URL.'reseller_info">Product Specials</a> &nbsp;';
+
+                        echo '<a href="?v=list_clients_orders">My orders</a></p><br />';
 
                         if ($S->basket_count() > 0) {
 
